@@ -1,0 +1,37 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": " Schlüsselbild ",
+                "de_DE": " Schlüsselbild "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Wähle ein Bild aus der Dokumentenbibliothek aus, das als Schlüsselbild bildschirmfüllend dargestellt werden soll. ",
+                "de_DE": " Wähle ein Bild aus der Dokumentenbibliothek aus, das als Schlüsselbild bildschirmfüllend dargestellt werden soll. "
+            },
+            "dataType": "document-library",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "keyVisual",
+            "readOnly": false,
+            "repeatable": false,
+            "required": true,
+            "showLabel": true,
+            "type": "ddm-documentlibrary"
+        }
+    ]
+}

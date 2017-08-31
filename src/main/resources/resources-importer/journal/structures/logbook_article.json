@@ -1,0 +1,36 @@
+{
+    "availableLanguageIds": [
+        "de_DE",
+        "en_US"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "de_DE": "layoutUuid",
+                "en_US": "layoutUuid"
+            },
+            "predefinedValue": {
+                "de_DE": "4b9b58ee-8823-4e33-9aaf-9e7520511e98",
+                "en_US": "4b9b58ee-8823-4e33-9aaf-9e7520511e98"
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": "Gib hier die uuid des betrefffenden Layouts an, auf dem Inhalte vom Typ \"Logbuchbeitrag\" angezeigt werden. Wenn Du jetzt nur Bahnhof verstehst, frag einen von Inofix - die machen das dann.",
+                "en_US": "Gib hier die uuid des betrefffenden Layouts an, auf dem Inhalte vom Typ \"Logbuchbeitrag\" angezeigt werden. Wenn Du jetzt nur Bahnhof verstehst, frag einen von Inofix - die machen das dann."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "layoutUuid",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "availableLanguageIds": [
+        "de_DE",
+        "en_US"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "de_DE": "layoutUuid",
+                "en_US": "layoutUuid"
+            },
+            "predefinedValue": {
+                "de_DE": "e98173e1-3554-43c1-b0f7-a7aed82bb7d6",
+                "en_US": "e98173e1-3554-43c1-b0f7-a7aed82bb7d6"
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": "Gib hier die uuid des betrefffenden Layouts an, auf dem Inhalte vom Typ \"Projektbeitrag\" angezeigt werden. Wenn Du jetzt nur Bahnhof verstehst, frag einen von Inofix - die machen das dann.",
+                "en_US": "Gib hier die uuid des betrefffenden Layouts an, auf dem Inhalte vom Typ \"Projektbeitrag\" angezeigt werden. Wenn Du jetzt nur Bahnhof verstehst, frag einen von Inofix - die machen das dann."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "layoutUuid",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        }
+    ]
+}

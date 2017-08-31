@@ -1,0 +1,260 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": " Einrückung ",
+                "de_DE": " Einrückung "
+            },
+            "options": [
+                {
+                    "value": "",
+                    "label": {
+                        "en_US": " keine ",
+                        "de_DE": " keine "
+                    }
+                },
+                {
+                    "value": "offset1",
+                    "label": {
+                        "en_US": " 1 Spalte ",
+                        "de_DE": " 1 Spalte "
+                    }
+                },
+                {
+                    "value": "offset2",
+                    "label": {
+                        "en_US": " 2 Spalten ",
+                        "de_DE": " 2 Spalten "
+                    }
+                },
+                {
+                    "value": "offset3",
+                    "label": {
+                        "en_US": " 3 Spalten ",
+                        "de_DE": " 3 Spalten "
+                    }
+                },
+                {
+                    "value": "offset4",
+                    "label": {
+                        "en_US": " 4 Spalten ",
+                        "de_DE": " 4 Spalten "
+                    }
+                },
+                {
+                    "value": "offset5",
+                    "label": {
+                        "en_US": " 5 Spalten ",
+                        "de_DE": " 5 Spalten "
+                    }
+                },
+                {
+                    "value": "offset6",
+                    "label": {
+                        "en_US": " 6 Spalten ",
+                        "de_DE": " 6 Spalten "
+                    }
+                }
+            ],
+            "predefinedValue": {
+                "en_US": [
+                    ""
+                ],
+                "de_DE": [
+                    ""
+                ]
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "multiple": false,
+            "name": "offset",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "select"
+        },
+        {
+            "label": {
+                "en_US": " Social-Media anzeigen? ",
+                "de_DE": " Social-Media anzeigen? "
+            },
+            "predefinedValue": {
+                "en_US": "false",
+                "de_DE": false
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Markiere diese Option, wenn am Ende dieses Abschnitts die Social-Media Links für diese Seite angezeigt werden sollen. ",
+                "de_DE": " Markiere diese Option, wenn am Ende dieses Abschnitts die Social-Media Links für diese Seite angezeigt werden sollen. "
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "showSocialMedia",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        },
+        {
+            "label": {
+                "en_US": " Absatz ",
+                "de_DE": " Absatz "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Gib dem Abschnitt eine knappe aber aussagekräftige Zwischenüberschrift. ",
+                "de_DE": " Gib dem Abschnitt eine knappe aber aussagekräftige Zwischenüberschrift. "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "section",
+            "readOnly": false,
+            "repeatable": true,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "en_US": " Textkörper ",
+                        "de_DE": " Textkörper "
+                    },
+                    "predefinedValue": {
+                        "en_US": "  ",
+                        "de_DE": "  "
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": " Schreibe hier Deinen Text und bemühe Dich, Deinen Beitrag sinnvoll in überschaubare Abschnitte zu gliedern. ",
+                        "de_DE": " Schreibe hier Deinen Text und bemühe Dich, Deinen Beitrag sinnvoll in überschaubare Abschnitte zu gliedern. "
+                    },
+                    "dataType": "html",
+                    "fieldNamespace": "ddm",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "body",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "ddm-text-html"
+                },
+                {
+                    "label": {
+                        "en_US": " Abbildung(en) vor dem Text ",
+                        "de_DE": " Abbildung(en) vor dem Text "
+                    },
+                    "predefinedValue": {
+                        "en_US": "false",
+                        "de_DE": false
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": " Entscheide, ob die Abbildung(en) vor oder nach dem Text (Standard) angezeigt werden sollen ",
+                        "de_DE": " Entscheide, ob die Abbildung(en) vor oder nach dem Text (Standard) angezeigt werden sollen "
+                    },
+                    "dataType": "boolean",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "imageAboveTheText",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "checkbox"
+                },
+                {
+                    "label": {
+                        "en_US": " Abbildung ",
+                        "de_DE": " Abbildung "
+                    },
+                    "predefinedValue": {
+                        "en_US": "  ",
+                        "de_DE": "  "
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": " Wähle eine oder mehrere Abbildungen aus, die in diesem Absatz angezeigt werden. ",
+                        "de_DE": " Wähle eine oder mehrere Abbildungen aus, die in diesem Absatz angezeigt werden. "
+                    },
+                    "dataType": "document-library",
+                    "fieldNamespace": "ddm",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "image",
+                    "readOnly": false,
+                    "repeatable": true,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "ddm-documentlibrary",
+                    "nestedFields": [
+                        {
+                            "label": {
+                                "en_US": " Bildunterschrift ",
+                                "de_DE": " Bildunterschrift "
+                            },
+                            "predefinedValue": {
+                                "en_US": "  ",
+                                "de_DE": "  "
+                            },
+                            "style": {
+                                "en_US": "",
+                                "de_DE": ""
+                            },
+                            "tip": {
+                                "en_US": " Gib jedem Bild eine knappe und aussagekräftige Bildunterschrift. ",
+                                "de_DE": " Gib jedem Bild eine knappe und aussagekräftige Bildunterschrift. "
+                            },
+                            "dataType": "string",
+                            "indexType": "keyword",
+                            "localizable": true,
+                            "name": "caption",
+                            "readOnly": false,
+                            "repeatable": false,
+                            "required": false,
+                            "showLabel": true,
+                            "type": "textarea"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

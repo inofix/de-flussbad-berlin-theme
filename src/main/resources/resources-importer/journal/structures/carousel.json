@@ -1,0 +1,66 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": "Bilddokument",
+                "de_DE": "Bilddokument"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Wähle ein Bilddokument aus der Dokumentenbibliothek aus, das in diesem Karussell erscheinen soll.",
+                "de_DE": "Wähle ein Bilddokument aus der Dokumentenbibliothek aus, das in diesem Karussell erscheinen soll."
+            },
+            "dataType": "document-library",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "image",
+            "readOnly": false,
+            "repeatable": true,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-documentlibrary",
+            "nestedFields": [
+                {
+                    "label": {
+                        "en_US": "Bildunterschrift",
+                        "de_DE": "Bildunterschrift"
+                    },
+                    "predefinedValue": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": "Füge für jedes Bild eine kurze Beschreibung hinzu.",
+                        "de_DE": "Füge für jedes Bild eine kurze Beschreibung hinzu."
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "caption",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": "Logo",
+                "de_DE": "Logo"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Wähle ein Logo eines Partners oder Förderers aus der Dokumentenbibliothek aus. Das Logo sollte in Farbe sein und 80 x 180 px groß sein.",
+                "de_DE": "Wähle ein Logo eines Partners oder Förderers aus der Dokumentenbibliothek aus. Das Logo sollte in Farbe sein und 80 x 180 px groß sein."
+            },
+            "dataType": "document-library",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "logo",
+            "readOnly": false,
+            "repeatable": true,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-documentlibrary",
+            "nestedFields": [
+                {
+                    "label": {
+                        "en_US": "Link",
+                        "de_DE": "Link"
+                    },
+                    "predefinedValue": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": "Gib den Link zur Hauptseite der betreffenden Institution im Format: http://www.name.org ein.",
+                        "de_DE": "Gib den Link zur Hauptseite der betreffenden Institution im Format: http://www.name.org ein."
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "link",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                }
+            ]
+        }
+    ]
+}

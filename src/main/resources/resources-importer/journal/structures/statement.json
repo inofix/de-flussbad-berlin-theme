@@ -1,0 +1,175 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": "Statement",
+                "de_DE": "Statement"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Gib hier das Statement an, dass in einem entsprechenden Karussel dargestellt weden kann.",
+                "de_DE": "Gib hier das Statement an, dass in einem entsprechenden Karussel dargestellt weden kann."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "statement",
+            "readOnly": false,
+            "repeatable": false,
+            "required": true,
+            "showLabel": true,
+            "type": "textarea",
+            "nestedFields": [
+                {
+                    "label": {
+                        "en_US": "Zitat",
+                        "de_DE": "Zitat"
+                    },
+                    "predefinedValue": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": "Bitte trage hier das Zitat des Author ein",
+                        "de_DE": "Bitte trage hier das Zitat des Author ein"
+                    },
+                    "dataType": "html",
+                    "fieldNamespace": "ddm",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "Zitat",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": true,
+                    "showLabel": true,
+                    "type": "ddm-text-html"
+                },
+                {
+                    "label": {
+                        "en_US": "Autor",
+                        "de_DE": "Autor"
+                    },
+                    "predefinedValue": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": "Du musst immer angeben, von wem diese Aussage stammt.",
+                        "de_DE": "Du musst immer angeben, von wem diese Aussage stammt."
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "author",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": true,
+                    "showLabel": true,
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "label": {
+                "en_US": "Anzeige auf Startseite",
+                "de_DE": "Anzeige auf Startseite"
+            },
+            "predefinedValue": {
+                "en_US": "false",
+                "de_DE": false
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Soll dieses Zitat auch auf der Startseite gezeigt werden, aktivieren sie dieses Feld",
+                "de_DE": "Soll dieses Zitat auch auf der Startseite gezeigt werden, aktivieren sie dieses Feld"
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Startseite",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        },
+        {
+            "label": {
+                "en_US": "Farbschema",
+                "de_DE": "Farbschema"
+            },
+            "options": [
+                {
+                    "value": "gray-green",
+                    "label": {
+                        "en_US": "graugrün",
+                        "de_DE": "graugrün"
+                    }
+                },
+                {
+                    "value": "sand",
+                    "label": {
+                        "en_US": "sand",
+                        "de_DE": "sand"
+                    }
+                },
+                {
+                    "value": "turquois",
+                    "label": {
+                        "en_US": "türkis",
+                        "de_DE": "türkis"
+                    }
+                }
+            ],
+            "predefinedValue": {
+                "en_US": [
+                    ""
+                ],
+                "de_DE": [
+                    ""
+                ]
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "multiple": false,
+            "name": "colorScheme",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "select"
+        }
+    ]
+}
