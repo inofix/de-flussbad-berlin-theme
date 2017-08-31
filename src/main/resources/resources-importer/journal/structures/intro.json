@@ -1,0 +1,374 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": " Überschrift ",
+                "de_DE": " Überschrift "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Gib hier die Überschrift ein, die über den drei Abstracts stehen soll. ",
+                "de_DE": " Gib hier die Überschrift ein, die über den drei Abstracts stehen soll. "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "headline",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": " Hintergrundbild ",
+                "de_DE": " Hintergrundbild "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Wähle ein Bild aus der Dokumentenbibliothek aus, das als Hintergundbild verwendet werden soll. ",
+                "de_DE": " Wähle ein Bild aus der Dokumentenbibliothek aus, das als Hintergundbild verwendet werden soll. "
+            },
+            "dataType": "document-library",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "background",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-documentlibrary"
+        },
+        {
+            "label": {
+                "en_US": " Hintergrundbild abdunkeln ",
+                "de_DE": " Hintergrundbild abdunkeln "
+            },
+            "predefinedValue": {
+                "en_US": "true",
+                "de_DE": true
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Standardmässig werden die Hintergrundbilder in Intros etwas abgedunkelt, damit man Schrift auf dem Bild besser lesen kann. Du kannst dieses Verhalten deaktivieren. ",
+                "de_DE": " Standardmässig werden die Hintergrundbilder in Intros etwas abgedunkelt, damit man Schrift auf dem Bild besser lesen kann. Du kannst dieses Verhalten deaktivieren. "
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "useGradient",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        },
+        {
+            "label": {
+                "en_US": " Werde aktiv! Link ",
+                "de_DE": " Werde aktiv! Link "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Wähle hier aus, auf welche Seite der Werde aktiv! Link verweisen soll. Wenn kein Ziel ausgewählt ist, dann wir die Schaltfläche nicht dargestellt. ",
+                "de_DE": " Wähle hier aus, auf welche Seite der Werde aktiv! Link verweisen soll. Wenn kein Ziel ausgewählt ist, dann wir die Schaltfläche nicht dargestellt. "
+            },
+            "dataType": "link-to-page",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "clubLink",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-link-to-page"
+        },
+        {
+            "label": {
+                "en_US": " Hintergrundfarbe ",
+                "de_DE": " Hintergrundfarbe "
+            },
+            "options": [
+                {
+                    "value": "",
+                    "label": {
+                        "en_US": " keine ",
+                        "de_DE": " keine "
+                    }
+                },
+                {
+                    "value": "turquois",
+                    "label": {
+                        "en_US": " türkis ",
+                        "de_DE": " türkis "
+                    }
+                },
+                {
+                    "value": "gray-green",
+                    "label": {
+                        "en_US": " graugrün ",
+                        "de_DE": " graugrün "
+                    }
+                },
+                {
+                    "value": "sand",
+                    "label": {
+                        "en_US": " sand ",
+                        "de_DE": " sand "
+                    }
+                }
+            ],
+            "predefinedValue": {
+                "en_US": [
+                    ""
+                ],
+                "de_DE": [
+                    ""
+                ]
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Wähle die Hintergrundfarbe für die gesamte Box aus (oder für die einzelnen Teaser, wenn Du ein Hintergrundbild benutzst). ",
+                "de_DE": " Wähle die Hintergrundfarbe für die gesamte Box aus (oder für die einzelnen Teaser, wenn Du ein Hintergrundbild benutzst). "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "multiple": false,
+            "name": "backgroundColor",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "select"
+        },
+        {
+            "label": {
+                "en_US": " Titel ",
+                "de_DE": " Titel "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Gib dem einzelnen Abstract eine aussagekräftige Überschrift ",
+                "de_DE": " Gib dem einzelnen Abstract eine aussagekräftige Überschrift "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "caption",
+            "readOnly": false,
+            "repeatable": true,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "en_US": " Claim ",
+                        "de_DE": " Claim "
+                    },
+                    "predefinedValue": {
+                        "en_US": "  ",
+                        "de_DE": "  "
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": " Formuliere einen knappe und prägnanten Claim ",
+                        "de_DE": " Formuliere einen knappe und prägnanten Claim "
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "claim",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                },
+                {
+                    "label": {
+                        "en_US": " Abstract ",
+                        "de_DE": " Abstract "
+                    },
+                    "predefinedValue": {
+                        "en_US": "  ",
+                        "de_DE": "  "
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": " Beschreibe in einem Satz, worum es in diesem Abschnitt geht. ",
+                        "de_DE": " Beschreibe in einem Satz, worum es in diesem Abschnitt geht. "
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "abstract",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "textarea"
+                },
+                {
+                    "label": {
+                        "en_US": " Link ",
+                        "de_DE": " Link "
+                    },
+                    "predefinedValue": {
+                        "en_US": "  ",
+                        "de_DE": "  "
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": " Wähle die Seite aus, auf die dieser Abstract verweisen soll. ",
+                        "de_DE": " Wähle die Seite aus, auf die dieser Abstract verweisen soll. "
+                    },
+                    "dataType": "link-to-page",
+                    "fieldNamespace": "ddm",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "abstractLink",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "ddm-link-to-page"
+                },
+                {
+                    "label": {
+                        "en_US": " Link Beschriftung ",
+                        "de_DE": " Link Beschriftung "
+                    },
+                    "predefinedValue": {
+                        "en_US": "  ",
+                        "de_DE": "  "
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": " Gib dem Link eine aussagekräftige Beschriftung, bspw.: \"Zum Projekt\", \"Mehr erfahren\" o.ä. ",
+                        "de_DE": " Gib dem Link eine aussagekräftige Beschriftung, bspw.: \"Zum Projekt\", \"Mehr erfahren\" o.ä. "
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "abstractLabel",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "label": {
+                "en_US": " Link ",
+                "de_DE": " Link "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Wähle die Seite aus, auf welche diese Abstracts verweisen sollen. ",
+                "de_DE": " Wähle die Seite aus, auf welche diese Abstracts verweisen sollen. "
+            },
+            "dataType": "link-to-page",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "link",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-link-to-page"
+        },
+        {
+            "label": {
+                "en_US": " Link Beschriftung ",
+                "de_DE": " Link Beschriftung "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Gib dem Link eine aussagekräftige Beschriftung, bspw.: \"Zum Projekt\", \"Mehr erfahren\" o.ä. ",
+                "de_DE": " Gib dem Link eine aussagekräftige Beschriftung, bspw.: \"Zum Projekt\", \"Mehr erfahren\" o.ä. "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "label",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": "Hintergrundbild",
+                "de_DE": "Hintergrundbild"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Wähle aus der Dokumentenbibliothek ein Bild aus, das als Hintergrundbild für den Opener benutzt werden soll.",
+                "de_DE": "Wähle aus der Dokumentenbibliothek ein Bild aus, das als Hintergrundbild für den Opener benutzt werden soll."
+            },
+            "dataType": "document-library",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "background",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-documentlibrary"
+        },
+        {
+            "label": {
+                "en_US": "Überschrift",
+                "de_DE": "Überschrift"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Gib dem Opener eine prägnante Überschrift und prüfe anschließend, ob diese vor dem Hintergrundbild auch gut lesbar ist.",
+                "de_DE": "Gib dem Opener eine prägnante Überschrift und prüfe anschließend, ob diese vor dem Hintergrundbild auch gut lesbar ist."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "headline",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": "Untertitel",
+                "de_DE": "Untertitel"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Wenn es Dir passend erscheint, gib hier einen Untertitel für den Opener ein.",
+                "de_DE": "Wenn es Dir passend erscheint, gib hier einen Untertitel für den Opener ein."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "caption",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": "Link",
+                "de_DE": "Link"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Wähle die Seite aus, auf die der Opener verweisen soll.",
+                "de_DE": "Wähle die Seite aus, auf die der Opener verweisen soll."
+            },
+            "dataType": "link-to-page",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "link",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-link-to-page"
+        }
+    ]
+}

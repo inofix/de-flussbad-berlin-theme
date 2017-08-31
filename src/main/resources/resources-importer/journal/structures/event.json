@@ -1,0 +1,537 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": "Titel",
+                "de_DE": "Titel"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Gib hier den Titel der Veranstaltung ein. Dieses Feld muss ausgefüllt sein.",
+                "de_DE": "Gib hier den Titel der Veranstaltung ein. Dieses Feld muss ausgefüllt sein."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "title",
+            "readOnly": false,
+            "repeatable": false,
+            "required": true,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": "Datum",
+                "de_DE": "Datum"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Wähle hier das Datum aus, an dem der Termin stattfindet.",
+                "de_DE": "Wähle hier das Datum aus, an dem der Termin stattfindet."
+            },
+            "dataType": "date",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "date",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-date"
+        },
+        {
+            "label": {
+                "en_US": "Stunde",
+                "de_DE": "Stunde"
+            },
+            "options": [
+                {
+                    "value": "",
+                    "label": {
+                        "en_US": "",
+                        "de_DE": ""
+                    }
+                },
+                {
+                    "value": "00",
+                    "label": {
+                        "en_US": "00",
+                        "de_DE": "00"
+                    }
+                },
+                {
+                    "value": "01",
+                    "label": {
+                        "en_US": "01",
+                        "de_DE": "01"
+                    }
+                },
+                {
+                    "value": "02",
+                    "label": {
+                        "en_US": "02",
+                        "de_DE": "02"
+                    }
+                },
+                {
+                    "value": "03",
+                    "label": {
+                        "en_US": "03",
+                        "de_DE": "03"
+                    }
+                },
+                {
+                    "value": "04",
+                    "label": {
+                        "en_US": "04",
+                        "de_DE": "04"
+                    }
+                },
+                {
+                    "value": "05",
+                    "label": {
+                        "en_US": "05",
+                        "de_DE": "05"
+                    }
+                },
+                {
+                    "value": "06",
+                    "label": {
+                        "en_US": "06",
+                        "de_DE": "06"
+                    }
+                },
+                {
+                    "value": "07",
+                    "label": {
+                        "en_US": "07",
+                        "de_DE": "07"
+                    }
+                },
+                {
+                    "value": "08",
+                    "label": {
+                        "en_US": "08",
+                        "de_DE": "08"
+                    }
+                },
+                {
+                    "value": "09",
+                    "label": {
+                        "en_US": "09",
+                        "de_DE": "09"
+                    }
+                },
+                {
+                    "value": "10",
+                    "label": {
+                        "en_US": "10",
+                        "de_DE": "10"
+                    }
+                },
+                {
+                    "value": "11",
+                    "label": {
+                        "en_US": "11",
+                        "de_DE": "11"
+                    }
+                },
+                {
+                    "value": "12",
+                    "label": {
+                        "en_US": "12",
+                        "de_DE": "12"
+                    }
+                },
+                {
+                    "value": "13",
+                    "label": {
+                        "en_US": "13",
+                        "de_DE": "13"
+                    }
+                },
+                {
+                    "value": "14",
+                    "label": {
+                        "en_US": "14",
+                        "de_DE": "14"
+                    }
+                },
+                {
+                    "value": "15",
+                    "label": {
+                        "en_US": "15",
+                        "de_DE": "15"
+                    }
+                },
+                {
+                    "value": "16",
+                    "label": {
+                        "en_US": "16",
+                        "de_DE": "16"
+                    }
+                },
+                {
+                    "value": "17",
+                    "label": {
+                        "en_US": "17",
+                        "de_DE": "17"
+                    }
+                },
+                {
+                    "value": "18",
+                    "label": {
+                        "en_US": "18",
+                        "de_DE": "18"
+                    }
+                },
+                {
+                    "value": "19",
+                    "label": {
+                        "en_US": "19",
+                        "de_DE": "19"
+                    }
+                },
+                {
+                    "value": "20",
+                    "label": {
+                        "en_US": "20",
+                        "de_DE": "20"
+                    }
+                },
+                {
+                    "value": "21",
+                    "label": {
+                        "en_US": "21",
+                        "de_DE": "21"
+                    }
+                },
+                {
+                    "value": "22",
+                    "label": {
+                        "en_US": "22",
+                        "de_DE": "22"
+                    }
+                },
+                {
+                    "value": "23",
+                    "label": {
+                        "en_US": "23",
+                        "de_DE": "23"
+                    }
+                }
+            ],
+            "predefinedValue": {
+                "en_US": [
+                    ""
+                ],
+                "de_DE": [
+                    ""
+                ]
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Wähle die Stunde aus, an der der Termin stattfindet.",
+                "de_DE": "Wähle die Stunde aus, an der der Termin stattfindet."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "multiple": false,
+            "name": "hour",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "select"
+        },
+        {
+            "label": {
+                "en_US": "Minute",
+                "de_DE": "Minute"
+            },
+            "options": [
+                {
+                    "value": "",
+                    "label": {
+                        "en_US": "",
+                        "de_DE": ""
+                    }
+                },
+                {
+                    "value": "00",
+                    "label": {
+                        "en_US": "00",
+                        "de_DE": "00"
+                    }
+                },
+                {
+                    "value": "05",
+                    "label": {
+                        "en_US": "05",
+                        "de_DE": "05"
+                    }
+                },
+                {
+                    "value": "10",
+                    "label": {
+                        "en_US": "10",
+                        "de_DE": "10"
+                    }
+                },
+                {
+                    "value": "15",
+                    "label": {
+                        "en_US": "15",
+                        "de_DE": "15"
+                    }
+                },
+                {
+                    "value": "20",
+                    "label": {
+                        "en_US": "20",
+                        "de_DE": "20"
+                    }
+                },
+                {
+                    "value": "25",
+                    "label": {
+                        "en_US": "25",
+                        "de_DE": "25"
+                    }
+                },
+                {
+                    "value": "30",
+                    "label": {
+                        "en_US": "30",
+                        "de_DE": "30"
+                    }
+                },
+                {
+                    "value": "35",
+                    "label": {
+                        "en_US": "35",
+                        "de_DE": "35"
+                    }
+                },
+                {
+                    "value": "40",
+                    "label": {
+                        "en_US": "40",
+                        "de_DE": "40"
+                    }
+                },
+                {
+                    "value": "45",
+                    "label": {
+                        "en_US": "45",
+                        "de_DE": "45"
+                    }
+                },
+                {
+                    "value": "50",
+                    "label": {
+                        "en_US": "50",
+                        "de_DE": "50"
+                    }
+                },
+                {
+                    "value": "55",
+                    "label": {
+                        "en_US": "55",
+                        "de_DE": "55"
+                    }
+                }
+            ],
+            "predefinedValue": {
+                "en_US": [
+                    ""
+                ],
+                "de_DE": [
+                    ""
+                ]
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Wähle die Minutes aus, an der der Termin stattfindet.",
+                "de_DE": "Wähle die Minutes aus, an der der Termin stattfindet."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "multiple": false,
+            "name": "minute",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "select"
+        },
+        {
+            "label": {
+                "en_US": "Veranstaltungsort",
+                "de_DE": "Veranstaltungsort"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Gib hier den Ort an, an dem die Veranstaltung stattfindet.",
+                "de_DE": "Gib hier den Ort an, an dem die Veranstaltung stattfindet."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "location",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": "Kurzbeschreibung",
+                "de_DE": "Kurzbeschreibung"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Gib hier eine kurze Beschreibung der Veranstaltung an. Worum geht es? Wer spricht? Warum ist das wichtig?",
+                "de_DE": "Gib hier eine kurze Beschreibung der Veranstaltung an. Worum geht es? Wer spricht? Warum ist das wichtig?"
+            },
+            "dataType": "html",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "summary",
+            "readOnly": false,
+            "repeatable": false,
+            "required": true,
+            "showLabel": true,
+            "type": "ddm-text-html"
+        },
+        {
+            "label": {
+                "en_US": "Abschnitt",
+                "de_DE": "Abschnitt"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Wenn Du die Beschreibung in mehrere Abschnitte gliedern möchtest, dann hast Du hier die Möglichkeit, den einzelnen Abschnitten Zwischenüberschriften zu geben.",
+                "de_DE": "Wenn Du die Beschreibung in mehrere Abschnitte gliedern möchtest, dann hast Du hier die Möglichkeit, den einzelnen Abschnitten Zwischenüberschriften zu geben."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "section",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "en_US": "Ausführliche Terminbeschreibung",
+                        "de_DE": "Ausführliche Terminbeschreibung"
+                    },
+                    "predefinedValue": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": "Schreibe hier Deine ausführliche Veranstaltungsbeschreibung. Wenn es viel zu beschreiben gibt, dann hast Du die Möglichkeit, Deine Beschreibung in mehrere Abschnitte zu gliedern und mit Zwischenüberschriften zu versehen.",
+                        "de_DE": "Schreibe hier Deine ausführliche Veranstaltungsbeschreibung. Wenn es viel zu beschreiben gibt, dann hast Du die Möglichkeit, Deine Beschreibung in mehrere Abschnitte zu gliedern und mit Zwischenüberschriften zu versehen."
+                    },
+                    "dataType": "html",
+                    "fieldNamespace": "ddm",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "body",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "ddm-text-html"
+                }
+            ]
+        },
+        {
+            "label": {
+                "en_US": "layoutUuid",
+                "de_DE": "layoutUuid"
+            },
+            "predefinedValue": {
+                "en_US": "ac3dd1b3-ef78-4ae4-b932-1959c81312a0",
+                "de_DE": "ac3dd1b3-ef78-4ae4-b932-1959c81312a0"
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Gib hier die uuid des betrefffenden Layouts an, auf dem Inhalte vom Typ \"Termin\" angezeigt werden. Wenn Du jetzt nur Bahnhof verstehst, frag einen von Inofix - die machen das dann.",
+                "de_DE": "Gib hier die uuid des betrefffenden Layouts an, auf dem Inhalte vom Typ \"Termin\" angezeigt werden. Wenn Du jetzt nur Bahnhof verstehst, frag einen von Inofix - die machen das dann."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "layoutUuid",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        }
+    ]
+}

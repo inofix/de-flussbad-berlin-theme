@@ -1,0 +1,111 @@
+{
+    "availableLanguageIds": [
+        "de_DE",
+        "en_US"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "de_DE": " Service ",
+                "en_US": " Service "
+            },
+            "options": [
+                {
+                    "value": "http://www.youtube.com/oembed?url=",
+                    "label": {
+                        "de_DE": " youtube ",
+                        "en_US": " youtube "
+                    }
+                },
+                {
+                    "value": "https://vimeo.com/api/oembed.json?url=",
+                    "label": {
+                        "de_DE": " vimeo ",
+                        "en_US": " vimeo "
+                    }
+                }
+            ],
+            "predefinedValue": {
+                "de_DE": [
+                    ""
+                ],
+                "en_US": [
+                    ""
+                ]
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": " Wähle den Dienst aus, von dem Du das Video einbetten möchtest. ",
+                "en_US": " Wähle den Dienst aus, von dem Du das Video einbetten möchtest. "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "multiple": false,
+            "name": "service",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "select"
+        },
+        {
+            "label": {
+                "de_DE": " Video URL ",
+                "en_US": " Video URL "
+            },
+            "predefinedValue": {
+                "de_DE": "  ",
+                "en_US": "  "
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": " Gib hier den URL des Videos ein. Der URL muss entweder mit http:// oder https:// beginnen. ",
+                "en_US": " Gib hier den URL des Videos ein. Der URL muss entweder mit http:// oder https:// beginnen. "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "url",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "de_DE": " Volle Bildschirmbreite ",
+                "en_US": " Volle Bildschirmbreite "
+            },
+            "predefinedValue": {
+                "de_DE": false,
+                "en_US": false
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": " Entscheide, ob das Video über die volle Bildschirmbreite oder innerhalb des Rasters angezeigt werden soll. ",
+                "en_US": " Entscheide, ob das Video über die volle Bildschirmbreite oder innerhalb des Rasters angezeigt werden soll. "
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "fullscreen",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        }
+    ]
+}

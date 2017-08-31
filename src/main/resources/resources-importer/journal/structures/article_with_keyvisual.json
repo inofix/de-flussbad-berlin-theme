@@ -1,0 +1,442 @@
+{
+    "availableLanguageIds": [
+        "de_DE",
+        "en_US"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "de_DE": "Überschrift",
+                "en_US": "Überschrift"
+            },
+            "predefinedValue": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": "Gib Deinem Beitrag eine knappe aber aussagekräftige Überschrift.",
+                "en_US": "Gib Deinem Beitrag eine knappe aber aussagekräftige Überschrift."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "headline",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "de_DE": "Schlüsselbild",
+                "en_US": "Schlüsselbild"
+            },
+            "predefinedValue": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": "Wähle ein Bild aus der Dokumentenbibliothek aus, das als Haupthintergrundbild verwendet werden soll. Achte darauf, dass das Bild mindestens 1024px breit ist.",
+                "en_US": "Wähle ein Bild aus der Dokumentenbibliothek aus, das als Haupthintergrundbild verwendet werden soll. Achte darauf, dass das Bild mindestens 1024px breit ist."
+            },
+            "dataType": "document-library",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "keyVisual",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-documentlibrary"
+        },
+        {
+            "label": {
+                "de_DE": "Teaser",
+                "en_US": "Teaser"
+            },
+            "predefinedValue": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": "Der Teaser erscheint als einspaltiger Textblock unterhalb der Überschrift und wird in Listendarstellungen als Zusammenfassung verwendet.",
+                "en_US": "Der Teaser erscheint als einspaltiger Textblock unterhalb der Überschrift und wird in Listendarstellungen als Zusammenfassung verwendet."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "teaser",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "textarea"
+        },
+        {
+            "label": {
+                "de_DE": "Inhaltsverzeichnis anzeigen?",
+                "en_US": "Inhaltsverzeichnis anzeigen?"
+            },
+            "predefinedValue": {
+                "de_DE": false,
+                "en_US": false
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": "Aktiviere diese Option, wenn Du ein Inhaltsverzeichnis für diesen Beitrag anzeigen möchtest. Das Inhaltsverzeichnis wird auf Grundlage der von Dir vergebenen Zwischenüberschriften erstellt.",
+                "en_US": "Aktiviere diese Option, wenn Du ein Inhaltsverzeichnis für diesen Beitrag anzeigen möchtest. Das Inhaltsverzeichnis wird auf Grundlage der von Dir vergebenen Zwischenüberschriften erstellt."
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "showToc",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        },
+        {
+            "label": {
+                "de_DE": "Verknüpfte Objekte anzeigen?",
+                "en_US": "Verknüpfte Objekte anzeigen?"
+            },
+            "predefinedValue": {
+                "de_DE": true,
+                "en_US": true
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": "Markiere diese Option, wenn Du am Ende des Beitrags verknüpfte Objekte anzeigen möchtest.",
+                "en_US": "Markiere diese Option, wenn Du am Ende des Beitrags verknüpfte Objekte anzeigen möchtest."
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "showRelatedAssets",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        },
+        {
+            "label": {
+                "de_DE": "Abschnitt",
+                "en_US": "Abschnitt"
+            },
+            "predefinedValue": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": "Gib dem Abschnitt eine knappe aber aussagekräftige Zwischenüberschrift.",
+                "en_US": "Gib dem Abschnitt eine knappe aber aussagekräftige Zwischenüberschrift."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "section",
+            "readOnly": false,
+            "repeatable": true,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "de_DE": "Beschriftung",
+                        "en_US": "Beschriftung"
+                    },
+                    "predefinedValue": {
+                        "de_DE": "",
+                        "en_US": ""
+                    },
+                    "style": {
+                        "de_DE": "",
+                        "en_US": ""
+                    },
+                    "tip": {
+                        "de_DE": "Wenn nötig, kannst Du hier dem Abschnitt eine von der Überschrift abweichende Beschriftung geben. Das ist besonders dann nützlich, wenn die Überschrift zu lang für vertikale Navigation mit dem Scrollspy ist.",
+                        "en_US": "Wenn nötig, kannst Du hier dem Abschnitt eine von der Überschrift abweichende Beschriftung geben. Das ist besonders dann nützlich, wenn die Überschrift zu lang für vertikale Navigation mit dem Scrollspy ist."
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "label",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                },
+                {
+                    "label": {
+                        "de_DE": "Textkörper",
+                        "en_US": "Textkörper"
+                    },
+                    "predefinedValue": {
+                        "de_DE": "",
+                        "en_US": ""
+                    },
+                    "style": {
+                        "de_DE": "",
+                        "en_US": ""
+                    },
+                    "tip": {
+                        "de_DE": "Schreibe hier Deinen Text und bemühe Dich, Deinen Beitrag sinnvoll in überschaubare Abschnitte zu gliedern.",
+                        "en_US": "Schreibe hier Deinen Text und bemühe Dich, Deinen Beitrag sinnvoll in überschaubare Abschnitte zu gliedern."
+                    },
+                    "dataType": "html",
+                    "fieldNamespace": "ddm",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "body",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "ddm-text-html"
+                },
+                {
+                    "label": {
+                        "de_DE": "Abbildung(en) vor dem Text?",
+                        "en_US": "Abbildung(en) vor dem Text?"
+                    },
+                    "predefinedValue": {
+                        "de_DE": false,
+                        "en_US": false
+                    },
+                    "style": {
+                        "de_DE": "",
+                        "en_US": ""
+                    },
+                    "tip": {
+                        "de_DE": "Entscheide, ob die Abbildung(en) vor oder nach dem Text (Standard) angezeigt werden sollen",
+                        "en_US": "Entscheide, ob die Abbildung(en) vor oder nach dem Text (Standard) angezeigt werden sollen"
+                    },
+                    "dataType": "boolean",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "imageAboveTheText",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "checkbox"
+                },
+                {
+                    "label": {
+                        "de_DE": "Abbildung",
+                        "en_US": "Abbildung"
+                    },
+                    "predefinedValue": {
+                        "de_DE": "",
+                        "en_US": ""
+                    },
+                    "style": {
+                        "de_DE": "",
+                        "en_US": ""
+                    },
+                    "tip": {
+                        "de_DE": "Wähle eine oder mehrere Abbildungen aus, die in diesem Absatz angezeigt werden.",
+                        "en_US": "Wähle eine oder mehrere Abbildungen aus, die in diesem Absatz angezeigt werden."
+                    },
+                    "dataType": "document-library",
+                    "fieldNamespace": "ddm",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "image",
+                    "readOnly": false,
+                    "repeatable": true,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "ddm-documentlibrary",
+                    "nestedFields": [
+                        {
+                            "label": {
+                                "de_DE": "Bildunterschrift",
+                                "en_US": "Bildunterschrift"
+                            },
+                            "predefinedValue": {
+                                "de_DE": "",
+                                "en_US": ""
+                            },
+                            "style": {
+                                "de_DE": "",
+                                "en_US": ""
+                            },
+                            "tip": {
+                                "de_DE": "Gib jedem Bild eine knappe und aussagekräftige Bildunterschrift.",
+                                "en_US": "Gib jedem Bild eine knappe und aussagekräftige Bildunterschrift."
+                            },
+                            "dataType": "string",
+                            "indexType": "keyword",
+                            "localizable": true,
+                            "name": "caption",
+                            "readOnly": false,
+                            "repeatable": false,
+                            "required": false,
+                            "showLabel": true,
+                            "type": "textarea"
+                        }
+                    ]
+                },
+                {
+                    "label": {
+                        "de_DE": "Service",
+                        "en_US": "Service"
+                    },
+                    "options": [
+                        {
+                            "value": "http://www.youtube.com/oembed?url=",
+                            "label": {
+                                "de_DE": "youtube",
+                                "en_US": "youtube"
+                            }
+                        },
+                        {
+                            "value": "https://vimeo.com/api/oembed.json?url=",
+                            "label": {
+                                "de_DE": "vimeo",
+                                "en_US": "vimeo"
+                            }
+                        }
+                    ],
+                    "predefinedValue": {
+                        "de_DE": [
+                            ""
+                        ],
+                        "en_US": [
+                            ""
+                        ]
+                    },
+                    "style": {
+                        "de_DE": "",
+                        "en_US": ""
+                    },
+                    "tip": {
+                        "de_DE": "Wähle den Dienst aus, von dem Du das Video einbetten möchtest.",
+                        "en_US": "Wähle den Dienst aus, von dem Du das Video einbetten möchtest."
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "multiple": false,
+                    "name": "service",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "select"
+                },
+                {
+                    "label": {
+                        "de_DE": "Video URL",
+                        "en_US": "Video URL"
+                    },
+                    "predefinedValue": {
+                        "de_DE": "",
+                        "en_US": ""
+                    },
+                    "style": {
+                        "de_DE": "",
+                        "en_US": ""
+                    },
+                    "tip": {
+                        "de_DE": "Gib hier den URL des Videos ein. Der URL muss entweder mit http:// oder https:// beginnen.",
+                        "en_US": "Gib hier den URL des Videos ein. Der URL muss entweder mit http:// oder https:// beginnen."
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "url",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "label": {
+                "de_DE": "Galerie Tags",
+                "en_US": "Galerie Tags"
+            },
+            "predefinedValue": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": "Trage hier ein oder mehrere Tags ein, auf deren Grundlage die Mediengalerie erstellt wird. Mehrere Tags werden durch Kommata von einander getrennt.",
+                "en_US": "Trage hier ein oder mehrere Tags ein, auf deren Grundlage die Mediengalerie erstellt wird. Mehrere Tags werden durch Kommata von einander getrennt."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "tags",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "de_DE": "Downloadoption anzeigen?",
+                "en_US": "Downloadoption anzeigen?"
+            },
+            "predefinedValue": {
+                "de_DE": false,
+                "en_US": false
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": "Markiere diese Option, wenn für die Dateien in der Mediengalerie eine Download-Option angezeigt werden soll.",
+                "en_US": "Markiere diese Option, wenn für die Dateien in der Mediengalerie eine Download-Option angezeigt werden soll."
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "showDownload",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        }
+    ]
+}

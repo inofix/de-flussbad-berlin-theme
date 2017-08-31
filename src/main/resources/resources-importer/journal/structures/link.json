@@ -1,0 +1,66 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": "Interne Zielseite",
+                "de_DE": "Interne Zielseite"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Wähle die Seite aus, auf die dieser Link verweisen soll.",
+                "de_DE": "Wähle die Seite aus, auf die dieser Link verweisen soll."
+            },
+            "dataType": "link-to-page",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "target",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-link-to-page",
+            "nestedFields": [
+                {
+                    "label": {
+                        "en_US": "Beschriftung",
+                        "de_DE": "Beschriftung"
+                    },
+                    "predefinedValue": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": "Gib dem Link eine aussagekrätigen Titel. Am besten nennst Du ihn so, wie die Zielseite heißt. Damit vermeidest Du Verwirrung beim Benutzer.",
+                        "de_DE": "Gib dem Link eine aussagekrätigen Titel. Am besten nennst Du ihn so, wie die Zielseite heißt. Damit vermeidest Du Verwirrung beim Benutzer."
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "label",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                }
+            ]
+        }
+    ]
+}

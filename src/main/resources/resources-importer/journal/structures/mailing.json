@@ -1,0 +1,150 @@
+{
+    "availableLanguageIds": [
+        "de_DE",
+        "en_US"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "de_DE": " Einführung ",
+                "en_US": " Einführung "
+            },
+            "predefinedValue": {
+                "de_DE": "  ",
+                "en_US": "  "
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": " Der Einleitungstext für den Newsletter. ",
+                "en_US": " Der Einleitungstext für den Newsletter. "
+            },
+            "dataType": "html",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "introduction",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-text-html"
+        },
+        {
+            "label": {
+                "de_DE": " Abschnitt ",
+                "en_US": " Abschnitt "
+            },
+            "predefinedValue": {
+                "de_DE": "  ",
+                "en_US": "  "
+            },
+            "style": {
+                "de_DE": "",
+                "en_US": ""
+            },
+            "tip": {
+                "de_DE": " Gib dem Abschnitt eine aussagekräftige Überschrift. Zusätzliche Abschnitte kannst Du mit dem Schaltelement oben rechts einfügen. ",
+                "en_US": " Gib dem Abschnitt eine aussagekräftige Überschrift. Zusätzliche Abschnitte kannst Du mit dem Schaltelement oben rechts einfügen. "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "section",
+            "readOnly": false,
+            "repeatable": true,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "de_DE": " Datum ",
+                        "en_US": " Datum "
+                    },
+                    "predefinedValue": {
+                        "de_DE": "  ",
+                        "en_US": "  "
+                    },
+                    "style": {
+                        "de_DE": "",
+                        "en_US": ""
+                    },
+                    "tip": {
+                        "de_DE": " Das Datum, das über dem Abschnitt angezeigt wird. ",
+                        "en_US": " Das Datum, das über dem Abschnitt angezeigt wird. "
+                    },
+                    "dataType": "date",
+                    "fieldNamespace": "ddm",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "date",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "ddm-date"
+                },
+                {
+                    "label": {
+                        "de_DE": " Bild ",
+                        "en_US": " Bild "
+                    },
+                    "predefinedValue": {
+                        "de_DE": "  ",
+                        "en_US": "  "
+                    },
+                    "style": {
+                        "de_DE": "",
+                        "en_US": ""
+                    },
+                    "tip": {
+                        "de_DE": " Wähle für den Abschnitt ein Bild aus der Dokumentenbibliothek aus. ",
+                        "en_US": " Wähle für den Abschnitt ein Bild aus der Dokumentenbibliothek aus. "
+                    },
+                    "dataType": "document-library",
+                    "fieldNamespace": "ddm",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "image",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "ddm-documentlibrary"
+                },
+                {
+                    "label": {
+                        "de_DE": " Text ",
+                        "en_US": " Text "
+                    },
+                    "predefinedValue": {
+                        "de_DE": "  ",
+                        "en_US": "  "
+                    },
+                    "style": {
+                        "de_DE": "",
+                        "en_US": ""
+                    },
+                    "tip": {
+                        "de_DE": " Ein kurzer Text, in dem beschrieben wird, was passiert. Nutze Links zum Online-Angebot www.flussbad-berlin.de, um den Leser zu vertiefenden Informationen weiter zu leiten. ",
+                        "en_US": " Ein kurzer Text, in dem beschrieben wird, was passiert. Nutze Links zum Online-Angebot www.flussbad-berlin.de, um den Leser zu vertiefenden Informationen weiter zu leiten. "
+                    },
+                    "dataType": "html",
+                    "fieldNamespace": "ddm",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "text",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "ddm-text-html"
+                }
+            ]
+        }
+    ]
+}

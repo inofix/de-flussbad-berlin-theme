@@ -17,6 +17,102 @@
             "friendlyURL": "/welcome",
             "name": "Welcome",
             "title": "Welcome"
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "logos_supporters.xml",
+                            "groupId": "${groupId}"
+                        }
+                    }                                    
+                ]
+            ],
+            "friendlyURL": "/logbook",
+            "name": "Logbook",
+            "title": "Logbook"
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "logos_supporters.xml",
+                            "groupId": "${groupId}"
+                        }
+                    }                                    
+                ]
+            ],
+            "friendlyURL": "/project",
+            "name": "Project",
+            "title": "Project"
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "logos_supporters.xml",
+                            "groupId": "${groupId}"
+                        }
+                    }                                    
+                ]
+            ],
+            "friendlyURL": "/about",
+            "name": "About Us",
+            "title": "About Us"
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "logos_supporters.xml",
+                            "groupId": "${groupId}"
+                        }
+                    }                                    
+                ]
+            ],
+            "friendlyURL": "/events",
+            "name": "Events",
+            "title": "Events"
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "logos_supporters.xml",
+                            "groupId": "${groupId}"
+                        }
+                    }                                    
+                ]
+            ],
+            "friendlyURL": "/press",
+            "name": "Press",
+            "title": "Press"
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "logos_supporters.xml",
+                            "groupId": "${groupId}"
+                        }
+                    }                                    
+                ]
+            ],
+            "friendlyURL": "/donate",
+            "name": "Donate",
+            "title": "Donate"
         }
     ]
 }

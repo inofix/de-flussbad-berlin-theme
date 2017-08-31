@@ -1,0 +1,199 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": "Überschrift",
+                "de_DE": "Überschrift"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Gib der Einführung eine aussagekräftige Überschrift.",
+                "de_DE": "Gib der Einführung eine aussagekräftige Überschrift."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "headline",
+            "readOnly": false,
+            "repeatable": false,
+            "required": true,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": "Teaser",
+                "de_DE": "Teaser"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Schreib einen kurzen Anreisser für den Bereich, der nicht mehr als 500 Zeichen umfasst.",
+                "de_DE": "Schreib einen kurzen Anreisser für den Bereich, der nicht mehr als 500 Zeichen umfasst."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "teaser",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "textarea"
+        },
+        {
+            "label": {
+                "en_US": "Beschreibung",
+                "de_DE": "Beschreibung"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "In der Beschreibung darf es etwas ausführlicher werden.",
+                "de_DE": "In der Beschreibung darf es etwas ausführlicher werden."
+            },
+            "dataType": "html",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "description",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-text-html"
+        },
+        {
+            "label": {
+                "en_US": "Inhaltsverzeichnis anzeigen?",
+                "de_DE": "Inhaltsverzeichnis anzeigen?"
+            },
+            "predefinedValue": {
+                "en_US": "false",
+                "de_DE": false
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Markiere diese Option, wenn Du ein Inhaltsverzeichnis für diese Seite anzeigen möchtest. Das Inhaltsverzeichnis wird auf Grundlage auf der Seite installierten Module erstellt.",
+                "de_DE": "Markiere diese Option, wenn Du ein Inhaltsverzeichnis für diese Seite anzeigen möchtest. Das Inhaltsverzeichnis wird auf Grundlage auf der Seite installierten Module erstellt."
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "showToc",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        },
+        {
+            "label": {
+                "en_US": "Hinweis \"Alle Artikel zum Thema ...\" einblenden?",
+                "de_DE": "Hinweis \"Alle Artikel zum Thema ...\" einblenden?"
+            },
+            "predefinedValue": {
+                "en_US": "false",
+                "de_DE": false
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Markiere diese Option, wenn der Einführungstext mit dem Hinweis: Alle Artikel zum Thema und einem Hinweispfeil abgeschlossen werden soll.",
+                "de_DE": "Markiere diese Option, wenn der Einführungstext mit dem Hinweis: Alle Artikel zum Thema und einem Hinweispfeil abgeschlossen werden soll."
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "showPointer",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        },
+        {
+            "label": {
+                "en_US": "Volle Breite?",
+                "de_DE": "Volle Breite?"
+            },
+            "predefinedValue": {
+                "en_US": "false",
+                "de_DE": false
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Markiere diese Option, wenn die Einführung in voller Breite (10 Spalten) dargestellt werden soll.",
+                "de_DE": "Markiere diese Option, wenn die Einführung in voller Breite (10 Spalten) dargestellt werden soll."
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "displayFullWidth",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        },
+        {
+            "label": {
+                "en_US": "Kategorie am Kopf einblenden?",
+                "de_DE": "Kategorie am Kopf einblenden?"
+            },
+            "predefinedValue": {
+                "en_US": "false",
+                "de_DE": false
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Markiere diese Option, wenn über der Überschrift ein Link zur übergeordneten Seite angezeigt werden soll.",
+                "de_DE": "Markiere diese Option, wenn über der Überschrift ein Link zur übergeordneten Seite angezeigt werden soll."
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "showCategories",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        }
+    ]
+}

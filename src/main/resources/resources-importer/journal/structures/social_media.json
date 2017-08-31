@@ -1,0 +1,149 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": "Link",
+                "de_DE": "Link"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Der Link auf die betreffende Zielseite, bspw. https://www.facebook.com/flussbadberlin. Bitte den Link immer mit der vollen Adresse angeben (http:// ...).",
+                "de_DE": "Der Link auf die betreffende Zielseite, bspw. https://www.facebook.com/flussbadberlin. Bitte den Link immer mit der vollen Adresse angeben (http:// ...)."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "link",
+            "readOnly": false,
+            "repeatable": true,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "en_US": "Anbieter",
+                        "de_DE": "Anbieter"
+                    },
+                    "options": [
+                        {
+                            "value": "icon-facebook",
+                            "label": {
+                                "en_US": "facebook",
+                                "de_DE": "facebook"
+                            }
+                        },
+                        {
+                            "value": "icon-pinterest",
+                            "label": {
+                                "en_US": "pinterest",
+                                "de_DE": "pinterest"
+                            }
+                        },
+                        {
+                            "value": "icon-instagram",
+                            "label": {
+                                "en_US": "instagram",
+                                "de_DE": "instagram"
+                            }
+                        },
+                        {
+                            "value": "icon-envelope",
+                            "label": {
+                                "en_US": "mail",
+                                "de_DE": "mail"
+                            }
+                        },
+                        {
+                            "value": "icon-google-plus",
+                            "label": {
+                                "en_US": "google+",
+                                "de_DE": "google+"
+                            }
+                        },
+                        {
+                            "value": "icon-linkedin",
+                            "label": {
+                                "en_US": "linkedin",
+                                "de_DE": "linkedin"
+                            }
+                        },
+                        {
+                            "value": "icon-flickr",
+                            "label": {
+                                "en_US": "flickr",
+                                "de_DE": "flickr"
+                            }
+                        },
+                        {
+                            "value": "icon-tumblr",
+                            "label": {
+                                "en_US": "tumblr",
+                                "de_DE": "tumblr"
+                            }
+                        },
+                        {
+                            "value": "icon-twitter",
+                            "label": {
+                                "en_US": "twitter",
+                                "de_DE": "twitter"
+                            }
+                        },
+                        {
+                            "value": "icon-youtube",
+                            "label": {
+                                "en_US": "youtube",
+                                "de_DE": "youtube"
+                            }
+                        },
+                        {
+                            "value": "fa fa-vimeo",
+                            "label": {
+                                "en_US": "vimeo",
+                                "de_DE": "vimeo"
+                            }
+                        }
+                    ],
+                    "predefinedValue": {
+                        "en_US": [
+                            ""
+                        ],
+                        "de_DE": [
+                            ""
+                        ]
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": "Wähle den Anbieter aus, zu dem Du einen Link erstellen möchtest.",
+                        "de_DE": "Wähle den Anbieter aus, zu dem Du einen Link erstellen möchtest."
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "multiple": false,
+                    "name": "icon",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "select"
+                }
+            ]
+        }
+    ]
+}
