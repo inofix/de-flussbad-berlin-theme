@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root available-locales="en_US,de_DE" default-locale="de_DE">
+    <dynamic-element name="headline" type="text" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[Come into our Flussbad Garden]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Komm zu uns in den Flussbad Garten]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="background" type="document_library" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[/documents/41139/1051249/SL20170610a568.jpg/53887532-ec86-4481-93ee-ce5a32941554?t=1497380417365]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[/documents/41139/1051249/SL20170610a568.jpg/53887532-ec86-4481-93ee-ce5a32941554?t=1497380417365]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="useGradient" type="boolean" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="clubLink" type="link_to_layout" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="backgroundColor" type="list" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[turquois]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[turquois]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="caption" type="text" index-type="keyword" index="0">
+        <dynamic-element name="claim" index="0" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Join us to the event]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Warst du dabei]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstract" index="0" type="text_box" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Be part of the 3rd Flussbad Berlin Cup on July 2nd, 2017!]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Auch wenn das Schwimmen nicht stattfinden konnte, die Veranstaltung war ein Erfolg]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink" index="0" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel" index="0" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Come and see]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Schau wie es war.]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[Flussbad Pokal 2017]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Flussbad Pokal 2017]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="caption" type="text" index-type="keyword" index="1">
+        <dynamic-element name="claim" index="1" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Partake]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Werde aktiv.]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstract" index="1" type="text_box" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Already more then 300 supporters became Flussbad Berlin members. If you want to be one of them, apply here.]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Wir sind schon mehr als 300 Mitglieder und der Verein wächst und wächst. Wenn du auch mitmachen willst, meld dich an.]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink" index="1" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel" index="1" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Join us.]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Mach mit]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[Membership]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Mitgliedschaft]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="caption" type="text" index-type="keyword" index="2">
+        <dynamic-element name="claim" index="2" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Our Hamam towels]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Unsere Hamamtücher]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstract" index="2" type="text_box" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[We offer a colorful variety of beautiful hamam towels. In several sizes and with a handcrafted print made in Berlin.]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Hier bieten wir eine bunte Auswahl unserer wunderschönen Hamamtücher an. Für Groß und Klein und alle mit Handsiebdruck aus Berlin. Greif zu…]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink" index="2" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel" index="2" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[All towels here]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Alle Tücher sind hier]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[Products]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Produkte]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="link" type="link_to_layout" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="label" type="text" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[Apply]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+</root>

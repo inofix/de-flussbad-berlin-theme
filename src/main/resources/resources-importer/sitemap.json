@@ -8,7 +8,7 @@
                     {
                         "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
                         "portletPreferences": {
-                            "articleId": "logos_supporters.xml",
+                            "articleId": "intro_welcome.xml",
                             "groupId": "${groupId}"
                         }
                     }                                    
