@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root available-locales="en_US,de_DE" default-locale="de_DE">
+    <dynamic-element name="headline" type="text"
+        index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]>
+        </dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]>
+        </dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="background" type="document_library"
+        index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]>
+        </dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]>
+        </dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="useGradient" type="boolean"
+        index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]>
+        </dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]>
+        </dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="clubLink" type="link_to_layout"
+        index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="backgroundColor" type="list"
+        index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]>
+        </dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[sand]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="caption" type="text"
+        index-type="keyword" index="0">
+        <dynamic-element name="claim" index="0" type="text"
+            index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[With more than two hands…]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Viele Hände schaffen mehr]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstract" index="0"
+            type="text_box" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[We are looking forward to your help, when we clean up, swim, build, in distributing the idea. If you want to help look]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Immer häufiger freuen wir uns auf eure Hilfe, beim Räumen, beim Schwimmen, beim Bauen, beim Idee verbeiten. Eine Übersicht ist]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink" index="0"
+            type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[[$LAYOUT_ID_PUBLIC$]@public@[$GROUP_ID$]]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[[$LAYOUT_ID_PUBLIC$]@public@[$GROUP_ID$]]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel" index="0"
+            type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[here.]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[hier zu finden…]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[Actions]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Aktionen]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="caption" type="text"
+        index-type="keyword" index="1">
+        <dynamic-element name="claim" index="0" type="text"
+            index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Images and articles]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Bilder und Texte]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstract" index="0"
+            type="text_box" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Our anual magazine, project presentations, maps, images, movies and more documents in an overview to be found
+Unser Jahresheft, Projektpräsentationen, Pläne und Fotos, Filme und weitere Dokumente sind übersichtlich auf einer Seite]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Unser Jahresheft, Projektpräsentationen, Pläne und Fotos, Filme und weitere Dokumente sind übersichtlich auf einer Seite]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink" index="0"
+            type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[[$LAYOUT_ID_PUBLIC$]@public@[$GROUP_ID$]]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[[$LAYOUT_ID_PUBLIC$]@public@[$GROUP_ID$]]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel" index="0"
+            type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[here.]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[hier zu finden…]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[Downloads]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Downloads]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="caption" type="text"
+        index-type="keyword" index="2">
+        <dynamic-element name="claim" index="0" type="text"
+            index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Work with us]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Arbeiten Sie für uns.]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstract" index="0"
+            type="text_box" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Current and previous tender documents can be found here. If you want to apply look at the list]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Auftragsbeschreibungen für ein breites Spektrum an Leistungen - noch offen und bereits abgeschlossen -  sind]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink" index="0"
+            type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[[$LAYOUT_ID_PUBLIC$]@public@[$GROUP_ID$]]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[[$LAYOUT_ID_PUBLIC$]@public@[$GROUP_ID$]]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel" index="0"
+            type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[here.]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[hier zu finden…]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[Tender]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Ausschreibungen]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="link" type="link_to_layout"
+        index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]>
+        </dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]>
+        </dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="label" type="text"
+        index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]>
+        </dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]>
+        </dynamic-content>
+    </dynamic-element>
+</root>

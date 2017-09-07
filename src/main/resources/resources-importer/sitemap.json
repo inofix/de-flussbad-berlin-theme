@@ -11,7 +11,14 @@
                             "articleId": "intro_welcome.xml",
                             "groupId": "${groupId}"
                         }
-                    }                                    
+                    }, 
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "intro_about.xml",
+                            "groupId": "${groupId}"
+                        }
+                    }                
                 ]
             ],
             "friendlyURL": "/welcome",
