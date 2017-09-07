@@ -2,8 +2,8 @@
     intro.ftl: Format the intro structure
     
     Created:    2015-08-28 17:52 by Christian Berndt
-    Modified:   2017-09-06 23:10 by Christian Berndt
-    Version:    1.0.9
+    Modified:   2017-09-07 18:27 by Christian Berndt
+    Version:    1.1.0
     
     Please note: Although this template is stored in the 
     site's context it's source is managed via git. Whenever you 
@@ -18,8 +18,6 @@
 <#assign layoutLocalService = serviceLocator.findService("com.liferay.portal.kernel.service.LayoutLocalService")>
 <#-- with virtualhost configured -->
 <#assign prefix = "" />
-
-
     
 <#-- request['theme-display'] is not available in search -->
 <#if request['theme-display']?? >
@@ -73,15 +71,19 @@
         <div class="keyvisual" style="${style}">
             <div class="claim">
                 <div class="row">
-                    <div class="span6 offset3">
+                    <div class="col-sm-6 col-sm-offset-3">
                         <#if link.getData()?has_content >
                         
+                            <#-- TODO
                             <#assign target = layoutLocalService.getLayout(groupId?number, false, link.getData()?number) />                                        
                             <#assign targetURL = prefix + target.getFriendlyURL(locale) />
                                                    
                             <a href="${targetURL}" title="${label.getData()}">
                                 <h1>${headline.getData()}</h1>
                             </a>
+                            -->
+                            <h1>${headline.getData()}</h1>
+
                         <#else>
                             <h1>${headline.getData()}</h1>
                         </#if>
@@ -92,7 +94,7 @@
     <#else>
         <div class="claim">
             <div class="row">
-                <div class="span8 offset2">
+                <div class="col-sm-6 col-sm-offset-3">
                     <h1>${headline.getData()}</h1>
                 </div>
             </div>
@@ -100,10 +102,11 @@
     </#if>
     <div class="abstracts">
 
+        <#--  TODO
         <#if clubLink??>
             <#if clubLink.getData()?has_content>
                 <div class="container">
-                    <div class="span4 offset8">
+                    <div class="col-sm-4 offset-sm-8">
                         <div class="pull-right">
                         
                             <#assign target = layoutLocalService.getLayout(groupId?number, false, clubLink.getData()?number) />                                        
@@ -116,13 +119,14 @@
                 </div>
             </#if>
         </#if>
+        -->
         
         <div class="container">
             <#if caption.getSiblings()?has_content>
                 <#assign i = 0 />
                 <#list caption.getSiblings() as cur_caption>
                     <#if (i < 3) >                   
-                        <div class="span4">
+                        <div class="col-sm-4">
                             <#if cur_caption.getData()?has_content>
                                 <div class="abstract">
                                     <h3>${cur_caption.getData()}</h3>
@@ -130,6 +134,7 @@
                                     <p>${cur_caption.abstract.getData()}</p>
                                     <#if cur_caption.abstractLink.getData()?has_content>
                                     
+                                        <#-- TODO 
                                         <#assign target = layoutLocalService.getLayout(groupId?number, false, cur_caption.abstractLink.getData()?number) />                                        
                                     
                                         <#assign targetURL = prefix + target.getFriendlyURL(locale) />
@@ -137,6 +142,7 @@
                                         <div>
                                             <a href="${targetURL}" class="btn" title="${cur_caption.abstractLabel.getData()}">${cur_caption.abstractLabel.getData()}</a>
                                         </div>
+                                        -->
                                     </#if>
                                 </div>
                             </#if>
@@ -147,9 +153,11 @@
             </#if>
         </div>
     </div>
+    <#-- TODO
     <#if link.getData()?has_content && !hasKeyVisual>
         <div class="container link">
             <a href="${link.getData()}" class="btn" title="${label.getData()}">${label.getData()}</a>
         </div>
     </#if>
+     -->
 </div>

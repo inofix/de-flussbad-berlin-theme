@@ -13,10 +13,21 @@
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
 
 @import "navigation";
+@import "templates";
 @import "variables";
+
+.modal {
+    &.slideshow {
+        display: none;
+    }
+}
 
 .portlet {
     h2.portlet-title-text {
         display: none;
     }
+}
+
+#wrapper {
+    padding-top: 0; 
 }
