@@ -1,24 +1,154 @@
 /** 
-    _navigation.scss: inofix theme's navigation 
+    _navigation.scss: main-navigation of the flussbad-theme.
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-08-07 19:17 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2017-09-11 00:35 by Christian Berndt
+    Version:    1.0.2
 */
 
 @import "variables";
 
 #navigation {
     
-    background-color: $color-turquois;
+    background-color: $color-turquois;    
+    font-family: $bold-font-family;
+    font-weight: normal;
     text-transform: uppercase;
+    width: 100%;
+    z-index: 11;
+    opacity: 0.95;
     
     .navbar-brand {
-        font-size: 16px;
-        letter-spacing: .1em;       
+    
+        padding-bottom: 20px;        
+        padding-top: 20px;  
+        line-height: 20px;      
+    
+        .brand-name {
+        
+            font-family: $bold-font-family;
+            font-size: $default-font-size;
+            font-weight: normal;
+            letter-spacing: $letter-spacing-wide;
+            color: $navigation-font-color;
+            text-shadow: none;
+            
+            &:hover {
+                color: $hover-font-color;
+            }
+        } 
+    }
+  
+    .navbar-nav {
+    
+        letter-spacing: 0.15em;
+        margin: 0;
+        text-transform: uppercase; 
+    
+        > li {
+                
+            > a {
+            
+                color: $navigation-font-color;
+                font-size: $default-font-size;
+                padding: 20px 10px; 
+                word-break: normal;
+                
+                &:hover {
+                    color: $hover-font-color;
+                }
+            }
+            
+            &.active {
+                        
+                a {
+                    background: transparent;
+                    color: $active-font-color;               
+                }
+            }
+            
+            &:nth-child(1) {
+                display: none;
+            }
+        }
     }
     
-    &.navbar {
-        margin-bottom: 0;
+    .navbar-toggle {
+        border: 0;
+        margin: 15px 6px 18px;
+    }
+    
+    .portlet-language {
+    
+        .portlet-content-editable {
+            border-width: 0; 
+        }
+    
+        .portlet-body {
+
+            a {
+            
+                color: $navigation-font-color;
+                line-height: 20px;
+                
+                &.dropdown-toggle {
+                    cursor: pointer;    
+                    display: inline-block;                            
+                    padding-bottom: 20px;
+                    padding-top: 20px; 
+                }
+                
+                &:hover {
+                    color: $hover-font-color;
+                }
+            }
+            
+            .dropdown-menu {
+            
+                background-color: #fff; 
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                margin-top: 0;
+    
+                min-width: 120px;
+                
+                li {
+                
+                    text-align: center;
+                    
+                    span {
+                        display: block; 
+                        padding: 3px 20px; 
+                    } 
+                    
+                    > a {
+                        padding: 5px;
+                    }  
+                }             
+            }
+            
+            .dropdown-toggle {
+            
+                padding-left: 15px; 
+                padding-right: 15px;
+                
+                &:nth-child(1) {
+                    padding-right: 7.5px;           
+                } 
+                
+                &:nth-child(2) {
+                    margin-left: -7.5px; 
+                    padding-left: 0;           
+                } 
+            }        
+        
+            > span {
+                display: block; 
+                
+                &.open {
+                    background-color: #eeeeee;
+                }
+            }
+        }
     }
 }

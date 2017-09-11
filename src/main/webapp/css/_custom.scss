@@ -3,7 +3,7 @@
 
     Created:    2017-09-07 16:32 by Christian Berndt
     Modified:   2017-09-11 23:24 by Christian Berndt
-    Version:    1.0.0
+    Version:    1.0.1
 */
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
 
@@ -16,6 +16,17 @@
 @import "navigation";
 @import "templates";
 @import "variables";
+
+a {
+    &:active,
+    &:focus {
+        outline-color: transparent;
+    }
+}
+
+body {
+    font-size: $default-font-size;
+}
 
 .control-menu {
     .toggle-controls {
