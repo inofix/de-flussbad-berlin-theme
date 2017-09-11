@@ -1,0 +1,113 @@
+/** 
+    _core_portlets.scss: adjust Liferay's core portlets for the flussbad-theme
+
+    Created:    2017-09-11 23:23 by Christian Berndt
+    Modified:   2017-09-11 23:23 by Christian Berndt
+    Version:    0.1.0
+*/
+
+.controls-hidden {
+    
+    .portlet {
+        
+        &:hover {
+            > .portlet-topper {
+                display: none; 
+            }
+        }
+    }
+}
+
+/** ----------------------------------- General settings ---- */
+.portlet {
+    
+    margin-bottom: 0;
+    
+    .portlet-content {
+        padding: 0;
+    }
+    
+    .portlet-icon-back {
+        margin-top: 2px;
+        margin-left: -8px;
+    }
+    
+    &:hover > .portlet-content-editable, 
+    &.focus > .portlet-content-editable {
+        border-color: transparent;
+    }
+}
+
+/** -------------------------- Portlet specific settings ---- */
+.portlet-login {
+    
+    margin-top: 30px;
+    
+    .btn {
+        font-size: 14px; /* bs .btn */
+        padding: 6px 12px; /* bs .btn */
+        width: 100%;
+    } 
+    
+    h2.portlet-title-text {
+        
+        background-color: #f5f5f5; /* bs .panel-heading */
+        border-color: #ddd; /* bs .panel-heading */
+        border-bottom: 1px solid #ddd; 
+        border-top-right-radius: 3px; /* bs .panel-heading */
+        border-top-left-radius: 3px; /* bs .panel-heading */         
+        color: #333333; /* bs .panel-heading */
+        display: block; 
+        font-size: 14px; 
+        font-weight: 600; 
+        max-width: none;
+        
+        padding: 10px 15px; /* bs .panel-heading */   
+    }
+    
+    .icon-monospaced {
+        display: none; 
+    }
+    
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    
+    .input-checkbox-wrapper {
+        margin-bottom: 5px;
+    }
+    
+    .portlet {
+    
+        text-align: center;
+    
+        &:hover {
+        
+            .portlet-content {
+                border-color: #ddd;
+            }
+        }
+    }
+    
+    .portlet-content {
+        
+        border-color: #ddd; /* bs .panel-default */
+        border-radius: 4px; /* bs .panel */
+        border-style: solid; 
+        border-width: 1px 1px 1px 1px ! important; /* bs .panel */
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); /* bs .panel */
+    
+        display: inline-block;
+        margin-bottom: 70px;
+        text-align: left; 
+        width: 320px;
+        
+        .portlet-body {
+            padding: 15px; /*  bs .panel-body */        
+        }
+    }
+    
+    .portlet-icon-back .icon-angle-left {
+        display: none; 
+    }
+}
