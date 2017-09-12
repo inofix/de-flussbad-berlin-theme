@@ -1,0 +1,74 @@
+/** 
+    _fonts.scss: font config of the flussbad-theme
+
+    Created:    2017-09-12 15:22 by Christian Berndt
+    Modified:   2017-09-12 15:22 by Christian Berndt
+    Version:    1.0.1
+*/
+/* Bold */
+@font-face {
+    font-family: 'Apercu Pro Bold';
+    src: url('../fonts/apercu_bold.eot');
+    src: url('../fonts/apercu_bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/apercu_bold.woff') format('woff'),
+         url('../fonts/apercu_bold.woff2') format('woff2'),
+         url('../fonts/apercu_bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Italic */
+@font-face {
+    font-family: 'Apercu Pro Regular';
+    src: url('../fonts/apercu_regular_italic.eot');
+    src: url('../fonts/apercu_regular_italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/apercu_regular_italic.woff') format('woff'),
+         url('../fonts/apercu_regular_italic.woff2') format('woff2'),
+         url('../fonts/apercu_regular_italic.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Light */
+@font-face {
+    font-family: 'Apercu Pro Light';
+    src: url('../fonts/apercu_light.eot');
+    src: url('../fonts/apercu_light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/apercu_light.woff') format('woff'),
+         url('../fonts/apercu_light.woff2') format('woff2'),
+         url('../fonts/apercu_light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Medium */
+@font-face {
+    font-family: 'Apercu Pro Medium';
+    src: url('../fonts/apercu_medium.eot');
+    src: url('../fonts/apercu_medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/apercu_medium.woff') format('woff'),
+         url('../fonts/apercu_medium.woff2') format('woff2'),
+         url('../fonts/apercu_medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Normal */
+@font-face {
+    font-family: 'Apercu Pro Regular';
+    src: url('../fonts/apercu_regular.eot');
+    src: url('../fonts/apercu_regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/apercu_regular.woff') format('woff'),
+         url('../fonts/apercu_regular.woff2') format('woff2'),
+         url('../fonts/apercu_regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
