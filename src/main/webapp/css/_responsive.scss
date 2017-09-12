@@ -1,0 +1,29 @@
+/** 
+    _responsive.scss: responsive configuration of the flussbad-theme
+
+    Created:    2017-09-12 19:34 by Christian Berndt
+    Modified:   2017-09-12 19:34 by Christian Berndt
+    Version:    0.1.0
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #navigation {
+        &.navbar-default {
+            .navbar-collapse {
+                li > a {
+                    padding: 20px 10px;
+                }
+            }
+        }
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
