@@ -9,10 +9,8 @@
     </dynamic-element>
     <dynamic-element name="background" type="document_library"
         index-type="keyword" index="0">
-        <dynamic-content language-id="en_US"><![CDATA[]]>
-        </dynamic-content>
-        <dynamic-content language-id="de_DE"><![CDATA[]]>
-        </dynamic-content>
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="useGradient" type="boolean"
         index-type="keyword" index="0">
@@ -46,8 +44,8 @@
         </dynamic-element>
         <dynamic-element name="abstractLink" index="0"
             type="link_to_layout" index-type="keyword">
-            <dynamic-content language-id="en_US"><![CDATA[[$LAYOUT_ID_PUBLIC$]@public@[$GROUP_ID$]]]></dynamic-content>
-            <dynamic-content language-id="de_DE"><![CDATA[[$LAYOUT_ID_PUBLIC$]@public@[$GROUP_ID$]]]></dynamic-content>
+            <dynamic-content language-id="en_US"><![CDATA[1@public@[$GROUP_ID$]]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[[1@public@[$GROUP_ID$]]]></dynamic-content>
         </dynamic-element>
         <dynamic-element name="abstractLabel" index="0"
             type="text" index-type="keyword">
@@ -72,8 +70,8 @@ Unser Jahresheft, Projektpräsentationen, Pläne und Fotos, Filme und weitere Do
         </dynamic-element>
         <dynamic-element name="abstractLink" index="0"
             type="link_to_layout" index-type="keyword">
-            <dynamic-content language-id="en_US"><![CDATA[[$LAYOUT_ID_PUBLIC$]@public@[$GROUP_ID$]]]></dynamic-content>
-            <dynamic-content language-id="de_DE"><![CDATA[[$LAYOUT_ID_PUBLIC$]@public@[$GROUP_ID$]]]></dynamic-content>
+            <dynamic-content language-id="en_US"><![CDATA[1@public@[$GROUP_ID$]]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[1@public@[$GROUP_ID$]]]></dynamic-content>
         </dynamic-element>
         <dynamic-element name="abstractLabel" index="0"
             type="text" index-type="keyword">
@@ -97,8 +95,8 @@ Unser Jahresheft, Projektpräsentationen, Pläne und Fotos, Filme und weitere Do
         </dynamic-element>
         <dynamic-element name="abstractLink" index="0"
             type="link_to_layout" index-type="keyword">
-            <dynamic-content language-id="en_US"><![CDATA[[$LAYOUT_ID_PUBLIC$]@public@[$GROUP_ID$]]]></dynamic-content>
-            <dynamic-content language-id="de_DE"><![CDATA[[$LAYOUT_ID_PUBLIC$]@public@[$GROUP_ID$]]]></dynamic-content>
+            <dynamic-content language-id="en_US"><![CDATA[1@public@[$GROUP_ID$]]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[1@public@[$GROUP_ID$]]]></dynamic-content>
         </dynamic-element>
         <dynamic-element name="abstractLabel" index="0"
             type="text" index-type="keyword">
@@ -110,16 +108,12 @@ Unser Jahresheft, Projektpräsentationen, Pläne und Fotos, Filme und weitere Do
     </dynamic-element>
     <dynamic-element name="link" type="link_to_layout"
         index-type="keyword" index="0">
-        <dynamic-content language-id="en_US"><![CDATA[]]>
-        </dynamic-content>
-        <dynamic-content language-id="de_DE"><![CDATA[]]>
-        </dynamic-content>
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="label" type="text"
         index-type="keyword" index="0">
-        <dynamic-content language-id="en_US"><![CDATA[]]>
-        </dynamic-content>
-        <dynamic-content language-id="de_DE"><![CDATA[]]>
-        </dynamic-content>
+        <dynamic-content language-id="en_US"><![CDATA[Learn more]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Mehr erfahren]]></dynamic-content>
     </dynamic-element>
 </root>
