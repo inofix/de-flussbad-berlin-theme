@@ -2,8 +2,8 @@
     _custom.scss: main config of the flussbad-theme
 
     Created:    2017-09-07 16:32 by Christian Berndt
-    Modified:   2017-09-11 23:24 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2017-09-12 21:47 by Christian Berndt
+    Version:    1.0.3
 */
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
 
@@ -13,6 +13,7 @@
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
 
 @import "core_portlets";
+@import "fonts";
 @import "navigation";
 @import "templates";
 @import "variables";
@@ -27,7 +28,6 @@ a {
 body {
     font-size: $default-font-size;
 }
-
 .control-menu {
     .toggle-controls {
         &.visible-xs {
@@ -36,6 +36,11 @@ body {
     }
 }
 
+.has-control-menu  {
+    #wrapper {
+        margin-top: 0;
+    }
+}
 
 .modal {
     &.slideshow {
@@ -44,6 +49,7 @@ body {
 }
 
 .portlet {
+    
     h2.portlet-title-text {
         display: none;
     }
@@ -58,3 +64,6 @@ body {
 #wrapper {
     padding-top: 0; 
 }
+
+@import "responsive";
+

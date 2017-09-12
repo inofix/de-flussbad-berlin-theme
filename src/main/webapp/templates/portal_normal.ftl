@@ -2,8 +2,8 @@
     portal_normal.ftl: base template of the flussbad-theme.
     
     Created:    2017-09-07 10:57 by Christian Berndt
-    Modified:   2017-09-07 10:57 by Christian Berndt
-    Version:    1.0.0
+    Modified:   2017-09-12 19:12 by Christian Berndt
+    Version:    1.0.1
 -->
 
 <!DOCTYPE html>
@@ -24,6 +24,8 @@
         <title>${the_title} - ${company_name}</title>
         
         <meta content="initial-scale=1.0, width=device-width" name="viewport" />
+        
+         <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&amp;subset=latin-ext" rel="stylesheet">
         
         <@liferay_util["include"] page=top_head_include />
     
