@@ -2,8 +2,8 @@
     _navigation.scss: main-navigation of the flussbad-theme.
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-09-12 21:47 by Christian Berndt
-    Version:    1.0.4
+    Modified:   2017-09-13 16:15 by Christian Berndt
+    Version:    1.0.5
 */
 
 @import "variables";
@@ -74,8 +74,13 @@
     }
     
     .navbar-toggle {
+    
         border: 0;
         margin: 15px 6px 18px;
+        
+        &:focus {
+            outline: none;
+        }
     }
     
     .portlet-language {
