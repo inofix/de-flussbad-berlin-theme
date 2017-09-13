@@ -18,6 +18,12 @@
                             "articleId": "intro_about.xml",
                             "groupId": "${groupId}"
                         }
+                    }, 
+                    {
+                        "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_STATEMENTS",
+                        "portletPreferences": {
+                            "groupId": "${groupId}"
+                        }
                     }                
                 ]
             ],

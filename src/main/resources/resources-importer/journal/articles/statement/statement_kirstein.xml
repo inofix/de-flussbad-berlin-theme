@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US,de_DE" default-locale="de_DE">
+    <dynamic-element name="statement" type="text_box" index-type="keyword" instance-id="K0rXrM2n">
+        <dynamic-element name="Zitat" instance-id="QXNstHpc" type="text_area" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[<p>Ich bin im Nikolaiviertel aufgewachsen und wei&szlig; wie es ist als Kind in der Innenstadt zu wohnen. Es gibt nur wenige M&ouml;glichkeiten rund um den Alex als Heranwachsender mit seinen Freunden zu spielen, Spa&szlig; zu haben, die Welt zu erkunden. Seit der Wende wurden immer mehr Spielpl&auml;tze, Wiesen und Sportst&auml;tten geschlossen bzw. abgerissen. Daher bin ich f&uuml;r die Realisierung dieses Projekts!</p>]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[<p>Ich bin im Nikolaiviertel aufgewachsen und wei&szlig; wie es ist als Kind in der Innenstadt zu wohnen. Es gibt nur wenige M&ouml;glichkeiten rund um den Alex als Heranwachsender mit seinen Freunden zu spielen, Spa&szlig; zu haben, die Welt zu erkunden. Seit der Wende wurden immer mehr Spielpl&auml;tze, Wiesen und Sportst&auml;tten geschlossen bzw. abgerissen. Daher bin ich f&uuml;r die Realisierung dieses Projekts!</p>]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="author" instance-id="7w6uQbsK" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Jens Kirstein]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Jens Kirstein]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[Ich bin im Nikolaiviertel aufgewachsen und weiß wie es ist als Kind in der Innenstadt zu wohnen. Es gibt nur wenige Möglichkeiten rund um den Alex als Heranwachsender mit seinen Freunden zu spielen, Spaß zu haben, die Welt zu erkunden. Seit der Wende wurden immer mehr Spielplätze, Wiesen und Sportstätten geschlossen bzw. abgerissen. Daher bin ich für die Realisierung dieses Projekts!]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Ich bin im Nikolaiviertel aufgewachsen und weiß wie es ist als Kind in der Innenstadt zu wohnen. Es gibt nur wenige Möglichkeiten rund um den Alex als Heranwachsender mit seinen Freunden zu spielen, Spaß zu haben, die Welt zu erkunden. Seit der Wende wurden immer mehr Spielplätze, Wiesen und Sportstätten geschlossen bzw. abgerissen. Daher bin ich für die Realisierung dieses Projekts!]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="Startseite" type="boolean" index-type="keyword" instance-id="FR5YHw2Y">
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="colorScheme" type="list" index-type="keyword" instance-id="hZ1GT3pb">
+        <dynamic-content language-id="en_US"><![CDATA[gray-green]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[gray-green]]></dynamic-content>
+    </dynamic-element>
+</root>
