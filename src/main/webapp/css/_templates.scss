@@ -22,6 +22,14 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
 
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 h3 {
     font-size: 14px;
     letter-spacing: .1em;
@@ -73,14 +81,14 @@ h3 {
     
     .keyvisual {
     
-        display: table;
         height: 80vh;
         
         @include background-cover(); 
         
         .claim {
-            display: table-cell;
-            vertical-align: middle;
+        
+            @include vertical-align();
+
         }
     }
     
