@@ -6,6 +6,7 @@
     Version:    0.1.0
 */
 
+@import "mixins";
 @import "variables";
 
 .portlet-asset-publisher {
@@ -16,11 +17,27 @@
         margin-right: -15px;
         padding-left: 15px;
         padding-right: 15px;
-    
-        min-height: 500px;
-    
+            
+        .carousel-inner {
+        
+            min-height: 500px; 
+            
+            .item {
+                            
+                @include vertical-align(absolute);
+            
+            }
+        }  
+          
         &.gray-green {
+        
             background: $color-gray-green;
+            
+            .item {
+            
+                background-color: $color-gray-green;
+                            
+            }
         }   
     } 
 }

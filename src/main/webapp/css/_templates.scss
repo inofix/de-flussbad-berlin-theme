@@ -3,32 +3,12 @@
     of the flussbad-theme.
 
     Created:    2017-09-07 17:21 by Christian Berndt
-    Modified:   2017-09-12 21:49 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2017-09-13 22:17 by Christian Berndt
+    Version:    1.0.2
 */
 
+@import "mixins";
 @import "variables";
-
-@mixin background-cover() {
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-}
-
-@mixin vertical-align($position: relative) {
-  position: $position;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 
 h3 {
     font-size: 14px;
@@ -142,4 +122,15 @@ h3 {
             color: white;
         } 
     }
+}
+
+.statement {
+    
+    text-align: center;
+    
+    blockquote {
+        border-left: none;
+        font-size: 21px;
+    }
+    
 }
