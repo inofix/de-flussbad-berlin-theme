@@ -2,8 +2,8 @@
     statements.ftl: Display a list of statements in a scrollview-carousel.
     
     Created:    2015-10-13 18:27 by Christian Berndt
-    Modified:   2017-09-13 18:58 by Christian Berndt
-    Version:    1.0.5
+    Modified:   2017-09-13 22:27 by Christian Berndt
+    Version:    1.0.6
 -->
 
 <#assign journalArticleService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService")>
@@ -23,35 +23,37 @@
 <#assign cssClass = "gray-green">
 
 <div id="statements-carousel" class="carousel slide statements ${cssClass}" data-ride="carousel">
-    <#if entries?has_content>  
-        <div class="carousel-inner" role="listbox">  
-            <#list entries as curEntry>
-            
-                <#assign cssClass = ""/>
-                <#if curEntry?is_first>
-                    <#assign cssClass = "active"/>                   
-                </#if>
-                <div class="item ${cssClass}">
-    
-                    <#assign content = "" />
-                    
-                    <#if "com.liferay.journal.model.JournalArticle" == curEntry.className >
-                        <#assign article = journalArticleService.getLatestArticle(curEntry.getClassPK()) />
-                        <#assign xml = saxReaderUtil.read(article.content) />
-                        <#assign author = value_of(xml, "author", language_id) />
-                        <#assign statement = value_of(xml, "statement", language_id) />
-                        
-                        <div class="statement">
-                            <blockquote>${statement}</blockquote>
-                            <cite class="author pull-right">${author}</cite>
-                        </div>
-    
-                    <#else>
-                        <span class="alert alert-danger"><strong>${curEntry.className}</strong> is not supported by the statements display template.</alert>
+    <#if entries?has_content>
+        <div class="container"> 
+            <div class="carousel-inner" role="listbox">  
+                <#list entries as curEntry>
+                
+                    <#assign cssClass = ""/>
+                    <#if curEntry?is_first>
+                        <#assign cssClass = "active"/>                   
                     </#if>
-                    
-                </div>
-            </#list>
+                    <div class="item ${cssClass}">
+        
+                        <#assign content = "" />
+                        
+                        <#if "com.liferay.journal.model.JournalArticle" == curEntry.className >
+                            <#assign article = journalArticleService.getLatestArticle(curEntry.getClassPK()) />
+                            <#assign xml = saxReaderUtil.read(article.content) />
+                            <#assign author = value_of(xml, "author", language_id) />
+                            <#assign statement = value_of(xml, "statement", language_id) />
+                            
+                            <div class="statement">
+                                <blockquote>${statement}</blockquote>
+                                <cite class="author pull-right">${author}</cite>
+                            </div>
+        
+                        <#else>
+                            <span class="alert alert-danger"><strong>${curEntry.className}</strong> is not supported by the statements display template.</alert>
+                        </#if>
+                        
+                    </div>
+                </#list>
+            </div>
         </div>
     </#if>
 </div>
