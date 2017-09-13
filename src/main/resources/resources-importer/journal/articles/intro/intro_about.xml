@@ -45,7 +45,7 @@
         <dynamic-element name="abstractLink" index="0"
             type="link_to_layout" index-type="keyword">
             <dynamic-content language-id="en_US"><![CDATA[1@public@[$GROUP_ID$]]]></dynamic-content>
-            <dynamic-content language-id="de_DE"><![CDATA[[1@public@[$GROUP_ID$]]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[1@public@[$GROUP_ID$]]]></dynamic-content>
         </dynamic-element>
         <dynamic-element name="abstractLabel" index="0"
             type="text" index-type="keyword">

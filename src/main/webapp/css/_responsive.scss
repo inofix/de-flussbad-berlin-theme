@@ -10,7 +10,20 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-     
+    
+    .intro {
+    
+        .keyvisual {
+        
+            display: block;
+            
+            .claim {
+            
+                display: block;
+                
+            }
+        }
+    }  
 }
 
 /* Medium devices (desktops, 992px and up) */
