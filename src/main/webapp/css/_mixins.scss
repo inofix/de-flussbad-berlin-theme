@@ -1,0 +1,28 @@
+/** 
+    _mixins.scss: mixins used by the flussbad-theme
+
+    Created:    2017-09-13 22:16 by Christian Berndt
+    Modified:   2017-09-13 22:16 by Christian Berndt
+    Version:    1.0.0
+*/
+
+@mixin background-cover() {
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

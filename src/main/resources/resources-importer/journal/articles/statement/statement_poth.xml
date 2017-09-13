@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US,de_DE" default-locale="de_DE">
+    <dynamic-element name="statement" type="text_box" index-type="keyword" instance-id="hyiY9220">
+        <dynamic-element name="Zitat" instance-id="cO3LnNFv" type="text_area" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[<p>Ich m&ouml;chte einen Ort in der historischen Mitte Berlins, der wirklich f&uuml;r jeden zug&auml;nglich ist und der wieder Spa&szlig; macht sich an der Spree aufzuhalten.</p>]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[<p>Ich m&ouml;chte einen Ort in der historischen Mitte Berlins, der wirklich f&uuml;r jeden zug&auml;nglich ist und der wieder Spa&szlig; macht sich an der Spree aufzuhalten.</p>]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="author" instance-id="KQhr2GXy" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Tessa Poth]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[Tessa Poth]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[Ich möchte einen Ort in der historischen Mitte Berlins, der wirklich für jeden zugänglich ist und der wieder Spaß macht sich an der Spree aufzuhalten.]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Ich möchte einen Ort in der historischen Mitte Berlins, der wirklich für jeden zugänglich ist und der wieder Spaß macht sich an der Spree aufzuhalten.]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="Startseite" type="boolean" index-type="keyword" instance-id="9ASxG7AA">
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="colorScheme" type="list" index-type="keyword" instance-id="APICSukH">
+        <dynamic-content language-id="en_US"><![CDATA[gray-green]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[gray-green]]></dynamic-content>
+    </dynamic-element>
+</root>
