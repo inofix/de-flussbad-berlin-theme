@@ -2,8 +2,8 @@
     intro.ftl: Format the intro structure
     
     Created:    2015-08-28 17:52 by Christian Berndt
-    Modified:   2017-09-13 22:28 by Christian Berndt
-    Version:    1.1.2
+    Modified:   2017-09-14 15:45 by Christian Berndt
+    Version:    1.1.3
     
     Please note: Although this template is stored in the 
     site's context it's source is managed via git. Whenever you 
@@ -70,18 +70,20 @@
     <#if hasKeyVisual>
         <div class="keyvisual" style="${style}">
             <div class="claim container">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <#if link.getData()?has_content >
-                    
-                        <#assign target = layoutLocalService.getLayout(groupId?number, false, link.getData()?number) />                                        
-                        <#assign targetURL = prefix + target.getFriendlyURL(locale) />
-                                               
-                        <a href="${targetURL}" title="${label.getData()}">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <#if link.getData()?has_content >
+                        
+                            <#assign target = layoutLocalService.getLayout(groupId?number, false, link.getData()?number) />                                        
+                            <#assign targetURL = prefix + target.getFriendlyURL(locale) />
+                                                   
+                            <a href="${targetURL}" title="${label.getData()}">
+                                <h1>${headline.getData()}</h1>
+                            </a>
+                        <#else>
                             <h1>${headline.getData()}</h1>
-                        </a>
-                    <#else>
-                        <h1>${headline.getData()}</h1>
-                    </#if>
+                        </#if>
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,7 +147,7 @@
     </div>
 
     <#if link.getData()?has_content && !hasKeyVisual>
-        <div class="container link">
+        <div class="link">
             <a href="${link.getData()}" class="btn btn-default" title="${label.getData()}">${label.getData()}</a>
         </div>
     </#if>
