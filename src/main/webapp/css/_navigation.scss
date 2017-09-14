@@ -2,8 +2,8 @@
     _navigation.scss: main-navigation of the flussbad-theme.
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-09-13 16:15 by Christian Berndt
-    Version:    1.0.5
+    Modified:   2017-09-14 15:40 by Christian Berndt
+    Version:    1.0.6
 */
 
 @import "variables";
@@ -50,10 +50,11 @@
             > a {
             
                 color: $navigation-font-color;
+                display: inline-block;
                 font-size: $default-font-size;
                 padding: 20px 10px; 
                 word-break: normal;
-                
+
                 &:hover {
                     color: $hover-font-color;
                 }
