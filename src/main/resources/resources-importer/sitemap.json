@@ -18,7 +18,7 @@
                             "articleId": "intro_about.xml",
                             "groupId": "${groupId}"
                         }
-                    }, 
+                    },
                     {
                         "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_STATEMENTS",
                         "portletPreferences": {
@@ -27,7 +27,16 @@
                             "displayStyle" : "ddmTemplate_92301",
                             "groupId": "${groupId}"
                         }
-                    }                
+                    },                       
+                    {
+                        "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_STATEMENTS",
+                        "portletPreferences": {
+                            "anyAssetType" : "29801",
+                            "anyClassTypeJournalArticleAssetRendererFactory" : "30182",
+                            "displayStyle" : "ddmTemplate_92301",
+                            "groupId": "${groupId}"
+                        }
+                    }             
                 ]
             ],
             "friendlyURL": "/welcome",
@@ -38,12 +47,14 @@
             "columns": [
                 [
                     {
-                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_STATEMENTS",
                         "portletPreferences": {
-                            "articleId": "logos_supporters.xml",
+                            "anyAssetType" : "29801",
+                            "anyClassTypeJournalArticleAssetRendererFactory" : "30182",
+                            "displayStyle" : "ddmTemplate_92301",
                             "groupId": "${groupId}"
                         }
-                    }                                    
+                    }                                   
                 ]
             ],
             "friendlyURL": "/logbook",
@@ -64,7 +75,19 @@
             ],
             "friendlyURL": "/project",
             "name": "Project",
-            "title": "Project"
+            "title": "Project",
+            "layouts": [
+                {
+                    "friendlyURL": "/child-page-1",
+                    "name": "Child Page 1",
+                    "title": "Child Page 1"
+                },
+                {
+                    "friendlyURL": "/child-page-2",
+                    "name": "Child Page 2",
+                    "title": "Child Page 2"
+                }
+            ]
         },
         {
             "columns": [
