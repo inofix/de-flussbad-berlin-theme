@@ -20,11 +20,11 @@
                         }
                     },
                     {
-                        "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_STATEMENTS",
+                        "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_EVENTS",
                         "portletPreferences": {
                             "anyAssetType" : "29801",
                             "anyClassTypeJournalArticleAssetRendererFactory" : "30182",
-                            "displayStyle" : "ddmTemplate_92301",
+                            "displayStyle" : "ddmTemplate_115201",
                             "groupId": "${groupId}"
                         }
                     },                       
