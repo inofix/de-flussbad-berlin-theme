@@ -2,8 +2,8 @@
     _custom.scss: main config of the flussbad-theme
 
     Created:    2017-09-07 16:32 by Christian Berndt
-    Modified:   2017-09-14 16:16 by Christian Berndt
-    Version:    1.0.5
+    Modified:   2017-09-15 17:26 by Christian Berndt
+    Version:    1.0.6
 */
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
 
@@ -16,6 +16,7 @@
 @import "core_portlets";
 @import "fonts";
 @import "navigation";
+/* responsive  is imported at the end of this file */
 @import "templates";
 @import "variables";
 
@@ -44,7 +45,7 @@ body {
 
 .has-control-menu  {
     #wrapper {
-        margin-top: 0;
+        margin-top: 0 ! important;
     }
 }
 
@@ -72,4 +73,3 @@ body {
 }
 
 @import "responsive";
-
