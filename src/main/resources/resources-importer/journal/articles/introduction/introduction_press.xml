@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root available-locales="en_US,de_DE" default-locale="de_DE">
+    <dynamic-element name="keyVisual" type="document_library" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[[$FILE=keyvisual_press.jpg$]]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[[$FILE=keyvisual_press.jpg$]]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="headline" type="text" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[Press]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Presse]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="teaser" type="text_box" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[Here you find press material and all relevant information about the project.]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Hier finden Sie Pressematerial zum Projekt. Sie können sich auch gerne registrieren, um regelmäßige Pressemitteilungen direkt von uns zu erhalten.]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="description" type="text_area" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[<p>If you have any questions, need press material on the project or the association, or if you would like to arrange an interview, we will be happy to be of assistance. Please add your name in our presse release circulation list; and if you would like to read our annual review, please see below. If you are interested in articles about Flussbad, please find them in the Logbook unter "Press Articles".</p>
+
+<p>Press and Public Relations:<br />
+Barbara Schindler<br />
+<a href="mailto:presse@flussbad.berlin">presse(at)flussbad.berlin</a><br />
+Phone: +49.(0)30.555 744 5-30<br />
+Fax: +49.(0)30.555 744 5-11</p>
+
+<p>&nbsp;</p>]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[<p>Wenn Sie Fragen haben, Pressematerial zum Projekt oder zum gemeinnützigen Verein Flussbad Berlin wünschen oder einen Interviewtermin vereinbaren möchten, stehen wir Ihnen jederzeit zur Verfügung. Gerne nehmen wir Sie in unseren Verteiler auf und senden Ihnen unsere aktuellen Pressemitteilungen per E-Mail zu und wenn Sie Interesse an unser gedruckten Jahrespublikation haben, dann diese auch gerne postalisch. Alle erscheinenden Artikel über das Projekt finden Sie unter "Pressespiegel" im Logbuch.</p>
+
+<p>Anfragen richten Sie bitte an:<br />
+Barbara Schindler - Presse- und Öffentlichkeitsarbeit<br />
+<a href="mailto:presse@flussbad.berlin">presse(at)flussbad.berlin</a><br />
+T: +49.(0)30.555 744 5-30<br />
+F: +49.(0)30.555 744 5-11</p>
+
+<p>&nbsp;</p>]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="showToc" type="boolean" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[true]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[true]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="showPointer" type="boolean" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="displayFullWidth" type="boolean" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="showCategories" type="boolean" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+</root>

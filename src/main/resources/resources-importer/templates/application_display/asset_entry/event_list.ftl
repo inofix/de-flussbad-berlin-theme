@@ -1,9 +1,9 @@
 <#--
-    events.ftl: Display a list of statements in a scrollview-carousel.
+    event_list.ftl: Display a list of events.
     
     Created:    2017-09-14 16:23 by Christian Berndt
-    Modified:   2017-09-14 16:23 by Christian Berndt
-    Version:    1.0.0
+    Modified:   2017-09-15 23:04 by Christian Berndt
+    Version:    1.0.1
 -->
 
 <#assign journalArticleService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService")>
@@ -22,12 +22,6 @@
 <div class="events" >
     <#if entries?has_content>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3><@liferay.language key="events" /></h3>
-                    <h2><@liferay.language key="the-most-important-events" /></h2>
-                </div>
-            </div>
             <#list entries as curEntry>
                 <div class="row">
                 
@@ -36,15 +30,27 @@
                     <#if "com.liferay.journal.model.JournalArticle" == curEntry.className >
                         <#assign article = journalArticleService.getLatestArticle(curEntry.getClassPK()) />
                         <#assign xml = saxReaderUtil.read(article.content) />
-                        <#assign title = value_of(xml, "title", language_id) />
                         <#assign date = value_of(xml, "date", language_id) />
+                        <#assign location = value_of(xml, "location", language_id) />
+                        <#assign summary = value_of(xml, "summary", language_id) />
+                        <#assign title = value_of(xml, "title", language_id) />
                         
-                        <div class="event col-sm-6 col-sm-offset-3">
-                            <h2><span class="date">${date}</span><span class="title">${title}</span></h2>
+                        <div class="col-sm-4">
+                            <div class="date">${date}</div>
+                            <#if location?has_content>
+                                <div class="location">${location}</div>
+                            </#if>
+                        </div>
+                        
+                        <div class="event col-sm-8">
+                            <h2><span class="title">${title}</span></h2>
+                            <#if summary?has_content>
+                                <div class="summary">${summary}</div>
+                            </#if>
                         </div>
     
                     <#else>
-                        <span class="alert alert-danger"><strong>${curEntry.className}</strong> is not supported by the statements display template.</alert>
+                        <span class="alert alert-danger"><strong>${curEntry.className}</strong> is not supported by the event_list display template.</alert>
                     </#if>
                 </div>
             </#list>
