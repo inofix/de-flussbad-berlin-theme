@@ -11,6 +11,21 @@ Liferay IDE 3.1.1 GA2 from https://sourceforge.net/projects/lportal/files/Lifera
 1. `cd $WORKSPACE/wars`
 1. `git clone https://github.com/inofix/de-flussbad-berlin-theme.git`
 1. `cd de-flussbad-berlin-theme`
+1. `TODO
+
+## Deployment
+
+Make sure you have configured the required thumbnail-sizes configured in portal-ext.properties: 
+
+<pre>
+  #
+  # custom-thumbnail configuration for document library
+  #
+  dl.file.entry.thumbnail.custom1.max.height=600
+  dl.file.entry.thumbnail.custom1.max.width=600
+  dl.file.entry.thumbnail.custom2.max.height=1440
+  dl.file.entry.thumbnail.custom2.max.width=1440
+</pre>
 
 ## How To Contribute
 
