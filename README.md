@@ -13,9 +13,9 @@ Liferay IDE 3.1.1 GA2 from https://sourceforge.net/projects/lportal/files/Lifera
 1. `cd de-flussbad-berlin-theme`
 1. `TODO
 
-## Deployment
+## How To Deploy
 
-Make sure you have configured the required thumbnail-sizes configured in portal-ext.properties: 
+Make sure you have configured the required thumbnail-sizes in portal-ext.properties: 
 
 <pre>
   #
