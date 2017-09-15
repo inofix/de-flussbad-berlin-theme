@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root available-locales="en_US,de_DE" default-locale="de_DE">
+    <dynamic-element name="publishDate" type="ddm-date" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[2016-06-30]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[2016-06-30]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="headline" type="text" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[PM ~ Press Release 2nd Berlin Flussbad Cup]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[PM ~ Presseinformation zum 2. Berliner Flussbad Pokal]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="teaser" type="text_box" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[On 3rd July 2016 the Flussbad Berlin Association will hold the 2nd Annual Berlin Flussbad Cup swimming event. Under the patronage of Mitte’s District Mayor Dr. Christian Hanke and in cooperation with the Berlin Triathlon Union and the Berliner Wasserbetriebe, the event will take place in a stretch of the Spree known as the “Kupfergraben” along Berlin’s Museum Island.]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Am 3. Juli 2016 veranstaltet der Verein Flussbad Berlin zum zweiten Mal den Schwimmwettbewerb „Berliner Flussbad Pokal“. Unter der Schirmherrschaft von Bezirksbürgermeister Dr. Christian Hanke und in Kooperation mit der Berliner Triathlon Union und den Berliner Wasserbetrieben wird er entlang des Kupfergrabens an der Museumsinsel ausgetragen.]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="showToc" type="boolean" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="section" type="text" index-type="keyword" index="0">
+        <dynamic-element name="body" index="0" type="text_area" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[<p>The Flussbad Cup is a swimming competition held in a section of Berlin’s Spree River that runs along the Kupfergraben between Bode Museum and Palace Bridge. In addition to showcasing a unique and exciting swimming race in downtown Berlin, the goal of the event is to draw attention to the potential benefits of a clean and swimmable Spree River and to send out a clear signal on behalf of water conservation and protection in general. Dr. Christian Hanke, Mayor of Berlin’s Mitte District, has also taken on the patronage of the event and will fire the starting pistol at 2:30 pm this Sunday.</p>
+
+<p>As was the case last year, the roughly 1,000-metre competition will get underway at Monbijou Bridge and run approximately 500 metres to the Palace Bridge at Lustgarten/Unter den Linden, at which point the swimmers will turn around and head back to the starting point. The race is scheduled to begin at 2:30 pm in separate groups of men and women. While last year’s event focused solely on experienced triathletes and seasoned open-water swimmers, a new feature in 2016 will be a “timed swimming” for recreational swimmers. More than 230 people have registered to participate to date. The entire event will enjoy the support and security services provided by the staff at the German Lifesaving Association (DLRG) and the Federal Agency for Technical Relief Berlin (THW).</p>
+
+<p>As association chairman Charlotte Hopf noted recently: “Clean water is a key cultural asset, which is why a clean river would be simply ideal at this central location in Berlin”. Indeed, the Flussbad would combine swimming and culture, body and spirit. Unfortunately, the Spree Canal along Museum Island is not designated as an official bathing area. In order to avoid any risks due to possible diseases, the water in the race area will be tested for microbes shortly before the event. And, seeing as any storms and/or strong rainfalls shortly before the competition could significantly affect the quality of the water in the race area due to the discharge of mixed wastewater from the sewage system, the competition might have to be cancelled at short notice.</p>
+
+<p>The Flussbad Berlin is an urban planning project that seeks to transform a 1.8-km body of water known as the Spree Canal located in downtown Berlin between Fischerinsel and Bode Museum into a public, non-commercial space for recreation and relaxation. The Flussbad envisages a series of new riverside paths running alongside a re-naturalised park landscape. Plus, thanks to a plant filter located in the canal between Gertrauden Bridge and the Foreign Office, naturally purified water would flow into a 840-metre "river pool" starting at Schlossplatz and extending all the way to the western tip of Museum Island. The Flussbad would mark a wonderful ecological addition to Berlin's already numerous attractions. It would also result in a new "green" link between Alexanderplatz and Friedrichstraße. The non-profit "Flussbad Berlin Association” has been tasked with the ongoing development of the project idea by the German Federal Government and the Federal State of Berlin as part of their "National Urban Planning Project" programme.</p>
+
+<p>Event organisers: Flussbad Berlin e.V. in cooperation with the <a href="http://www.btu-info.de" target="_blank">Berlin Triathlon Union e.V. </a>and the <a href="http://www.bwb.de" target="_blank">Berliner Wasserbetriebe</a><br />
+Media partners: <a href="http://www.swim.de" target="_blank">SWIM</a><br />
+Image material covering the 1st Annual Berlin Flussbad Cup and the Flussbad project in general can be found in our press kit and in the press section of our website.</p>
+
+<p><br />
+<strong>Parallel Event: Munich’s </strong><strong>ISAR-POKAL and ISAR-TREIBEN will get underway </strong><strong>simultaneous to Berlin’s Flussbad Cup </strong><br />
+Our colleagues from i<a href="http://www.isarlust.org" target="_blank">sarlust e.V. </a>in Munich will open a temporary bathing area in the Isar River on Sunday, 3rd July between 3-5 pm. For a couple of hours, roughly 300 Munich residents will have an historic opportunity – the first time since 1839 – to swim in the Isar between the Deutsches Museum and the Patent Offices. This unique event is designed to act as a precursor to the implementation of a grand vision of creating a permanent Flussbad (“bathing area”) as a site of recreation and a new public urban space in downtown Munich. http://www.isarlust.org</p>]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[<p>Der „Berliner Flussbad Pokal“ ist ein Schwimmwettbewerb, der auf der Strecke zwischen Bode-Museum und Schlossbrücke entlang des Kupfergrabens ausgetragen wird. Neben dem sportlichen Wettkampf möchten wir auf das Potenzial einer sauberen Spree im Zentrum Berlins aufmerksam machen und ein allgemeines Zeichen für den Gewässerschutz setzen. Die Schirmherrschaft übernimmt freundlicherweise Dr. Christian Hanke, Bezirksbürgermeister von Berlin Mitte, der am Sonntag um 14.30 Uhr den Startschuss gibt.</p>
+
+<p>Der Wettbewerb wird wie im letzten Jahr von der südlichen Monbijou-Brücke bis zur Schlossbrücke (Wendemarke Lustgarten/Unter den Linden) und zurück auf einer Länge von circa 1.000 Metern ausgetragen. Der Start erfolgt voraussichtlich um 14.30 Uhr in Gruppen von Frauen und Männer getrennt. Neu in 2016 ist, dass wir&nbsp;zusätzlich zu dem&nbsp;Wettbewerb, der sich an wettkampferfahrene TriathletInnen und FreiwasserschwimmerInnen richtet, ein&nbsp;Zeitschwimmen&nbsp;für ambitionierte FreizeitsportlerInnen anbieten. Über 230 Personen haben sich beim gestrigen Anmeldeschluss registriert: 28 Frauen und 48 Männer für den Wettkampf sowie 157 ZeitschwimmerInnen (Frauen/Männer). Die Veranstaltung wird durch das Personal der Deutschen Lebensrettungsgesellschaft (DLRG) abgesichert und vom Technischen Hilfswerk (THW) Berlin unterstützt.</p>
+
+<p>„Sauberes Wasser ist ein Kulturgut“, meint Vereinsvorsitzende Charlotte Hopf, „weswegen ein gereinigter Fluss einen Wert darstellt, der hervorragend an diesen zentralen Ort passt.“ Schwimmen und Kultur, Körper und Geist. Der Spreekanal entlang der Museumsinsel ist jedoch nicht als Badegewässer ausgewiesen. Um ein gesundheitliches Risiko durch mögliche Krankheitserreger weitgehend auszuschließen, wird das Gewässer im Schwimmabschnitt kurz vor der Veranstaltung mikrobiologisch untersucht. Da Unwetter und Starkregenfälle die Wasserqualität der Schwimmstrecke durch Einleitungen von Mischwasser aus dem Kanalisationssystem erheblich beeinträchtigen, muss in einem derartigen Fall der Schwimmwettbewerb kurzfristig abgesagt werden.</p>
+
+<p>Flussbad Berlin ist ein Stadtentwicklungsprojekt, das den innerstädtischen 1,8 km langen Spreekanal zwischen Fischerinsel und Bode-Museum in einen öffentlich zugänglichen, nicht kommerziellen Ort der Erholung umwandeln möchte.&nbsp;Entlang einer renaturierten Parklandschaft sollen neue Uferwege entstehen sowie Dank eines Pflanzenfilters zwischen Gertraudenbrücke und Auswärtigem Amt natürlich gereinigtes Wasser, das ab Höhe des Schlossplatzes bis zur westlichen Spitze der Museumsinsel in ein 840 Meter langes Flussbad mündet. Berlin wäre um eine ökologische Attraktion reicher und&nbsp;zwischen Alexanderplatz und Friedrichstraße entstünde ein neues grünes Band.&nbsp;Das Bundesministerium für Umwelt, Naturschutz, Bau und Reaktorsicherheit &nbsp;und die Senatsverwaltung für Stadtentwicklung und Umwelt fördern den gemeinnützigen Verein bei der Weiterentwicklung der Projektidee im Rahmen des Programms “Nationale Projekte des Städtebaus”</p>
+
+<p>Veranstalter: Flussbad Berlin e.V. in Kooperation mit dem <a href="http://www.btu-info.de" target="_blank">Berliner Triathlon Union e.V.</a> und den <a href="http://www.bwb.de/" target="_blank">Berliner Wasserbetrieben</a><br />
+Medienpartner: <a href="http://www.swim.de" target="_blank">SWIM</a><br />
+Bildmaterial vom 1. Berliner Flussbad Pokal und zum Projekt finden Sie hier im Pressebereich und im Pressekit&nbsp;</p>
+
+<p><strong>Parallelaktion: Gleichzeitig mit Berlin startet in München der </strong><strong>ISAR-POKAL und das ISAR-TREIBEN</strong><br />
+Unsere KollegInnen in München vom <a href="http://www.isarlust.org" target="_blank">isarlust e.V. </a>eröffnen am Sonntag, dem 3. Juli zwischen 15 und 18 Uhr ein temporäres Isarflussbad. Für ein paar Stunden werden 300 MünchnerInnen die historische Gelegenheit bekommen, erstmals seit 1839 in der großen Isar zwischen Deutschem Museum und den Patentämtern zu schwimmen. Beim 1. Münchner ISAR-POKAL können sich professionelle bis gute SchwimmerInnen in ihrer Schnelligkeit messen, beim anschließenden 1. Münchner ISAR-TREIBEN dürfen sich alle weiteren Wasserbegeisterten die Isar entlangtreiben lassen. Dieses Testschwimmen ist der Vorreiter zur Umsetzung einer großen Vision: ein dauerhaftes Flussbad als Ort der Erholung und neuer öffentlicher Stadtraum in der Innenstadt von München.</p>]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="imageAboveTheText" index="0" type="boolean" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="image" index="0" type="document_library" index-type="keyword">
+            <dynamic-element name="caption" index="0" type="text_box" index-type="keyword">
+                <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+                <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+            </dynamic-element>
+            <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="layoutUuid" type="text" index-type="keyword" index="0">
+        <dynamic-content language-id="en_US"><![CDATA[9e3da74d-4ffa-4630-8ce0-3610493c6027]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[9e3da74d-4ffa-4630-8ce0-3610493c6027]]></dynamic-content>
+    </dynamic-element>
+</root>

@@ -22,18 +22,18 @@
                     {
                         "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_EVENTS",
                         "portletPreferences": {
-                            "anyAssetType" : "29801",
-                            "anyClassTypeJournalArticleAssetRendererFactory" : "30182",
-                            "displayStyle" : "ddmTemplate_115201",
+                            "anyAssetType": "29701",                      
+                            "anyClassTypeJournalArticleAssetRendererFactory" : "47455",
+                            "displayStyle": "ddmTemplate_EVENT_LIST_SMALL-7.0.3",
                             "groupId": "${groupId}"
                         }
                     },                       
                     {
                         "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_STATEMENTS",
                         "portletPreferences": {
-                            "anyAssetType" : "29801",
-                            "anyClassTypeJournalArticleAssetRendererFactory" : "30182",
-                            "displayStyle" : "ddmTemplate_92301",
+                            "anyAssetType": "29701",
+                            "anyClassTypeJournalArticleAssetRendererFactory" : "47525",
+                            "displayStyle": "ddmTemplate_STATEMENTS-7.0.3",
                             "groupId": "${groupId}"
                         }
                     }             
@@ -47,11 +47,18 @@
             "columns": [
                 [
                     {
-                        "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_STATEMENTS",
+                        "portletId": "com_liferay_asset_categories_navigation_web_portlet_AssetCategoriesNavigationPortlet",
                         "portletPreferences": {
-                            "anyAssetType" : "29801",
-                            "anyClassTypeJournalArticleAssetRendererFactory" : "30182",
-                            "displayStyle" : "ddmTemplate_92301",
+                            "displayStyle" : "ddmTemplate_BUTTONS-7.0.3",
+                            "groupId": "${groupId}"
+                        }
+                    },                
+                    {
+                        "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_LOGBOOK",
+                        "portletPreferences": {
+                            "anyAssetType": "29701",
+                            "anyClassTypeJournalArticleAssetRendererFactory" : "47455",
+                            "displayStyle" : "ddmTemplate_LOGBOOK-7.0.3",
                             "groupId": "${groupId}"
                         }
                     }                                   
@@ -67,7 +74,7 @@
                     {
                         "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
                         "portletPreferences": {
-                            "articleId": "logos_supporters.xml",
+                            "articleId": "intro_about.xml",
                             "groupId": "${groupId}"
                         }
                     }                                    
@@ -107,14 +114,16 @@
         },
         {
             "columns": [
-                [
+                [              
                     {
-                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_EVENTS",
                         "portletPreferences": {
-                            "articleId": "logos_supporters.xml",
+                            "anyAssetType": "29701",
+                            "anyClassTypeJournalArticleAssetRendererFactory" : "47455",
+                            "displayStyle" : "ddmTemplate_EVENT_LIST-7.0.3",
                             "groupId": "${groupId}"
                         }
-                    }                                    
+                    }                                   
                 ]
             ],
             "friendlyURL": "/events",
@@ -123,14 +132,23 @@
         },
         {
             "columns": [
-                [
+                [ 
                     {
                         "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
                         "portletPreferences": {
-                            "articleId": "logos_supporters.xml",
+                            "articleId": "introduction_press.xml",
                             "groupId": "${groupId}"
                         }
-                    }                                    
+                    },             
+                    {
+                        "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_PRESS_RELEASES",
+                        "portletPreferences": {
+                            "anyAssetType": "29701",
+                            "anyClassTypeJournalArticleAssetRendererFactory" : "47510",
+                            "displayStyle" : "ddmTemplate_PRESS_RELEASES-7.0.3",
+                            "groupId": "${groupId}"
+                        }
+                    }                                   
                 ]
             ],
             "friendlyURL": "/press",

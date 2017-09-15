@@ -1,0 +1,25 @@
+{
+    "assets": [
+        {
+            "name": "intro_welcome.png",
+            "tags": [
+                "intro",
+                "welcome"
+            ]
+        },
+        {
+            "abstractSummary": "This the about summary.",
+            "name": "intro_about.xml",
+            "tags": [
+                "web content"
+            ]
+        },
+        {
+            "abstractSummary": "This is the welcome summary.",
+            "name": "intro_welcome.xml",
+            "tags": [
+                "welcome"
+            ]
+        }
+    ]
+}
