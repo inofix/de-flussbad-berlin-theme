@@ -2,8 +2,8 @@
     _custom.scss: main config of the flussbad-theme
 
     Created:    2017-09-07 16:32 by Christian Berndt
-    Modified:   2017-09-15 17:26 by Christian Berndt
-    Version:    1.0.6
+    Modified:   2017-09-16 15:01 by Christian Berndt
+    Version:    1.0.7
 */
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
 
@@ -20,15 +20,28 @@
 @import "templates";
 @import "variables";
 
+/* ----------------------------------------------- global settings */
+
+    
 a {
+    
+    color: $navigation-font-color;
+    
     &:active,
     &:focus {
         outline-color: transparent ! important;
+    }
+    
+    &:hover, 
+    &:focus {    
+        text-decoration: none;
+        color: $hover-font-color;
     }
 }
 
 body {
     font-size: $default-font-size;
+    font-size-adjust: $default-font-size-adjust;
 }
 
 .control-menu {
@@ -41,6 +54,31 @@ body {
 
 #footer {
     background-color: cyan;
+}
+
+h1 {  
+    font-family: $bold-font-family;
+    font-size: $h1-font-size;
+    line-height: $h1-line-height;
+    letter-spacing: 0.02em;             
+}
+
+h2 {   
+    font-family: $bold-font-family;
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+}
+
+h3 {   
+    font-family: $medium-font-family;
+    font-size: $h3-font-size;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-wide;
+}
+
+h1,h2,h3,h4,h5,h6,strong {    
+    font-style: normal;
+    font-weight: normal;
 }
 
 .has-control-menu  {

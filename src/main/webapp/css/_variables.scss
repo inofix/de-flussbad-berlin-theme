@@ -2,8 +2,8 @@
     _variables.scss: common variables of the flussbad-theme
 
     Created:    2017-09-07 16:16 by Christian Berndt
-    Modified:   2017-09-11 23:42 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2017-09-16 15:30 by Christian Berndt
+    Version:    1.0.2
 */
 
 /** ------------- colors ------------- */
@@ -21,6 +21,11 @@ $color-turquois: #93EAEE;
 $color-orange: #F5A623;
 $color-muted: #B2C4C4;
 
+/* button */
+$button-font-size: 22px;
+$button-font-family: 'Amatic SC', cursive;
+$button-letter-spacing: 2.6px;
+$button-padding: 10px 30px 8px;
 
 /* typography */
 $regular-font-family: 'Apercu Pro Regular', Calibri, Roboto, sans-serif;

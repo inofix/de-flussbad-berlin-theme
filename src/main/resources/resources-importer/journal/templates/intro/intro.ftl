@@ -2,8 +2,8 @@
     intro.ftl: Format the intro structure
     
     Created:    2015-08-28 17:52 by Christian Berndt
-    Modified:   2017-09-14 15:45 by Christian Berndt
-    Version:    1.1.3
+    Modified:   2017-09-16 15:28 by Christian Berndt
+    Version:    1.1.4
     
     Please note: Although this template is stored in the 
     site's context it's source is managed via git. Whenever you 
@@ -65,6 +65,34 @@
     <#assign cssClass = "${cssClass}" + " " + "${backgroundColor.getData()}" />
 </#if>
 
+<#macro print_abstracts caption>
+    <#assign i = 0 />
+    <#list caption.getSiblings() as cur_caption>
+        <#if (i < 3) >                   
+            <div class="col-sm-4">
+                <#if cur_caption.getData()?has_content>
+                    <div class="abstract abstract-${i}">
+                        <h3>${cur_caption.getData()}</h3>
+                        <h2>${cur_caption.claim.getData()}</h2>
+                        <p>${cur_caption.abstract.getData()}</p>
+                        <#if cur_caption.abstractLink.getData()?has_content>
+                        
+                            <#assign target = layoutLocalService.getLayout(groupId?number, false, cur_caption.abstractLink.getData()?number) />                                        
+                        
+                            <#assign targetURL = prefix + target.getFriendlyURL(locale) />
+                                            
+                            <div>
+                                <a href="${targetURL}" class="btn btn-default" title="${cur_caption.abstractLabel.getData()}">${cur_caption.abstractLabel.getData()}</a>
+                            </div>
+                        </#if>
+                    </div>
+                </#if>
+            </div>
+            <#assign i = i+1/>
+        </#if>
+    </#list>
+</#macro>
+
 <div class="intro ${cssClass}">
 
     <#if hasKeyVisual>
@@ -100,7 +128,7 @@
         <#if clubLink??>
             <#if clubLink.getData()?has_content>
                 <div class="row">
-                    <div class="col-sm-4 offset-sm-8">
+                    <div class="col-sm-4 col-sm-offset-8">
                         <div class="pull-right">
                         
                             <#assign target = layoutLocalService.getLayout(groupId?number, false, clubLink.getData()?number) />                                        
@@ -116,32 +144,8 @@
         
         <#if caption.getSiblings()?has_content>
             <div class="row">
-                <#assign i = 0 />
-                <#list caption.getSiblings() as cur_caption>
-                    <#if (i < 3) >                   
-                        <div class="col-sm-4">
-                            <#if cur_caption.getData()?has_content>
-                                <div class="abstract abstract-${i}">
-                                    <h3>${cur_caption.getData()}</h3>
-                                    <h2>${cur_caption.claim.getData()}</h2>
-                                    <p>${cur_caption.abstract.getData()}</p>
-                                    <#if cur_caption.abstractLink.getData()?has_content>
-                                    
-                                        <#assign target = layoutLocalService.getLayout(groupId?number, false, cur_caption.abstractLink.getData()?number) />                                        
-                                    
-                                        <#assign targetURL = prefix + target.getFriendlyURL(locale) />
-                                                        
-                                        <div>
-                                            <a href="${targetURL}" class="btn btn-default" title="${cur_caption.abstractLabel.getData()}">${cur_caption.abstractLabel.getData()}</a>
-                                        </div>
-                                    </#if>
-                                </div>
-                            </#if>
-                        </div>
-                        <#assign i = i+1/>
-                    </#if>
-                </#list>
-            </div>
+                <@print_abstracts caption />
+            </div>        
         </#if> 
         
     </div>
