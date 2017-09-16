@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-09-07 11:27 by Christian Berndt
-    Modified:   2017-09-15 23:51 by Christian Berndt
-    Version:    1.0.2
+    Modified:   2017-09-16 12:31 by Christian Berndt
+    Version:    1.0.3
 -->
 
 <#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
@@ -43,6 +43,21 @@
 
         </div>
  
+         <ul class="nav language">
+            <li>
+                <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />        
+                <#assign VOID = freeMarkerPortletPreferences.setValue("displayStyle", "ddmTemplate_POPOVER-7.0.3") />        
+                                    
+                <@liferay_portlet["runtime"]
+                    defaultPreferences="${freeMarkerPortletPreferences}"
+                    portletProviderAction=portletProviderAction.VIEW
+                    instanceId="NAVIGATION_LANGUAGE"
+                    portletName="com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet" />
+        
+                <#assign VOID = freeMarkerPortletPreferences.reset() />
+            </li>
+        </ul>
+        
         <ul aria-label="<@liferay.language key="site-pages" />" class="collapse nav navbar-collapse navbar-nav navbar-right site-navigation" role="menubar">
             <#list nav_items as nav_item>
                 <#assign
@@ -103,18 +118,6 @@
                               
             </#list>
 
-            <li>
-                <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />        
-                <#assign VOID = freeMarkerPortletPreferences.setValue("displayStyle", "ddmTemplate_POPOVER-7.0.3") />        
-                                    
-                <@liferay_portlet["runtime"]
-                    defaultPreferences="${freeMarkerPortletPreferences}"
-                    portletProviderAction=portletProviderAction.VIEW
-                    instanceId="NAVIGATION_LANGUAGE"
-                    portletName="com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet" />
-        
-                <#assign VOID = freeMarkerPortletPreferences.reset() />
-            </li>
         </ul>
     </div>
 </nav>
