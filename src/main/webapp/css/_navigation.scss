@@ -2,8 +2,8 @@
     _navigation.scss: main-navigation of the flussbad-theme.
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-09-14 15:40 by Christian Berndt
-    Version:    1.0.6
+    Modified:   2017-09-16 12:44 by Christian Berndt
+    Version:    1.0.7
 */
 
 @import "variables";
@@ -13,10 +13,115 @@
     background-color: $color-turquois;    
     font-family: $bold-font-family;
     font-weight: normal;
-    opacity: 0.95;
+/*     opacity: 0.95; */
     text-transform: uppercase;
     width: 100%;
     z-index: 11;
+    
+    .container {
+        position: relative;
+    }
+    
+    .nav {
+    
+        &.language {
+
+            position: absolute;
+            right: 50px;
+            top: -1px;                       
+    
+            .portlet-language {
+            
+                .portlet-content-editable {
+                    border-width: 0; 
+                }
+            
+                .portlet-body {
+        
+                    a {
+                    
+                        color: $navigation-font-color;
+                        line-height: 20px;
+                        
+                        &.dropdown-toggle {
+                            cursor: pointer;    
+                            display: inline-block;                            
+                            padding-bottom: 20px;
+                            padding-top: 20px; 
+                        }
+                        
+                        &:hover {
+                            color: $hover-font-color;
+                        }
+                    }
+                    
+                    .dropdown-menu {
+                    
+                        background-color: $color-gray-green; 
+                        border-radius: 0;
+                        left: 50%;
+                        right: auto;
+                        text-align: center;
+                        transform: translate(-50%, 0);
+                        margin-top: -10px;
+            
+                        min-width: 90px;
+                        
+                        li {
+                        
+                            display: inline-block;
+                            text-align: center;
+                            
+                            span {
+                                color: white;
+                                display: block; 
+                                padding: 3px 5px; 
+                                
+                                &.open {
+                                    
+                                    a {
+                                        color: $color-turquois;
+                                    }
+                                }                                
+                                
+                            } 
+                            
+                            > a {
+                            
+                                color: $color-turquois;                         
+                                padding: 3px 5px; 
+                                
+                                &:hover {
+                                    background-color: transparent ! important;
+                                    color: darken($color-turquois, 10%);                                
+                                }
+                            }  
+                        }             
+                    }
+                    
+                    .dropdown-toggle {
+                    
+                        padding-left: 15px; 
+                        padding-right: 15px;
+
+                    }        
+                
+                    > span {
+                    
+                        display: block; 
+
+                        &.open {
+                            
+                            > a {
+                                background-color: transparent ! important;
+                                color: $active-font-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     .navbar-brand {
     
@@ -81,80 +186,6 @@
         
         &:focus {
             outline: none;
-        }
-    }
-    
-    .portlet-language {
-    
-        .portlet-content-editable {
-            border-width: 0; 
-        }
-    
-        .portlet-body {
-
-            a {
-            
-                color: $navigation-font-color;
-                line-height: 20px;
-                
-                &.dropdown-toggle {
-                    cursor: pointer;    
-                    display: inline-block;                            
-                    padding-bottom: 20px;
-                    padding-top: 20px; 
-                }
-                
-                &:hover {
-                    color: $hover-font-color;
-                }
-            }
-            
-            .dropdown-menu {
-            
-                background-color: #fff; 
-                border-top-right-radius: 0;
-                border-top-left-radius: 0;
-                margin-top: 0;
-    
-                min-width: 120px;
-                
-                li {
-                
-                    text-align: center;
-                    
-                    span {
-                        display: block; 
-                        padding: 3px 20px; 
-                    } 
-                    
-                    > a {
-                        padding: 5px;
-                    }  
-                }             
-            }
-            
-            .dropdown-toggle {
-            
-                padding-left: 15px; 
-                padding-right: 15px;
-                
-                &:nth-child(1) {
-                    padding-right: 7.5px;           
-                } 
-                
-                &:nth-child(2) {
-                    margin-left: -7.5px; 
-                    padding-left: 0;           
-                } 
-            }        
-        
-            > span {
-                display: block; 
-                
-                &.open {
-                    background-color: #eeeeee;
-                }
-            }
         }
     }
     
