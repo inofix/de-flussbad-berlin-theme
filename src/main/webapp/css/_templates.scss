@@ -3,8 +3,8 @@
     of the flussbad-theme.
 
     Created:    2017-09-07 17:21 by Christian Berndt
-    Modified:   2017-09-16 15:29 by Christian Berndt
-    Version:    1.0.5
+    Modified:   2017-09-18 13:23 by Christian Berndt
+    Version:    1.0.6
 */
 
 @import "custom_mixins";
@@ -151,15 +151,4 @@ h3 {
             }
         }
     }
-}
-
-.statement {
-    
-    text-align: center;
-    
-    blockquote {
-        border-left: none;
-        font-size: 21px;
-    }
-    
 }

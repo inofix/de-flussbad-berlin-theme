@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-09-07 11:27 by Christian Berndt
-    Modified:   2017-09-16 12:31 by Christian Berndt
-    Version:    1.0.3
+    Modified:   2017-09-18 18:09 by Christian Berndt
+    Version:    1.0.4
 -->
 
 <#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
@@ -118,6 +118,18 @@
                               
             </#list>
 
+            <li>
+                <#assign VOID = freeMarkerPortletPreferences.setValue("displayDepth", "1") />        
+                <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />        
+                                 
+                <@liferay_portlet["runtime"]
+                    defaultPreferences="${freeMarkerPortletPreferences}"
+                    portletProviderAction=portletProviderAction.VIEW
+                    instanceId="NAVIGATION_SITE_MAP"
+                    portletName="com_liferay_site_navigation_site_map_web_portlet_SiteNavigationSiteMapPortlet" />
+        
+                <#assign VOID = freeMarkerPortletPreferences.reset() />            
+            </li>
         </ul>
     </div>
 </nav>
