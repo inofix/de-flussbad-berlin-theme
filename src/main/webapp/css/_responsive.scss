@@ -2,14 +2,25 @@
     _responsive.scss: responsive configuration of the flussbad-theme
 
     Created:    2017-09-12 19:34 by Christian Berndt
-    Modified:   2017-09-18 18:32 by Christian Berndt
-    Version:    0.1.7
+    Modified:   2017-09-19 00:30 by Christian Berndt
+    Version:    0.2.0
 */
 
 
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    
+    .events-small {
+            
+        h2 {
+            display: inline-block;
+            
+            &.date {
+                margin-right: 10px;
+            }
+        }
+    }
     
     #footer {
     
@@ -22,7 +33,15 @@
         
             border-left: 5px solid #cad3d3;
             
-        }       
+        }  
+        
+        .logos {
+        
+            a {
+                display: inline-block ! important;
+                margin: 0 30px;
+            }
+        }     
     }
     
     .intro {
@@ -85,6 +104,13 @@
             padding-bottom: 120px;
             padding-top: 120px; 
         }
+        
+        .logos {
+        
+            a {
+                margin: 0 60px;
+            }
+        } 
     
     }
     
@@ -165,8 +191,8 @@
         }
            
         blockquote {
-            font-size: $h1-font-size;
-            padding: 0 8.54701% 1em;
+            font-size: $h1-font-size ! important;
+            padding: 0 8.54701% 1em ! important;
         }
     }
 }

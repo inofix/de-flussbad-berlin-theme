@@ -3,8 +3,8 @@
     of the flussbad-theme.
 
     Created:    2017-09-07 17:21 by Christian Berndt
-    Modified:   2017-09-18 13:23 by Christian Berndt
-    Version:    1.0.6
+    Modified:   2017-09-19 00:30 by Christian Berndt
+    Version:    1.0.7
 */
 
 @import "custom_mixins";
@@ -67,18 +67,26 @@ h3 {
         color: $default-font-color;
         background-color: $color-sand;
         
+        .btn-default {
+            border-color: transparent;
+        }
+        
         h2 {
             color: $color-gray-green;
         }
         
         h3 {
-            color: white;
+            color: $color-gray-green;
         } 
     }
     
     &.turquois {
         
         color: $default-font-color;
+        
+        .btn-default {
+            border-color: transparent;
+        }
         
         .abstract {
             background-clip: padding-box;
@@ -91,9 +99,6 @@ h3 {
             -o-border-image: url(../images/border-wave.png) 15 0 15 0 round;
             border-top: 13px solid transparent; 
             
-            .btn-default {
-                border-color: transparent;
-            }
         }
         
         h1 {
