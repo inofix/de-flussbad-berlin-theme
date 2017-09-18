@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US,de_DE" default-locale="de_DE">
+    <dynamic-element name="logo" type="document_library" index-type="keyword" instance-id="LEwuAcA7">
+        <dynamic-element name="link" instance-id="SX2WhWOL" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[http://www.bmub.bund.de/presse/pressemitteilungen/pm/artikel/bundesbauministerium-foerdert-herausragende-staedtebau-projekte-mit-50-millionen-euro/]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[http://www.bmub.bund.de/presse/pressemitteilungen/pm/artikel/bundesbauministerium-foerdert-herausragende-staedtebau-projekte-mit-50-millionen-euro/]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[[$FILE=logo_nationale_projekte.png$]]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[[$FILE=logo_nationale_projekte.png$]]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="logo" type="document_library" index-type="keyword" instance-id="jCfNKMAh">
+        <dynamic-element name="link" instance-id="fN8RMfwn" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[http://www.stadtentwicklung.berlin.de/]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[http://www.stadtentwicklung.berlin.de/]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[[$FILE=logo_senatsverwaltung.png$]]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[[$FILE=logo_senatsverwaltung.png$]]]></dynamic-content>    </dynamic-element>
+    <dynamic-element name="logo" type="document_library" index-type="keyword" instance-id="Vu4sLbTi">
+        <dynamic-element name="link" instance-id="GAoCaz8L" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[http://www.tatenfuermorgen.de/projekt/?projektid=2920]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[http://www.tatenfuermorgen.de/projekt/?projektid=2920]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[[$FILE=logo_nachhaltigkeit.png$]]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[[$FILE=logo_nachhaltigkeit.png$]]]></dynamic-content>
+    </dynamic-element>
+</root>
