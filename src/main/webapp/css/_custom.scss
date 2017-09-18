@@ -2,8 +2,8 @@
     _custom.scss: main config of the flussbad-theme
 
     Created:    2017-09-07 16:32 by Christian Berndt
-    Modified:   2017-09-16 15:01 by Christian Berndt
-    Version:    1.0.7
+    Modified:   2017-09-18 13:00 by Christian Berndt
+    Version:    1.0.8
 */
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
 
@@ -53,7 +53,91 @@ body {
 }
 
 #footer {
-    background-color: cyan;
+    
+    background: $color-light-gray;
+    border-top: 5px solid white;
+    padding-bottom: 20px;
+    
+    .boxes {
+        padding-bottom: 120px;
+        padding-top: 120px; 
+    }
+    
+    .col-sm-6 {
+    
+        min-height: 240px;
+        
+    }
+    
+    .col-sm-6:nth-child(-n+1) {
+    
+        border-right: 5px solid #cad3d3;
+        
+    }
+    
+    .copyright {
+    
+        font-size: $small-font-size;
+        color: $navigation-font-color;
+        text-transform: uppercase;
+        letter-spacing: $letter-spacing-wide;
+    }
+       
+    .info {
+        text-align: center; 
+        margin-bottom: 25px;     
+    }
+    
+    .share-links {
+    
+        font-size: 30px;
+        text-align: center;
+        padding: 4em 0;
+    
+        ul {
+        
+            list-style: none;
+            margin: 0; 
+            padding: 0;
+            
+            li {
+        
+                display: inline;
+                margin: 0 15px 0 0; 
+                
+                a {
+        
+                    color: $color-light-gray;
+                    
+                    &:hover {
+                    
+                        color: $color-gray-green;
+                    }
+                    
+                    .circle {
+        
+                        background: $color-gray-green;
+                        border-radius: 100%;
+                        text-align: center;
+                        width: 60px;
+                        height: 60px;
+                        display: inline-block;
+                        line-height: 200%;
+                        
+                        &:hover {                        
+                            background: $color-turquois;
+                        }
+                        
+                        span::before {
+                        
+                            margin-top: 14px;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+    
 }
 
 h1 {  
