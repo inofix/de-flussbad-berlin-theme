@@ -111,6 +111,20 @@
         .navbar-toggle {
             display: none;
         }
+        
+        .portlet-site-map {
+        
+            ul {
+    
+                li {
+                    display: inline-block;
+                    
+                    a {
+                        padding: 17px 10px !important;
+                    }
+                } 
+            }  
+        }
     
         &.navbar-default {
             .navbar-collapse {

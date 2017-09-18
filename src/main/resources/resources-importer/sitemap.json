@@ -114,62 +114,75 @@
         },
         {
             "columns": [
-                [              
-                    {
-                        "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_EVENTS",
-                        "portletPreferences": {
-                            "anyAssetType": "29701",
-                            "anyClassTypeJournalArticleAssetRendererFactory" : "47455",
-                            "displayStyle" : "ddmTemplate_EVENT_LIST-7.0.3",
-                            "groupId": "${groupId}"
-                        }
-                    }                                   
+                [                                                
                 ]
             ],
-            "friendlyURL": "/events",
-            "name": "Events",
-            "title": "Events"
-        },
-        {
-            "columns": [
-                [ 
-                    {
-                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
-                        "portletPreferences": {
-                            "articleId": "introduction_press.xml",
-                            "groupId": "${groupId}"
-                        }
-                    },             
-                    {
-                        "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_PRESS_RELEASES",
-                        "portletPreferences": {
-                            "anyAssetType": "29701",
-                            "anyClassTypeJournalArticleAssetRendererFactory" : "47510",
-                            "displayStyle" : "ddmTemplate_PRESS_RELEASES-7.0.3",
-                            "groupId": "${groupId}"
-                        }
-                    }                                   
-                ]
-            ],
-            "friendlyURL": "/press",
-            "name": "Press",
-            "title": "Press"
-        },
-        {
-            "columns": [
-                [
-                    {
-                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
-                        "portletPreferences": {
-                            "articleId": "logos_supporters.xml",
-                            "groupId": "${groupId}"
-                        }
-                    }                                    
-                ]
-            ],
-            "friendlyURL": "/donate",
-            "name": "Donate",
-            "title": "Donate"
+            "friendlyURL": "/service",
+            "hidden" : true,
+            "name": "Service",
+            "title": "Service",
+            "layouts" : [
+                {
+                    "columns": [
+                        [              
+                            {
+                                "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_EVENTS",
+                                "portletPreferences": {
+                                    "anyAssetType": "29701",
+                                    "anyClassTypeJournalArticleAssetRendererFactory" : "47455",
+                                    "displayStyle" : "ddmTemplate_EVENT_LIST-7.0.3",
+                                    "groupId": "${groupId}"
+                                }
+                            }                                   
+                        ]
+                    ],
+                    "friendlyURL": "/events",
+                    "name": "Events",
+                    "title": "Events"
+                },
+                {
+                    "columns": [
+                        [ 
+                            {
+                                "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                                "portletPreferences": {
+                                    "articleId": "introduction_press.xml",
+                                    "groupId": "${groupId}"
+                                }
+                            },             
+                            {
+                                "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_PRESS_RELEASES",
+                                "portletPreferences": {
+                                    "anyAssetType": "29701",
+                                    "anyClassTypeJournalArticleAssetRendererFactory" : "47510",
+                                    "displayStyle" : "ddmTemplate_PRESS_RELEASES-7.0.3",
+                                    "groupId": "${groupId}"
+                                }
+                            }                                   
+                        ]
+                    ],
+                    "friendlyURL": "/press",
+                    "name": "Press",
+                    "title": "Press"
+                },
+                {
+                    "columns": [
+                        [
+                            {
+                                "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                                "portletPreferences": {
+                                    "articleId": "logos_supporters.xml",
+                                    "groupId": "${groupId}"
+                                }
+                            }                                    
+                        ]
+                    ],
+                    "friendlyURL": "/donate",
+                    "name": "Donate",
+                    "title": "Donate"
+                }
+            
+            ]
         }
-    ]
+     ]
 }
