@@ -11,13 +11,6 @@
                             "articleId": "intro_welcome.xml",
                             "groupId": "${groupId}"
                         }
-                    }, 
-                    {
-                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
-                        "portletPreferences": {
-                            "articleId": "intro_about.xml",
-                            "groupId": "${groupId}"
-                        }
                     },
                     {
                         "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_EVENTS",
@@ -27,7 +20,14 @@
                             "displayStyle": "ddmTemplate_EVENT_LIST_SMALL-7.0.3",
                             "groupId": "${groupId}"
                         }
-                    },                       
+                    },
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "intro_about.xml",
+                            "groupId": "${groupId}"
+                        }
+                    },                                         
                     {
                         "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_STATEMENTS",
                         "portletPreferences": {

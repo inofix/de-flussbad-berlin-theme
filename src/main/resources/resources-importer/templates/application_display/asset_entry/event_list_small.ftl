@@ -2,8 +2,8 @@
     event_list_small.ftl: Display a small list of events.
     
     Created:    2017-09-14 16:23 by Christian Berndt
-    Modified:   2017-09-14 16:23 by Christian Berndt
-    Version:    1.0.0
+    Modified:   2017-09-19 00:29 by Christian Berndt
+    Version:    1.0.1
 -->
 
 <#assign journalArticleService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService")>
@@ -19,13 +19,13 @@
     <#return value />
 </#function>
 
-<div class="events" >
+<div class="events-small" >
     <#if entries?has_content>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <h3><@liferay.language key="events" /></h3>
-                    <h2><@liferay.language key="the-most-important-events" /></h2>
+                    <h1><@liferay.language key="the-most-important-events" /></h1>
                 </div>
             </div>
             <#list entries as curEntry>
@@ -39,8 +39,9 @@
                         <#assign title = value_of(xml, "title", language_id) />
                         <#assign date = value_of(xml, "date", language_id) />
                         
-                        <div class="event col-sm-6 col-sm-offset-3">
-                            <h2><span class="date">${date}</span><span class="title">${title}</span></h2>
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <h2 class="date">${date} _ </h2>
+                            <h2 class="title">${title}</h2>
                         </div>
     
                     <#else>
