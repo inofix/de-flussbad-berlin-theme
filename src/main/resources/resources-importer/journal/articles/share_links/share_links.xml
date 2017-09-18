@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+    <dynamic-element name="link" type="text" index-type="keyword" instance-id="npgf">
+        <dynamic-element name="icon" instance-id="npvs" type="list" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[icon-facebook]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[http://www.facebook.com]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="link" type="text" index-type="keyword" instance-id="qeuf">
+        <dynamic-element name="icon" instance-id="yojh" type="list" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[icon-twitter]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[http://www.twitter.com]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="link" type="text" index-type="keyword" instance-id="lmmw">
+        <dynamic-element name="icon" instance-id="wjoq" type="list" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[icon-instagram]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[http://www.instagram.com]]></dynamic-content>
+    </dynamic-element>
+</root>
