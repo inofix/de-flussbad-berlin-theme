@@ -2,8 +2,8 @@
     _custom.scss: main config of the flussbad-theme
 
     Created:    2017-09-07 16:32 by Christian Berndt
-    Modified:   2017-09-18 13:00 by Christian Berndt
-    Version:    1.0.8
+    Modified:   2017-09-18 22:13 by Christian Berndt
+    Version:    1.0.9
 */
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
 
@@ -55,25 +55,7 @@ body {
 #footer {
     
     background: $color-light-gray;
-    border-top: 5px solid white;
     padding-bottom: 20px;
-    
-    .boxes {
-        padding-bottom: 120px;
-        padding-top: 120px; 
-    }
-    
-    .col-sm-6 {
-    
-        min-height: 240px;
-        
-    }
-    
-    .col-sm-6:nth-child(-n+1) {
-    
-        border-right: 5px solid #cad3d3;
-        
-    }
     
     .copyright {
     
@@ -86,6 +68,108 @@ body {
     .info {
         text-align: center; 
         margin-bottom: 25px;     
+    }
+    
+    .logos {
+    
+        border-top: 5px solid white;
+        line-height: 120px; /* center the div's content vertically */                
+        text-align: center;
+        
+        a {
+            margin: 0 60px;
+        }
+        
+        img {
+        
+            width: 120px;
+            vertical-align: middle;
+            opacity: 0.3;
+            
+            -webkit-filter: grayscale(100%);
+            -webkit-transition: .5s ease-in-out; 
+            filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+            filter: grayscale(100%);
+            -moz-transition: .5s ease-in-out;
+            -o-filter: grayscale(100%);
+            -o-transition: .5s ease-in-out; 
+        }
+             
+        img:hover {
+        
+            opacity: 0.8;
+            
+            -webkit-filter: grayscale(0%);
+            -webkit-transition: .5s ease-in-out; 
+            filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+            filter: grayscale(0%);
+            -moz-transition: .5s ease-in-out;
+            -o-filter: grayscale(0%);
+            -o-transition: .5s ease-in-out; 
+        }  
+    }
+        
+    .portlet-site-map {
+    
+        display: inline;
+        
+        section {
+        
+            display: inline;
+            
+            .portlet-content {
+            
+                display: inline;
+                
+                .portlet-content-container {
+                
+                    display: inline;
+                    
+                    .portlet-body {
+                    
+                        display: inline; 
+                        
+                        ul {
+                        
+                            display: inline;
+                            padding-left: 0;
+                            list-style: none;
+                
+                            li {
+                            
+                                display: inline;
+                                margin: 0 3px;
+                            
+                                > a {
+                                
+                                    color: $navigation-font-color; 
+                                    font-size: $small-font-size;
+                                    text-decoration: underline; 
+                                    text-transform: uppercase;
+                                    letter-spacing: $letter-spacing-wide;
+                                    margin-left: 5px;                
+                                    
+                                    &.current {
+                                        color: $active-font-color;                 
+                                    }
+                                    
+                                    &:hover {
+                                        color: $hover-font-color;
+                                    }
+                                }
+                                
+                                &::before {
+                            
+                                    content: "/ ";
+                                    color: $navigation-font-color;
+                                        
+                                } 
+                            } 
+                        }
+                    }
+                }
+            }             
+        }
     }
     
     .share-links {

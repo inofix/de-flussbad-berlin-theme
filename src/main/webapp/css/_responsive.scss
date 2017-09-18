@@ -2,14 +2,28 @@
     _responsive.scss: responsive configuration of the flussbad-theme
 
     Created:    2017-09-12 19:34 by Christian Berndt
-    Modified:   2017-09-18 13:22 by Christian Berndt
-    Version:    0.1.6
+    Modified:   2017-09-18 18:32 by Christian Berndt
+    Version:    0.1.7
 */
 
 
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    
+    #footer {
+    
+        .boxes {
+            padding-bottom: 30px;
+            padding-top: 30px; 
+        }
+    
+        .col-sm-6:nth-child(2) {
+        
+            border-left: 5px solid #cad3d3;
+            
+        }       
+    }
     
     .intro {
     
@@ -64,6 +78,15 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    
+    #footer {
+    
+        .boxes {
+            padding-bottom: 120px;
+            padding-top: 120px; 
+        }
+    
+    }
     
     #navigation {
     

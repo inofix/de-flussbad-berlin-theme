@@ -2,8 +2,8 @@
     portal_normal.ftl: base template of the flussbad-theme.
     
     Created:    2017-09-07 10:57 by Christian Berndt
-    Modified:   2017-09-18 11:34 by Christian Berndt
-    Version:    1.0.2
+    Modified:   2017-09-18 22:09 by Christian Berndt
+    Version:    1.0.4
 -->
 
 <!DOCTYPE html>
@@ -100,24 +100,31 @@
                     <div class="col-sm-12">
                         <span class="copyright">&copy; 2015-2017 Flussbad Berlin e.V.</span>
                         
-                        TODO: add service site-map
-                        
-                        <#if !is_signed_in>
-                            <a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
-                        <#elseif sign_out_url??> <#-- sign_out_url is not available in impersonate mode -->
-                            <a href="${sign_out_url}" id="sign-out" rel="nofollow" title="<@liferay.language key="sign-out" />"><@liferay.language key="sign-out" /></a>
-                        </#if>
+                        <#assign VOID = freeMarkerPortletPreferences.setValue("displayDepth", "1") />        
+                        <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />        
+                                         
+                        <@liferay_portlet["runtime"]
+                            defaultPreferences="${freeMarkerPortletPreferences}"
+                            portletProviderAction=portletProviderAction.VIEW
+                            instanceId="FOOTER_SITE_MAP"
+                            portletName="com_liferay_site_navigation_site_map_web_portlet_SiteNavigationSiteMapPortlet" />
+                
+                        <#assign VOID = freeMarkerPortletPreferences.reset() />  
+
                     </div>
                 </div>            
             </div>
-            
-            <div class="container logos">
-                <div class="row">
-                    <div class="col-sm-12">
-                        TODO: embed a web-content display with supporter logos
-                    </div>
-                </div>
-            </div>
+                        
+            <#assign VOID = freeMarkerPortletPreferences.setValue("articleId", "logos_footer.xml") />        
+            <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />        
+                             
+            <@liferay_portlet["runtime"]
+                defaultPreferences="${freeMarkerPortletPreferences}"
+                portletProviderAction=portletProviderAction.VIEW
+                instanceId="FOOTER_LOGOS"
+                portletName="com_liferay_journal_content_web_portlet_JournalContentPortlet" />
+    
+            <#assign VOID = freeMarkerPortletPreferences.reset() />
             
         </footer>
         
