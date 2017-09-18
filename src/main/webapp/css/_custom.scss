@@ -2,8 +2,8 @@
     _custom.scss: main config of the flussbad-theme
 
     Created:    2017-09-07 16:32 by Christian Berndt
-    Modified:   2017-09-18 22:13 by Christian Berndt
-    Version:    1.0.9
+    Modified:   2017-09-18 22:25 by Christian Berndt
+    Version:    1.1.0
 */
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
 
@@ -56,6 +56,7 @@ body {
     
     background: $color-light-gray;
     padding-bottom: 20px;
+    text-align: center;
     
     .copyright {
     
@@ -77,6 +78,7 @@ body {
         text-align: center;
         
         a {
+            display: block;
             margin: 0 60px;
         }
         
