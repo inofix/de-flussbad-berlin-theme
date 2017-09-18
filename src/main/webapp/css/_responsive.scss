@@ -2,8 +2,8 @@
     _responsive.scss: responsive configuration of the flussbad-theme
 
     Created:    2017-09-12 19:34 by Christian Berndt
-    Modified:   2017-09-16 13:50 by Christian Berndt
-    Version:    0.1.5
+    Modified:   2017-09-18 13:22 by Christian Berndt
+    Version:    0.1.6
 */
 
 
@@ -118,6 +118,18 @@
                     padding: 20px 10px;
                 }
             }
+        }
+    }
+    
+    .statements {
+    
+        .author {
+            padding: 0 8.54701%;
+        }
+           
+        blockquote {
+            font-size: $h1-font-size;
+            padding: 0 8.54701% 1em;
         }
     }
 }
