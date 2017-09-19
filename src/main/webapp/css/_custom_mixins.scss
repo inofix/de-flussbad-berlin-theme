@@ -2,9 +2,11 @@
     _mixins.scss: mixins used by the flussbad-theme
 
     Created:    2017-09-13 22:16 by Christian Berndt
-    Modified:   2017-09-16 14:43 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2017-09-19 18:16 by Christian Berndt
+    Version:    1.0.2
 */
+
+@import "variables";
 
 @mixin background-cover() {
 
@@ -17,6 +19,31 @@
     
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+
+@mixin event-date() {
+    
+    font-size: $h2-font-size;
+    padding-bottom: 1.12em;
+    padding-left: 0;
+    
+    &::after {
+    
+       content: " _";
+    }    
+}
+
+@mixin event-location() {
+    
+    display: inline-block;
+    padding-left: 25px;
+            
+    .icon-map-marker {
+    
+       display: inline-block;
+       margin-left: -23px;
+       width: 23px;
+    }
 }
 
 @mixin rotate($degree) {
