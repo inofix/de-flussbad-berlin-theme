@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US,de_DE" default-locale="de_DE">
+    <dynamic-element name="title" type="text" index-type="keyword" instance-id="qCI0QVZL">
+        <dynamic-content language-id="en_US"><![CDATA[3. Stammtisch]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[3. Stammtisch]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="date" type="ddm-date" index-type="keyword" instance-id="oIfcqlk1">
+        <dynamic-content language-id="en_US"><![CDATA[2015-10-14]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[2015-10-14]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="hour" type="list" index-type="keyword" instance-id="EKSy5qK8">
+        <dynamic-content language-id="en_US"><![CDATA[16]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="minute" type="list" index-type="keyword" instance-id="C40nrN4A">
+        <dynamic-content language-id="en_US"><![CDATA[45]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="location" type="text" index-type="keyword" instance-id="slOEKbQ4">
+        <dynamic-content language-id="en_US"><![CDATA[Restaurant Rio Grande]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Restaurant Rio Grande]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="summary" type="text_area" index-type="keyword" instance-id="eK21wP9X">
+        <dynamic-content language-id="en_US"><![CDATA[<p>... am Spreeufer mit Barbara Schindler</p>]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[<p>... am Spreeufer mit Barbara Schindler</p>]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="section" type="text" index-type="keyword" instance-id="zmMJQ1wt">
+        <dynamic-element name="body" instance-id="07005UNe" type="text_area" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[<p><span style="color: rgb(0, 0, 0);">mit Barbara Schindler</span></p>]]></dynamic-content>
+            <dynamic-content language-id="de_DE"><![CDATA[<p><span style="color: rgb(0, 0, 0);">mit Barbara Schindler</span></p>]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="layoutUuid" type="text" index-type="keyword" instance-id="HUpvlghF">
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+</root>
