@@ -2,8 +2,8 @@
     _navigation.scss: main-navigation of the flussbad-theme.
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-09-18 17:47 by Christian Berndt
-    Version:    1.0.8
+    Modified:   2017-09-19 16:01 by Christian Berndt
+    Version:    1.0.9
 */
 
 @import "variables";
@@ -162,6 +162,10 @@
 
                 &:hover {
                     color: $hover-font-color;
+                }
+                            
+                &.dropdown-toggle {
+                    display: none;
                 }
             }
             
