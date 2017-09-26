@@ -1,5 +1,5 @@
 <#--
-    article_list.ftl: Display a list of statements in a scrollview-carousel.
+    article_list.ftl: Display a set of articles in a reloadable list.
     
     Created:    2017-09-14 16:23 by Christian Berndt
     Modified:   2017-09-14 16:23 by Christian Berndt
