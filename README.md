@@ -14,7 +14,7 @@ Liferay IDE 3.1.1 GA2 from https://sourceforge.net/projects/lportal/files/Lifera
 1. `git clone https://github.com/inofix/de-flussbad-berlin-theme.git`
 1. `cd de-flussbad-berlin-theme`
 1. `gradle war`
-1. The deployable WAR is found at $WORKSPACE/wars/de-flussbad-berlin-theme/build/libs/de-flussbad-berlin-theme.war
+1. The deployable WAR is found at **$WORKSPACE/wars/de-flussbad-berlin-theme/build/libs/de-flussbad-berlin-theme.war**
 
 ## How To Deploy
 
