@@ -3,15 +3,14 @@
 
     Created:    2017-09-12 19:34 by Christian Berndt
     Modified:   2017-09-19 15:53 by Christian Berndt
-    Version:    0.2.1
+    Version:    0.2.2
 */
 
 
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    
-            
+         
     .button {
     
         padding-bottom: 120px;
@@ -19,7 +18,7 @@
     }
     
     .events-small {
-            
+                
         h2 {
             display: inline-block;
             
@@ -28,7 +27,7 @@
             }
         }
     }
-    
+        
     #footer {
     
         .boxes {
@@ -53,6 +52,8 @@
     
     .intro {
     
+        padding: 2em 0 6em;
+    
         .keyvisual {
         
             display: block;
@@ -62,7 +63,15 @@
             
                 display: block;
                 
+                h1 {
+                    font-size: 42px;
+                }
+                
             }
+        }
+        
+        &.with-image {
+            padding: 0 0 6em;
         }
     } 
     
@@ -99,7 +108,15 @@
             float: right;
             margin-right: 0;
         }
-    } 
+    }
+
+    .portlet-asset-publisher {
+        .statements {
+            .carousel-inner {
+                min-height: 720px;
+            }
+        }
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
