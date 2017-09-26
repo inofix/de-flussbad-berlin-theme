@@ -8,10 +8,12 @@ Liferay IDE 3.1.1 GA2 from https://sourceforge.net/projects/lportal/files/Lifera
 
 ## How To Build
 
+1. Install blade: `curl https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/installers/local | sh`
+1. Create a liferay workspace: `WORKSPACE=my-workspace; blade init $WORKSPACE`
 1. `cd $WORKSPACE/wars`
 1. `git clone https://github.com/inofix/de-flussbad-berlin-theme.git`
 1. `cd de-flussbad-berlin-theme`
-1. `TODO
+1. `gradle war`
 
 ## How To Deploy
 
