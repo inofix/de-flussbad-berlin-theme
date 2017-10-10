@@ -16,7 +16,7 @@
                         "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_EVENTS",
                         "portletPreferences": {
                             "anyAssetType": "29701",                      
-                            "anyClassTypeJournalArticleAssetRendererFactory" : "47455",
+                            "anyClassTypeJournalArticleAssetRendererFactory" : "85403",
                             "displayStyle": "ddmTemplate_EVENT_LIST_SMALL-7.0.3",
                             "groupId": "${groupId}"
                         }
@@ -52,20 +52,12 @@
         },
         {
             "columns": [
-                [
-                    {
-                        "portletId": "com_liferay_asset_categories_navigation_web_portlet_AssetCategoriesNavigationPortlet",
-                        "portletPreferences": {
-                            "displayStyle" : "ddmTemplate_BUTTONS-7.0.3",
-                            "groupId": "${groupId}"
-                        }
-                    },                
+                [               
                     {
                         "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_LOGBOOK",
                         "portletPreferences": {
                             "anyAssetType": "29701",
-                            "anyClassTypeJournalArticleAssetRendererFactory" : "47455",
-                            "displayStyle" : "ddmTemplate_LOGBOOK-7.0.3",
+                            "displayStyle" : "ddmTemplate_ARTICLE_LIST-7.0.3",
                             "groupId": "${groupId}"
                         }
                     }                                   
