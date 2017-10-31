@@ -2,8 +2,8 @@
     buttons.ftl: a buttons style for the site-map portlet.
     
     Created:    2017-04-16 14:53 by Christian Berndt
-    Modified:   2017-10-31 19:10 by Christian Berndt
-    Version:    1.0.2
+    Modified:   2017-10-31 23:01 by Christian Berndt
+    Version:    1.0.3
 -->
 
 <#-- Loop over the configured layouts -->
@@ -11,7 +11,7 @@
     <div class="buttons wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-4">
+                <div class="col-lg-8 col-lg-offset-4">
                     <ul>
                     <#list entries as curLayout>
                     
