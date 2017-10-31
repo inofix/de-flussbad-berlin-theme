@@ -3,7 +3,7 @@
 
     Created:    2017-09-12 19:34 by Christian Berndt
     Modified:   2017-10-10 18:08 by Christian Berndt
-    Version:    0.2.3
+    Version:    0.2.4
 */
 
 
@@ -53,7 +53,7 @@
     .intro {
     
         padding: 2em 0 6em;
-    
+
         .keyvisual {
         
             display: block;
@@ -112,6 +112,16 @@
 
     .portlet-asset-publisher {
         .statements {
+        
+            .author {
+                padding: 0 8.54701%;
+            }
+               
+            blockquote {
+                font-size: $h1-font-size ! important;
+                padding: 0 8.54701% 1em ! important;
+            }
+            
             .carousel-inner {
                 min-height: 720px;
             }
@@ -228,18 +238,6 @@
                 line-height: $lead-line-height;        
             }
         } 
-        
-        .statements {
-        
-            .author {
-                padding: 0 8.54701%;
-            }
-               
-            blockquote {
-                font-size: $h1-font-size ! important;
-                padding: 0 8.54701% 1em ! important;
-            }
-        }   
     }
 }
 

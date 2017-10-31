@@ -2,8 +2,8 @@
     _adt.scss: Configuration of application display templates of the flussbad-theme
 
     Created:    2017-09-13 19:02 by Christian Berndt
-    Modified:   2017-10-10 16:10 by Christian Berndt
-    Version:    0.1.5
+    Modified:   2017-10-31 15:22 by Christian Berndt
+    Version:    0.1.6
 */
 
 @import "custom_mixins";
@@ -180,6 +180,10 @@
         
             background-color: $color-gray-green;
             color: white;
+            
+            blockquote {
+                background-color: $color-gray-green;
+            }
                         
             .item {
             

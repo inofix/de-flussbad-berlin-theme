@@ -2,8 +2,8 @@
     intro.ftl: Format the intro structure
     
     Created:    2015-08-28 17:52 by Christian Berndt
-    Modified:   2017-09-16 15:28 by Christian Berndt
-    Version:    1.1.4
+    Modified:   2017-10-31 18:43 by Christian Berndt
+    Version:    1.1.5
     
     Please note: Although this template is stored in the 
     site's context it's source is managed via git. Whenever you 
@@ -143,7 +143,7 @@
         </#if>
         
         <#if caption.getSiblings()?has_content>
-            <div class="row">
+            <div class="row align-items-stretch">
                 <@print_abstracts caption />
             </div>        
         </#if> 
