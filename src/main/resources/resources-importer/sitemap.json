@@ -39,7 +39,7 @@
                         "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_STATEMENTS",
                         "portletPreferences": {
                             "anyAssetType": "29701",
-                            "anyClassTypeJournalArticleAssetRendererFactory" : "47525",
+                            "anyClassTypeJournalArticleAssetRendererFactory" : "47612",
                             "displayStyle": "ddmTemplate_STATEMENTS-7.0.3",
                             "groupId": "${groupId}"
                         }
