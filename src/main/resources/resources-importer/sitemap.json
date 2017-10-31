@@ -69,7 +69,15 @@
         },
         {
             "columns": [
+            
                 [
+                    {
+                        "portletId": "com_liferay_site_navigation_site_map_web_portlet_SiteNavigationSiteMapPortlet",
+                        "portletPreferences": {
+                            "displayStyle": "ddmTemplate_BUTTONS-7.0.3",
+                            "groupId": "${groupId}"
+                        }
+                    },
                     {
                         "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
                         "portletPreferences": {

@@ -2,8 +2,8 @@
     _mixins.scss: mixins used by the flussbad-theme
 
     Created:    2017-09-13 22:16 by Christian Berndt
-    Modified:   2017-09-19 18:16 by Christian Berndt
-    Version:    1.0.2
+    Modified:   2017-10-31 19:34 by Christian Berndt
+    Version:    1.0.3
 */
 
 @import "variables";
@@ -44,6 +44,29 @@
        margin-left: -23px;
        width: 23px;
     }
+}
+
+@mixin filter-item() {
+    
+    color: $navigation-font-color;
+    padding: 5px 30px;
+    border: 1px solid $navigation-font-color; 
+    font-size: $default-font-size;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-wide;
+    margin-right: 15px;
+    
+    &:hover {
+    
+        color: $hover-font-color;
+        border: 1px solid $hover-font-color;
+    }
+}
+
+@mixin filter-item-selected() {
+    
+    border: 1px solid white; 
+    background: white;
 }
 
 @mixin rotate($degree) {

@@ -2,8 +2,8 @@
     _responsive.scss: responsive configuration of the flussbad-theme
 
     Created:    2017-09-12 19:34 by Christian Berndt
-    Modified:   2017-10-10 18:08 by Christian Berndt
-    Version:    0.2.4
+    Modified:   2017-10-31 22:14 by Christian Berndt
+    Version:    0.2.5
 */
 
 
@@ -126,6 +126,31 @@
                 min-height: 720px;
             }
         }
+    }
+    
+    .portlet-site-map {
+        .buttons {
+            ul {
+            
+                float: left; 
+                padding-left: 0; 
+                
+                li {
+                
+                    display: inline;
+                    float: left; 
+
+                }
+            }       
+        }
+        
+        .toggle {
+        
+            .toggle-button {
+                
+                @include rotate(45deg);             
+            }  
+        } 
     }
 }
 
