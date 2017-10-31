@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-09-07 11:27 by Christian Berndt
-    Modified:   2017-09-18 18:09 by Christian Berndt
-    Version:    1.0.4
+    Modified:   2017-10-30 21:54 by Christian Berndt
+    Version:    1.0.5
 -->
 
 <#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
@@ -18,7 +18,7 @@
     <#assign home_url = httpUtil.addParameter(home_url, "doAsUserId", do_as_user_id) />
 </#if>
 
-<nav class="${nav_css_class} navbar navbar-default" id="navigation" role="navigation">
+<nav class="${nav_css_class} navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-navigation" aria-expanded="false">
