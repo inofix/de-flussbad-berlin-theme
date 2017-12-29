@@ -16,7 +16,7 @@
                         "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_EVENTS",
                         "portletPreferences": {
                             "anyAssetType": "29901",                      
-                            "anyClassTypeJournalArticleAssetRendererFactory" : "85403",
+                            "anyClassTypeJournalArticleAssetRendererFactory" : "30476",
                             "displayStyle": "ddmTemplate_EVENT_LIST_SMALL-7.0.4",
                             "groupId": "${groupId}"
                         }
