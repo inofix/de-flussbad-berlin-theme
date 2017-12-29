@@ -2,8 +2,8 @@
     _custom.scss: main config of the flussbad-theme
 
     Created:    2017-09-07 16:32 by Christian Berndt
-    Modified:   2017-10-31 22:13 by Christian Berndt
-    Version:    1.1.5
+    Modified:   2017-12-29 21:28 by Christian Berndt
+    Version:    1.1.6
 */
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
 
@@ -104,16 +104,16 @@ h1,h2,h3,h4,h5,h6,strong {
     }
 }
 
-.signed-in {
-    
-    #banner {
-        margin-top: 65px;
-    }  
+.signed-in { 
     
     &.controls-visible {
         .portlet-asset-publisher {
             margin-top: 50px;
         }
+    }
+    
+    #navigation {
+        margin-top: 50px;
     }
     
     .portlet {

@@ -2,8 +2,8 @@
     _responsive.scss: responsive configuration of the flussbad-theme
 
     Created:    2017-09-12 19:34 by Christian Berndt
-    Modified:   2017-10-31 23:04 by Christian Berndt
-    Version:    0.2.6
+    Modified:   2017-12-29 21:38 by Christian Berndt
+    Version:    0.2.7
 */
 
 
@@ -151,6 +151,13 @@
                 @include rotate(45deg);             
             }  
         } 
+    }
+    
+    .signed-in {
+        
+        #navigation {
+            margin-top: 65px;
+        }
     }
 }
 
