@@ -32,11 +32,13 @@ Make sure you have configured the required thumbnail-sizes in portal-ext.propert
 
 By default, the serviceLocator is disabled in the portal. In order to activate the serviceLocator go to: 
 
+<pre>
  Control Panel -> Configuration -> System Settings 
  Search: Freemarker
  Choose: Freemarker Engine
  Remove: serviceLocator from restricted variables.
- 
+</pre>
+
 Restart the server.
 
 ## How To Contribute
