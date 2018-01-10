@@ -15,8 +15,6 @@
                     {
                         "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_EVENTS",
                         "portletPreferences": {
-                            "anyAssetType": "29901",                      
-                            "anyClassTypeJournalArticleAssetRendererFactory" : "30476",
                             "displayStyle": "ddmTemplate_EVENT_LIST_SMALL-7.0.4",
                             "groupId": "${groupId}"
                         }
@@ -38,8 +36,6 @@
                     {
                         "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_STATEMENTS",
                         "portletPreferences": {
-                            "anyAssetType": "29901",
-                            "anyClassTypeJournalArticleAssetRendererFactory" : "47612",
                             "displayStyle": "ddmTemplate_STATEMENTS-7.0.4",
                             "groupId": "${groupId}"
                         }
@@ -56,7 +52,6 @@
                     {
                         "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_LOGBOOK",
                         "portletPreferences": {
-                            "anyAssetType": "29901",
                             "displayStyle" : "ddmTemplate_ARTICLE_LIST-7.0.4",
                             "groupId": "${groupId}"
                         }
@@ -135,8 +130,6 @@
                             {
                                 "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_EVENTS",
                                 "portletPreferences": {
-                                    "anyAssetType": "29901",
-                                    "anyClassTypeJournalArticleAssetRendererFactory" : "134803",                   
                                     "displayStyle" : "ddmTemplate_EVENT_LIST-7.0.4",
                                     "groupId": "${groupId}"
                                 }
@@ -160,8 +153,6 @@
                             {
                                 "portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_PRESS_RELEASES",
                                 "portletPreferences": {
-                                    "anyAssetType": "29901",
-                                    "anyClassTypeJournalArticleAssetRendererFactory" : "47510",
                                     "displayStyle" : "ddmTemplate_PRESS_RELEASES-7.0.4",
                                     "groupId": "${groupId}"
                                 }
