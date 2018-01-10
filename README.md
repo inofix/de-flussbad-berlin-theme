@@ -30,6 +30,15 @@ Make sure you have configured the required thumbnail-sizes in portal-ext.propert
   dl.file.entry.thumbnail.custom2.max.width=1440
 </pre>
 
+By default, the serviceLocator is disabled in the portal. In order to activate the serviceLocator go to: 
+
+ Control Panel -> Configuration -> System Settings 
+ Search: Freemarker
+ Choose: Freemarker Engine
+ Remove: serviceLocator from restricted variables.
+ 
+Restart the server.
+
 ## How To Contribute
 
 1. Fork this repository to your individual github account.
