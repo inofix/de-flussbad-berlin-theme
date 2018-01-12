@@ -2,8 +2,8 @@
     video.ftl: Format the video structure
 
     Created:    2016-04-06 21:32 by Christian Berndt
-    Modified:   2016-04-14 13:43 by Christian Berndt
-    Version:    1.0.2
+    Modified:   2018-01-12 15:10 by Christian Berndt
+    Version:    1.0.3
 
     Please note: Although this template is stored in the
     site's context it's source is managed via git. Whenever you
@@ -50,10 +50,7 @@
     
     <#assign layout_url = prefix + layout.friendlyURL />
     
-    <div style="margin-top: 100px;">
-    	video.ftl v.1
-    </div>
-    
+    <div>video.ftl</div>
     
     <#if displayFullscreen>
         <div id="${namespace}_video">&nbsp;</div>
