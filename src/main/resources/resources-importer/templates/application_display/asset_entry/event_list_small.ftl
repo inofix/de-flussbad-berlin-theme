@@ -2,8 +2,8 @@
     event_list_small.ftl: Display a small list of events.
     
     Created:    2017-09-14 16:23 by Christian Berndt
-    Modified:   2017-09-19 00:29 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2018-01-12 15:24 by Christian Berndt
+    Version:    1.0.2
 -->
 
 <#assign journalArticleService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService")>
@@ -45,7 +45,7 @@
                         </div>
     
                     <#else>
-                        <span class="alert alert-danger"><strong>${curEntry.className}</strong> is not supported by the event_list_small display template.</alert>
+                        <span class="alert alert-danger"><strong>${curEntry.className}</strong> is not supported by the event_list_small display template.</span>
                     </#if>
                 </div>
             </#list>
