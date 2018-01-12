@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<root available-locales="de_DE" default-locale="de_DE">
+	<dynamic-element name="service" type="list" index-type="keyword" index="0">
+		<dynamic-content language-id="de_DE"><![CDATA[https://vimeo.com/api/oembed.json?url=]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="url" type="text" index-type="keyword" index="0">
+		<dynamic-content language-id="de_DE"><![CDATA[http://www.vimeo.com/189642401]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="fullscreen" type="boolean" index-type="keyword" index="0">
+		<dynamic-content language-id="de_DE"><![CDATA[true]]></dynamic-content>
+	</dynamic-element>
+</root>
