@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root available-locales="de_DE" default-locale="de_DE">
+	<dynamic-element name="headline" type="text" index-type="keyword" index="0">
+		<dynamic-content language-id="de_DE"><![CDATA[Das Projekt Flussbad Berlin]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="keyVisual" type="document_library" index-type="keyword" index="0">
+		<dynamic-content language-id="de_DE"><![CDATA[[$FILE=intro_welcome.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="teaser" type="text_box" index-type="keyword" index="0">
+		<dynamic-content language-id="de_DE"><![CDATA[„Flussbad Berlin“ ist ein Stadtentwicklungsprojekt zur Reaktivierung des seit über 100 Jahren weitgehend ungenutzten Spreekanals im Herzen des historischen Berlins. Das Projekt gliedert den Spreekanal in drei Abschnitte unterschiedlicher Nutzung, Atmosphäre und Funktion.]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="showToc" type="boolean" index-type="keyword" index="0">
+		<dynamic-content language-id="de_DE"><![CDATA[true]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="showRelatedAssets" type="boolean" index-type="keyword" index="0">
+		<dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="section" type="text" index-type="keyword" index="0">
+		<dynamic-element name="label" index="0" type="text" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="body" index="0" type="text_area" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[<p>Der an der Fischerinsel gelegene Kanalabschnitt soll, ähnlich einem Altarm, zu einer ökologischen Regenerationszone umgestaltet werden. Die uferbegleitenden Flachwasserzonen sollen Lebens- und Reproduktionsräume für Flora und Fauna schaffen. Dies ist ein Beitrag zur Verbesserung des ökologischen Zustands des Gewässers, der europäischen Zielsetzungen entspricht. Durch punktuelle Entfernungen der Kanalmauer sollen begrünte Bereiche mit flachen Uferböschungen entstehen, die als historisches Fenster die im Boden verborgene Stadtmauer Berlins freilegen. Ein neuer Steg auf Wasserniveau lädt zur Erkundung des Kanals ein.</p>]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="imageAboveTheText" index="0" type="boolean" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[true]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="image" index="0" type="document_library" index-type="keyword">
+			<dynamic-element name="caption" index="0" type="text_box" index-type="keyword">
+				<dynamic-content language-id="de_DE"><![CDATA[Isometrie des Bereichs des renaturierten Flussarms, cc realities:united 2015]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-content language-id="de_DE"><![CDATA[[$FILE=intro_welcome.jpg$]]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="service" index="0" type="list" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[http://www.youtube.com/oembed?url=]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="url" index="0" type="text" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content language-id="de_DE"><![CDATA[Naturnaher Flusslauf]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="section" type="text" index-type="keyword" index="1">
+		<dynamic-element name="label" index="1" type="text" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="body" index="1" type="text_area" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[<p>Zwischen Gertraudenbrücke und Auswärtigem Amt soll ein ökologischer Pflanzenfilter das hindurchfließende Spreewasser reinigen, welches im Wesentlichen durch gelegentliche Einleitungen aus der Mischwasserkanalisation verunreinigt wird. Das Wasser strömt auf einer Länge von etwa 400 Metern durch eine mit Wasserpflanzen bestandene Kiesschicht. In dieser Passage findet eine mikrobiologische Reinigung statt, so dass anschließend gefahrlos im Wasser geschwommen werden kann. Dieser kontinuierliche Prozess wird allein von der Schwerkraft angetrieben, denn das gefilterte Wasser fließt in den circa eineinhalb Meter tiefer liegenden Schwimmbereich.</p>]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="imageAboveTheText" index="1" type="boolean" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[true]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="image" index="1" type="document_library" index-type="keyword">
+			<dynamic-element name="caption" index="1" type="text_box" index-type="keyword">
+				<dynamic-content language-id="de_DE"><![CDATA[Isometrie des Natürlichen Wasserfilters an der Friedrichsgracht, cc realities:united 2015]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-content language-id="de_DE"><![CDATA[[$FILE=intro_welcome.jpg$]]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="service" index="1" type="list" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[http://www.youtube.com/oembed?url=]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="url" index="1" type="text" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content language-id="de_DE"><![CDATA[Natürlicher Wasserfilter]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="section" type="text" index-type="keyword" index="2">
+		<dynamic-element name="label" index="2" type="text" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="body" index="2" type="text_area" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[<p>Entlang der Museumsinsel soll sich ein 835 Meter langer Kanalabschnitt mit sauberem Flusswasser erstrecken, dies entspricht einer Wasserfläche von 23.700 m<sup>2</sup>. Diese bisher weitgehend ungenutzte Fläche soll als natürliche Ressource inmitten der Stadt über großzügige Freitreppen, z.B. am Lustgarten oder am Humboldt Forum, zugänglich gemacht werden. Ein neuer öffentlicher Raum lädt zur Begegnung, zum Verweilen oder zum Schwimmen im sauberen Wasser in die Stadtmitte ein. Die alltägliche und sinnliche Erfahrung erlaubt eine neue Perspektive auf die historische Stadt und schafft eine neue Ebene der Nutzung, Wahrnehmung und Bedeutung für die zunehmend repräsentativ geprägte historische Mitte. So wird die kulturelle und gesellschaftliche Bedeutung und Attraktivität gesteigert und nachhaltig gesichert.</p>]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="imageAboveTheText" index="2" type="boolean" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[true]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="image" index="2" type="document_library" index-type="keyword">
+			<dynamic-element name="caption" index="2" type="text_box" index-type="keyword">
+				<dynamic-content language-id="de_DE"><![CDATA[Isometrie an der Museumsinsel, cc realities:united, 2015]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-content language-id="de_DE"><![CDATA[[$FILE=intro_welcome.jpg$]]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="service" index="2" type="list" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[http://www.youtube.com/oembed?url=]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="url" index="2" type="text" index-type="keyword">
+			<dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content language-id="de_DE"><![CDATA[Schwimmbereich]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="tags" type="text" index-type="keyword" index="0">
+		<dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="showDownload" type="boolean" index-type="keyword" index="0">
+		<dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+</root>
