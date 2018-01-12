@@ -104,10 +104,10 @@
                     {
                         "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
                         "portletPreferences": {
-                            "articleId": "logos_supporters.xml",
+                            "articleId": "video_about_us.xml",
                             "groupId": "${groupId}"
                         }
-                    }                                    
+                    }                                                       
                 ]
             ],
             "friendlyURL": "/about",
