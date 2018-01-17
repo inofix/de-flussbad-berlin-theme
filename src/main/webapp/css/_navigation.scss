@@ -2,8 +2,8 @@
     _navigation.scss: main-navigation of the flussbad-theme.
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-10-31 23:04 by Christian Berndt
-    Version:    1.1.1
+    Modified:   2018-01-17 11:59 by Christian Berndt
+    Version:    1.1.2
 */
 
 @import "variables";
@@ -13,7 +13,7 @@
     background-color: $color-turquois;    
     font-family: $bold-font-family;
     font-weight: normal;
-/*     opacity: 0.95; */
+    opacity: 0.95;
     min-height: $nav-height; 
     text-transform: uppercase;
     width: 100%;
@@ -45,10 +45,17 @@
                         line-height: 20px;
                         
                         &.dropdown-toggle {
+                        
                             cursor: pointer;    
                             display: inline-block;                            
-                            padding-bottom: 20px;
-                            padding-top: 20px; 
+                            padding-bottom: 22px;
+                            padding-top: 18px; 
+                            padding-left: 5px; 
+                            padding-right: 5px;
+                                                                
+                            .icon-globe {
+                                font-size: $button-font-size;
+                            }
                         }
                         
                         &:hover {
@@ -98,13 +105,6 @@
                                 }
                             }  
                         }             
-                    }
-                    
-                    .dropdown-toggle {
-                    
-                        padding-left: 15px; 
-                        padding-right: 15px;
-
                     }        
                 
                     > span {
