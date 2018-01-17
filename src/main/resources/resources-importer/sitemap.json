@@ -76,7 +76,7 @@
                     {
                         "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
                         "portletPreferences": {
-                            "articleId": "intro_about.xml",
+                            "articleId": "article_project.xml",
                             "groupId": "${groupId}"
                         }
                     }                                    
