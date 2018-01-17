@@ -2,13 +2,15 @@
     buttons.ftl: a buttons style for the site-map portlet.
     
     Created:    2017-04-16 14:53 by Christian Berndt
-    Modified:   2017-10-31 23:01 by Christian Berndt
-    Version:    1.0.3
+    Modified:   2018-01-17 15:50 by Christian Berndt
+    Version:    1.0.4
 -->
+
+<#assign namespace = renderResponse.getNamespace()!'undefined'>
 
 <#-- Loop over the configured layouts -->
 <#if entries?has_content>
-    <div class="buttons wrapper">
+    <div class="buttons wrapper collapse" id="${namespace}buttons">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-4">
@@ -38,6 +40,8 @@
     </div>
     
     <div class="toggle">
-        <div class="toggle-button">+</div>
+        <a class="toggle-button collapsed" role="button" data-toggle="collapse" href="#${namespace}buttons" aria-expanded="false" aria-controls="${namespace}buttons">
+          +
+        </a>
     </div>
 </#if>
