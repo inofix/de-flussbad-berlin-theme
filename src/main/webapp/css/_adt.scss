@@ -2,8 +2,8 @@
     _adt.scss: Configuration of application display templates of the flussbad-theme
 
     Created:    2017-09-13 19:02 by Christian Berndt
-    Modified:   2018-01-17 13:38 by Christian Berndt
-    Version:    0.1.8
+    Modified:   2018-01-17 16:32 by Christian Berndt
+    Version:    0.1.9
 */
 
 @import "custom_mixins";
@@ -257,31 +257,38 @@
         color: $navigation-font-color;
         cursor: pointer;                     
         font-family: $regular-font-family;
-        font-size: $h2-font-size;
-        padding: 17.5px 25px;
+        font-size: 28px;
+        padding: 15px 25px;
         position: fixed; 
         right: 0; 
         top: $nav-height;
         z-index: 100;
         
         .toggle-button {
-    
-          -webkit-transition: -webkit-transform 0.2s ease-in-out;
-             -moz-transition: -moz-transform 0.2s ease-in-out;
-               -o-transition: -o-transform 0.2s ease-in-out;  
-                  transition: 0.2s ease-in-out;
             
-            @include rotate(0);             
+            display: block;
+            
+            -webkit-transition: -webkit-transform 0.2s ease-in-out;
+            -moz-transition: -moz-transform 0.2s ease-in-out;
+            -o-transition: -o-transform 0.2s ease-in-out;  
+            transition: 0.2s ease-in-out;
+                  
+            @include rotate(45deg);                         
+            
+            &.collapsed {
+                @include rotate(0);             
+            }
         }      
         
-        &.manually--closed .toggle-button,
-        &.headroom--unpinned .toggle-button {
-          -webkit-transition: -webkit-transform 0.2s ease-in-out;
-             -moz-transition: -moz-transform 0.2s ease-in-out;
-               -o-transition: -o-transform 0.2s ease-in-out;  
-                  transition: 0.2s ease-in-out;
+/*         &.collapsed, */
+/*         &.manually--closed .toggle-button, */
+/*         &.headroom--unpinned .toggle-button { */
+/*           -webkit-transition: -webkit-transform 0.2s ease-in-out; */
+/*              -moz-transition: -moz-transform 0.2s ease-in-out; */
+/*                -o-transition: -o-transform 0.2s ease-in-out;   */
+/*                   transition: 0.2s ease-in-out; */
 
-            @include rotate(0deg);
-        }      
+/*             @include rotate(0deg); */
+/*         }       */
     }   
 }
