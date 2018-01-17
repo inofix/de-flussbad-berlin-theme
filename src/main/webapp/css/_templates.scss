@@ -3,8 +3,8 @@
     of the flussbad-theme.
 
     Created:    2017-09-07 17:21 by Christian Berndt
-    Modified:   2017-09-19 16:35 by Christian Berndt
-    Version:    1.0.8
+    Modified:   2018-01-17 12:31 by Christian Berndt
+    Version:    1.0.9
 */
 
 @import "custom_mixins";
@@ -81,7 +81,7 @@ h3 {
     
     .keyvisual {
     
-        height: 80vh;
+        height: 100vh;
         
         @include background-cover(); 
         
