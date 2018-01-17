@@ -3,15 +3,15 @@
     of the flussbad-theme.
 
     Created:    2017-09-07 17:21 by Christian Berndt
-    Modified:   2018-01-17 12:31 by Christian Berndt
-    Version:    1.0.9
+    Modified:   2018-01-17 15:18 by Christian Berndt
+    Version:    1.1.0
 */
 
 @import "custom_mixins";
 @import "variables";
 
 h3 {
-    font-size: 14px;
+    font-size: $h3-font-size;
     letter-spacing: .1em;
     text-transform: uppercase;
 }
@@ -50,16 +50,18 @@ h3 {
     
     margin-left: -15px;
     margin-right: -15px;
+    padding-bottom: 1em;
     text-align: center;
     
     .abstract {
     
         margin-bottom: 1em;
-        padding: 0 15px 30px 15px;
+        padding: 0 15px 30px;
       
     }
     
     .btn-default {
+    
         border: 2px solid $navigation-font-color; 
         border-radius: 2px;
         
@@ -77,6 +79,10 @@ h3 {
         &:hover {
             color: $hover-font-color;
         }
+    }
+    
+    h2 {
+        margin-bottom: 20px;
     }
     
     .keyvisual {
