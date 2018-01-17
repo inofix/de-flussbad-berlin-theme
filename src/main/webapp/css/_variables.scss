@@ -2,8 +2,8 @@
     _variables.scss: common variables of the flussbad-theme
 
     Created:    2017-09-07 16:16 by Christian Berndt
-    Modified:   2017-10-31 22:14 by Christian Berndt
-    Version:    1.0.3
+    Modified:   2018-01-17 12:52 by Christian Berndt
+    Version:    1.0.4
 */
 
 /** ------------- colors ------------- */
@@ -34,25 +34,24 @@ $medium-font-family: 'Apercu Pro Medium', Calibri, Roboto, sans-serif;
 $bold-font-family: 'Apercu Pro Bold', Calibri, Roboto, sans-serif;
 $light-font-family: 'Apercu Pro Light', Calibri, Roboto, sans-serif;
 
-$default-font-size: 16px;
+$default-font-size: 14px;
+/* $default-font-size: 16px; */
 $default-font-size-adjust:0.508;
-$default-line-height: 21px;
-$h1-font-size: 36px;
-$h1-line-height: 42px;
-$h2-font-size: 28px;
+$default-line-height: 19px;
+/* $default-line-height: 21px; */
+$h1-font-size: 32px;
+/* $h1-font-size: 36px; */
+$h1-line-height: 39px;
+/* $h1-line-height: 42px; */
+$h2-font-size: 24px;
+/* $h2-font-size: 28px; */
 $h2-line-height: 36px;
 $h3-font-size: $default-font-size;
-$lead-font-size: 21px; 
-$lead-line-height: 30px;
+$lead-font-size: 18px; 
+/* $lead-font-size: 21px;  */
+$lead-line-height: 28px;
+/* $lead-line-height: 30px; */
 $letter-spacing-wide: 0.1em;
 $small-font-size: 13px;
-
-$mobile-default-font-size: 14px;
-$mobile-default-line-height: 19px;
-$mobile-h1-font-size: 32px;
-$mobile-h1-line-height: 39px;
-$mobile-h2-font-size: 24px;
-$mobile-lead-font-size: 18px;
-$mobile-lead-line-height: 28px;
 
 $nav-height: 60px;
