@@ -2,8 +2,8 @@
     portal_normal.ftl: base template of the flussbad-theme.
     
     Created:    2017-09-07 10:57 by Christian Berndt
-    Modified:   2017-09-18 22:09 by Christian Berndt
-    Version:    1.0.4
+    Modified:   2018-01-17 12:13 by Christian Berndt
+    Version:    1.0.5
 -->
 
 <!DOCTYPE html>
@@ -16,6 +16,12 @@
 
 <#if full_width>
     <#assign wrapper_class = "container-fluid full-width"/>
+</#if>
+
+<#assign page_type = "default-page" />
+
+<#if nav_items[0].isSelected()>
+    <#assign page_type = "start-page"/>
 </#if>
 
 <html class="${root_css_class}" dir="<@liferay.language key="lang.dir" />" lang="${w3c_language_id}">
@@ -31,7 +37,7 @@
     
     </head>
 
-    <body class="${css_class}">
+    <body class="${css_class} ${page_type}">
     
     <@liferay_ui["quick-access"] contentId="#main-content" />
     
