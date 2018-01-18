@@ -2,8 +2,8 @@
     article.ftl: Format the article structure
 
     Created:    2015-08-28 17:50 by Christian Berndt
-    Modified:   2017-09-07 14:35 by Christian Berndt
-    Version:    1.4.6
+    Modified:   2018-01-18 15:10 by Christian Berndt
+    Version:    1.4.7
 
     Please note: Although this template is stored in the
     site's context it's source is managed via git. Whenever you
@@ -156,7 +156,7 @@
     <#assign assetRenderer = assetEntry.assetRenderer />
     <#assign className = assetRenderer.className />              
     
-    <#if "com.liferay.portlet.journal.model.JournalArticle" == className >
+    <#if "com.liferay.journal.model.JournalArticle" == className >
     
         <#assign docXml = saxReaderUtil.read(assetEntry.getAssetRenderer().getArticle().getContent()) />
         
@@ -169,7 +169,7 @@
                             
         </#if>
         
-    <#elseif "com.liferay.portlet.documentlibrary.model.DLFileEntry" == className >
+    <#elseif "com.liferay.document.library.kernel.model.DLFileEntry" == className >
 
         <#assign fileEntry = fileEntryService.getFileEntry(assetEntry.classPK) />
         
@@ -318,7 +318,7 @@
 </#macro>
 
 
-<!-- Modal slideshow -->
+<#-- Modal slideshow -->
 <div class="modal slideshow fade" id="modalSlideshow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -339,7 +339,7 @@
                                     <#assign assetRenderer = entry.assetRenderer />
                                     <#assign className = assetRenderer.className />              
                                 
-                                    <#if "com.liferay.portlet.journal.model.JournalArticle" == className >
+                                    <#if "com.liferay.journal.model.JournalArticle" == className >
                                                                             
                                         <#assign docXml = saxReaderUtil.read(entry.getAssetRenderer().getArticle().getContent()) />
                                         
@@ -364,7 +364,7 @@
                                             </div>
                                         </#if>
                                     
-                                    <#elseif "com.liferay.portlet.documentlibrary.model.DLFileEntry" == className >
+                                    <#elseif "com.liferay.document.library.kernel.model.DLFileEntry" == className >
                     
                                         <#assign fileEntry = fileEntryService.getFileEntry(entry.classPK) />                
                                         <#assign latestFileVersion = fileEntry.getFileVersion() />
@@ -399,280 +399,282 @@
     </div>
 </div>
 
-<div class="story ${cssClass}">
+<div class="article ${cssClass}">
     <#if hasKeyVisual>
         <div class="keyvisual" style="${style}"></div>
     </#if>
     <div class="container">
-        <#assign cssStyle = "content span8 offset2" />
-        
-        <#if displayToc >
-            <#assign cssStyle = "content span8" />       
-        </#if>  
-
-        <#if hasKeyVisual >
+        <div class="row">
+            <#assign cssStyle = "content col-md-8 col-md-offset-2" />
+            
             <#if displayToc >
-                <#assign cssStyle = "content span8 offset1" /> 
-            <#else>
-                <#assign cssStyle = "content span8 offset2" />             
+                <#assign cssStyle = "content col-md-8" />
+            </#if>  
+    
+            <#if hasKeyVisual >
+                <#if displayToc >
+                    <#assign cssStyle = "content col-md-8 col-md-offset-1" />
+                <#else>
+                    <#assign cssStyle = "content col-md-8 col-md-offset-2" />
+                </#if>      
             </#if>      
-        </#if>      
-
-        <div class="${cssStyle}">
+    
+            <div class="${cssStyle}">
+                    
+                <@categories_list categories/>
                 
-            <@categories_list categories/>
-            
-            <#if headline??>
-                <#if headline.getData()?has_content>
-                    <h1 id="section-0">${headline.getData()}</h1>
+                <#if headline??>
+                    <#if headline.getData()?has_content>
+                        <h1 id="section-0">${headline.getData()}</h1>
+                    </#if>
                 </#if>
-            </#if>
-            <p class="lead">${teaser.getData()}</p>
-            <#if section?? >
-                <#if section.getSiblings()?has_content>
-                    <#assign i = 1 />
-                    <#list section.getSiblings() as cur_section>
-                    
-                        <#assign imageAboveTheText = false />
+                <p class="lead">${teaser.getData()}</p>
+                <#if section?? >
+                    <#if section.getSiblings()?has_content>
+                        <#assign i = 1 />
+                        <#list section.getSiblings() as cur_section>
                         
-                        <#if cur_section.imageAboveTheText??>
-                            <#assign imageAboveTheText = getterUtil.getBoolean(cur_section.imageAboveTheText.getData()) />
-                        </#if>
-                    
-                        <#if cur_section.getData()?has_content || (cur_section.body?? && cur_section.body.getData()?has_content) >
+                            <#assign imageAboveTheText = false />
                             
-                            <div class="section" id="section-${i}">
-                            
-                                <#if cur_section.getData()?has_content>
-                                    <h2>${cur_section.getData()}</h2>
-                                </#if>
-                                
-                                <#if imageAboveTheText >
-                                
-                                    <@video cur_section/>
-                                    
-                                    <@images cur_section/>
-                                    
-                                    <#if cur_section.body??>
-                                        <#if cur_section.body.getData()?has_content>                                
-                                            <div class="section-body">${cur_section.body.getData()}</div>
-                                        </#if>
-                                    </#if>
-                                    
-                                <#else>
-     
-                                    <#if cur_section.body??>
-                                        <#if cur_section.body.getData()?has_content>                            
-                                            <div class="section-body">${cur_section.body.getData()}</div>
-                                        </#if>
-                                    </#if>
-                                    
-                                    <@video cur_section/>
-                                    
-                                    <@images cur_section/>
-                                                                  
-                                </#if>
-                                
-                            </div>
-                        </#if>
-                        <#assign i = i+1 />
-                    </#list>
-                </#if>
-            </#if>
-            
-            <#if filteredEntries?has_content>
-                <div class="template gallery media">
-                    <#assign i = 1 /> 
-                    
-                    <div class="row-fluid">          
-                        
-                    <#list filteredEntries as entry>
-                    
-                        <div class="span6">
-                    
-                        <#assign entry = entry />
-                        <#assign assetRenderer = entry.assetRenderer />
-                        <#assign className = assetRenderer.className />              
-                    
-                        <#if "com.liferay.portlet.journal.model.JournalArticle" == className >
-                                            
-                            <#assign docXml = saxReaderUtil.read(entry.getAssetRenderer().getArticle().getContent()) />
-                            
-                            <#assign service = value_of(docXml, "service", language_id) />
-                            <#assign url = value_of(docXml, "url", language_id) />
-                           
-                            <#assign viewURL = ""/>
-                            <#assign assetRenderer = entry.getAssetRenderer() />
-                            
-                            <#if url?has_content>
-                            
-                                <#assign config = "&format=json" />    
-                                <#assign embed_url = service + url + config />
-                                <#assign embed_url = httpUtil.encodeURL(embed_url) />
-                                                        
-                                <a href="javascript:;" data-toggle="modal" data-target="#modalSlideshow" data-index="${i}">
-                                
-                                    <div id="${namespace}_${i}_video_thumbnail" class="video-wrapper">
-                                        <#-- <span class="icon-youtube-play"></span> -->
-                                        <span class="icon icon-play-sign"></span>
-                                    </div>
-                                </a>
-                                                            
-                                <script>
-                                <!--       
-                                    var ${namespace}_${i}_oEmbedURL = "${layout_url}?p_p_id=proxyportlet_WAR_proxyportlet&p_p_lifecycle=2&_proxyportlet_WAR_proxyportlet_embedURL= ${embed_url}";
-                                                                                 
-                                    $( document ).ready(function() {            
-                                        ${namespace}_${i}_loadFrame();            
-                                    });
-                                    
-                                    function ${namespace}_${i}_loadFrame() {
-                                    
-                                        /**
-                                         * oEmbed
-                                         */
-                                        $.get( ${namespace}_${i}_oEmbedURL, function( str ) {
-        
-                                            var data = JSON.parse(str);
-                                            var html = data.html;
-                                            var provider_name = data.provider_name;
-                                            var thumbnail_url = data.thumbnail_url;
-                                            var title = data.title;
-                                                                                
-                                            var videoHeight = data.height; 
-                                            var videoWidth = data.width;
-                                                    
-                                            var scale = 0.9;
-                                            var buttonWidth = 40;
-                                                                                 
-                                            var boxWidth = $(window).width() * scale - buttonWidth;
-                                            var boxHeight = $(window).height() * scale; 
-                                            var boxRatio = boxWidth / boxHeight;                                   
-                                                                                 
-                                            // set the size of the embedded video iframes
-                                            var width = boxWidth;
-                                            var height = boxHeight;
-                                                                                                                       
-                                            // preserve the videos ratio 
-                                            var videoRatio = videoWidth / videoHeight;                                   
-                                            
-                                            if (videoRatio > boxRatio) {
-                                                width = boxWidth;
-                                                var ratio = videoWidth / boxWidth; 
-                                                height = videoHeight / ratio;
-                                            } else {
-                                                height = boxHeight;
-                                                var ratio = videoHeight / boxHeight; 
-                                                width = videoWidth / ratio;
-                                            }                                
-                                                                                
-                                            html = html.replace(videoWidth, width); 
-                                            html = html.replace(videoHeight, height);
-                                             
-                                            // load the thumbnail into the gallery
-                                            var style = 'background-image: url("' +  thumbnail_url + '");';                                                    
-                                            $("#${namespace}_${i}_video_thumbnail").attr("style", style);
-                                            
-                                            // insert the title as a caption after the video-wrapper
-                                            var caption = '<div class="caption">' + title + '</div>'; 
-                                            $(caption).insertAfter($("#${namespace}_${i}_video_thumbnail")); 
-                                            
-                                            // and load the video frame into the slider                 
-                                            $("#${namespace}_${i}_video").html(html);                  
-                                                 
-                                        });          
-                                    };        
-                                -->
-                                </script> 
-                            
-                            <#else>
-                                <div class="none">
-                                    Only structures of type "Video" can be displayed
-                                    in the Media Gallery.
-                                </div>
+                            <#if cur_section.imageAboveTheText??>
+                                <#assign imageAboveTheText = getterUtil.getBoolean(cur_section.imageAboveTheText.getData()) />
                             </#if>
                         
-                        <#elseif "com.liferay.portlet.documentlibrary.model.DLFileEntry" == className >
-                        
-                            <#assign fileEntry = fileEntryService.getFileEntry(entry.classPK) />
-                            <#assign latestFileVersion = fileEntry.getFileVersion() />
-                            <#assign latestFileVersionStatus = latestFileVersion.getStatus() />
-                            <#assign title = httpUtil.encodeURL(htmlUtil.unescape(latestFileVersion.getTitle())) />
-                        
-                            <#assign style = "background-image: url('/documents/" + groupId + "/" + fileEntry.folder.folderId + "/" + title + "?imageThumbnail=3');" /> 
-                            <#assign caption = latestFileVersion.getDescription() />  
-                            <#assign downloadURL = "/documents/" + groupId + "/" + fileEntry.folder.folderId + "/" + title + "?download=true" />            
-                                            
-                            <a href="javascript:;" data-toggle="modal" data-target="#modalSlideshow" data-index="${i}">
-                                <div class="image-wrapper" style="${style}">&nbsp;</div>                      
-                            </a>
-                            <#if caption?has_content >
-                                <span class="caption">${caption}</span>
-                            </#if>                              
-                            <#if displayDownload >
-                                <a href="${downloadURL}" title="<@liferay.language key="download" />" class="download"><span class="icon icon-download"></span></a>
-                            </#if>                  
-                                                
-                        <#else>
-                        
-                            <div class="none">This is neither a video nor a document.</div>
-                           
-                        </#if>
-                        
-                        </div> <#-- /.span6 -->           
-                        
-                        <#if i%2 == 0 && i gt 0 >
-                            </div>
-                            <div class="row-fluid">
-                        </#if>
-                        
-                        <#assign i = i+1 />                    
-            
-                    </#list>
-                    
-                    </div> <#-- / .row-fluid -->
-                    
-                </div> <#-- /.media -->
-            </#if>            
-            
-            <#-- Include the common social-media snippet -->   
-            <#--   TODO    
-            <#include "${templatesPath}/72079" />
-             --> 
-                          
-        </div> <#-- / .span8 -->
-        
-        <#if displayToc>
-            <#if hasKeyVisual >
-                <#assign cssClass = "span3" />
-            <#else>
-                <#assign cssClass = "span4" />            
-            </#if>
-        
-            <div class="${cssClass}">
-                <div class="toc">
-                    <ul class="nav nav-list">                        
-                        <#if section.getSiblings()?has_content>
-                            <#assign i = 1 />
-                            <#list section.getSiblings() as cur_section >
-                                <#assign label = cur_section.getData() />
-                                <#if cur_section.label??>
-                                    <#if cur_section.label.getData()?has_content>
-                                        <#assign label = cur_section.label.getData() /> 
+                            <#if cur_section.getData()?has_content || (cur_section.body?? && cur_section.body.getData()?has_content) >
+                                
+                                <div class="section" id="section-${i}">
+                                
+                                    <#if cur_section.getData()?has_content>
+                                        <h3>${cur_section.getData()}</h3>
                                     </#if>
+                                    
+                                    <#if imageAboveTheText >
+                                    
+                                        <@video cur_section/>
+                                        
+                                        <@images cur_section/>
+                                        
+                                        <#if cur_section.body??>
+                                            <#if cur_section.body.getData()?has_content>                                
+                                                <div class="section-body">${cur_section.body.getData()}</div>
+                                            </#if>
+                                        </#if>
+                                        
+                                    <#else>
+         
+                                        <#if cur_section.body??>
+                                            <#if cur_section.body.getData()?has_content>                            
+                                                <div class="section-body">${cur_section.body.getData()}</div>
+                                            </#if>
+                                        </#if>
+                                        
+                                        <@video cur_section/>
+                                        
+                                        <@images cur_section/>
+                                                                      
+                                    </#if>
+                                    
+                                </div>
+                            </#if>
+                            <#assign i = i+1 />
+                        </#list>
+                    </#if>
+                </#if>
+                
+                <#if filteredEntries?has_content>
+                    <div class="template gallery media">
+                        <#assign i = 1 /> 
+                        
+                        <div class="row-fluid">          
+                            
+                        <#list filteredEntries as entry>
+                        
+                            <div class="span6">
+                        
+                            <#assign entry = entry />
+                            <#assign assetRenderer = entry.assetRenderer />
+                            <#assign className = assetRenderer.className />              
+                        
+                            <#if "com.liferay.journal.model.JournalArticle" == className >
+                                                
+                                <#assign docXml = saxReaderUtil.read(entry.getAssetRenderer().getArticle().getContent()) />
+                                
+                                <#assign service = value_of(docXml, "service", language_id) />
+                                <#assign url = value_of(docXml, "url", language_id) />
+                               
+                                <#assign viewURL = ""/>
+                                <#assign assetRenderer = entry.getAssetRenderer() />
+                                
+                                <#if url?has_content>
+                                
+                                    <#assign config = "&format=json" />    
+                                    <#assign embed_url = service + url + config />
+                                    <#assign embed_url = httpUtil.encodeURL(embed_url) />
+                                                            
+                                    <a href="javascript:;" data-toggle="modal" data-target="#modalSlideshow" data-index="${i}">
+                                    
+                                        <div id="${namespace}_${i}_video_thumbnail" class="video-wrapper">
+                                            <#-- <span class="icon-youtube-play"></span> -->
+                                            <span class="icon icon-play-sign"></span>
+                                        </div>
+                                    </a>
+                                                                
+                                    <script>
+                                    <!--       
+                                        var ${namespace}_${i}_oEmbedURL = "${layout_url}?p_p_id=proxyportlet_WAR_proxyportlet&p_p_lifecycle=2&_proxyportlet_WAR_proxyportlet_embedURL= ${embed_url}";
+                                                                                     
+                                        $( document ).ready(function() {            
+                                            ${namespace}_${i}_loadFrame();            
+                                        });
+                                        
+                                        function ${namespace}_${i}_loadFrame() {
+                                        
+                                            /**
+                                             * oEmbed
+                                             */
+                                            $.get( ${namespace}_${i}_oEmbedURL, function( str ) {
+            
+                                                var data = JSON.parse(str);
+                                                var html = data.html;
+                                                var provider_name = data.provider_name;
+                                                var thumbnail_url = data.thumbnail_url;
+                                                var title = data.title;
+                                                                                    
+                                                var videoHeight = data.height; 
+                                                var videoWidth = data.width;
+                                                        
+                                                var scale = 0.9;
+                                                var buttonWidth = 40;
+                                                                                     
+                                                var boxWidth = $(window).width() * scale - buttonWidth;
+                                                var boxHeight = $(window).height() * scale; 
+                                                var boxRatio = boxWidth / boxHeight;                                   
+                                                                                     
+                                                // set the size of the embedded video iframes
+                                                var width = boxWidth;
+                                                var height = boxHeight;
+                                                                                                                           
+                                                // preserve the videos ratio 
+                                                var videoRatio = videoWidth / videoHeight;                                   
+                                                
+                                                if (videoRatio > boxRatio) {
+                                                    width = boxWidth;
+                                                    var ratio = videoWidth / boxWidth; 
+                                                    height = videoHeight / ratio;
+                                                } else {
+                                                    height = boxHeight;
+                                                    var ratio = videoHeight / boxHeight; 
+                                                    width = videoWidth / ratio;
+                                                }                                
+                                                                                    
+                                                html = html.replace(videoWidth, width); 
+                                                html = html.replace(videoHeight, height);
+                                                 
+                                                // load the thumbnail into the gallery
+                                                var style = 'background-image: url("' +  thumbnail_url + '");';                                                    
+                                                $("#${namespace}_${i}_video_thumbnail").attr("style", style);
+                                                
+                                                // insert the title as a caption after the video-wrapper
+                                                var caption = '<div class="caption">' + title + '</div>'; 
+                                                $(caption).insertAfter($("#${namespace}_${i}_video_thumbnail")); 
+                                                
+                                                // and load the video frame into the slider                 
+                                                $("#${namespace}_${i}_video").html(html);                  
+                                                     
+                                            });          
+                                        };        
+                                    -->
+                                    </script> 
+                                
+                                <#else>
+                                    <div class="none">
+                                        Only structures of type "Video" can be displayed
+                                        in the Media Gallery.
+                                    </div>
                                 </#if>
-                                <#if label?has_content >
-                                    <li class="">
-                                        <a href="#section-${i}">${label}</a>
-                                    </li>
-                                </#if>
-                                <#assign i = i+1 />
-                            </#list>
-                        </#if>
-                    </ul>
-                </div> <#-- / .toc -->
-            </div> <#-- / .span3 / 4 -->
-        </#if>
+                            
+                            <#elseif "com.liferay.document.library.kernel.model.DLFileEntry" == className >
+                            
+                                <#assign fileEntry = fileEntryService.getFileEntry(entry.classPK) />
+                                <#assign latestFileVersion = fileEntry.getFileVersion() />
+                                <#assign latestFileVersionStatus = latestFileVersion.getStatus() />
+                                <#assign title = httpUtil.encodeURL(htmlUtil.unescape(latestFileVersion.getTitle())) />
+                            
+                                <#assign style = "background-image: url('/documents/" + groupId + "/" + fileEntry.folder.folderId + "/" + title + "?imageThumbnail=3');" /> 
+                                <#assign caption = latestFileVersion.getDescription() />  
+                                <#assign downloadURL = "/documents/" + groupId + "/" + fileEntry.folder.folderId + "/" + title + "?download=true" />            
+                                                
+                                <a href="javascript:;" data-toggle="modal" data-target="#modalSlideshow" data-index="${i}">
+                                    <div class="image-wrapper" style="${style}">&nbsp;</div>                      
+                                </a>
+                                <#if caption?has_content >
+                                    <span class="caption">${caption}</span>
+                                </#if>                              
+                                <#if displayDownload >
+                                    <a href="${downloadURL}" title="<@liferay.language key="download" />" class="download"><span class="icon icon-download"></span></a>
+                                </#if>                  
+                                                    
+                            <#else>
+                            
+                                <div class="none">This is neither a video nor a document.</div>
+                               
+                            </#if>
+                            
+                            </div> <#-- /.span6 -->           
+                            
+                            <#if i%2 == 0 && i gt 0 >
+                                </div>
+                                <div class="row-fluid">
+                            </#if>
+                            
+                            <#assign i = i+1 />                    
+                
+                        </#list>
+                        
+                        </div> <#-- / .row-fluid -->
+                        
+                    </div> <#-- /.media -->
+                </#if>            
+                
+                <#-- Include the common social-media snippet -->   
+                <#--   TODO    
+                <#include "${templatesPath}/72079" />
+                 --> 
+                              
+            </div> <#-- / .span8 -->        
+
+            <#if displayToc>
+                <#if hasKeyVisual >
+                    <#assign cssClass = "col-md-3 hidden-xs hidden-sm" />
+                <#else>
+                    <#assign cssClass = "col-md-4 hidden-xs hidden-sm" />
+                </#if>
+            
+                <div class="${cssClass}">
+                    <div class="toc">
+                        <ul class="nav nav-list">                        
+                            <#if section.getSiblings()?has_content>
+                                <#assign i = 1 />
+                                <#list section.getSiblings() as cur_section >
+                                    <#assign label = cur_section.getData() />
+                                    <#if cur_section.label??>
+                                        <#if cur_section.label.getData()?has_content>
+                                            <#assign label = cur_section.label.getData() /> 
+                                        </#if>
+                                    </#if>
+                                    <#if label?has_content >
+                                        <li class="">
+                                            <a href="#section-${i}">${label}</a>
+                                        </li>
+                                    </#if>
+                                    <#assign i = i+1 />
+                                </#list>
+                            </#if>
+                        </ul>
+                    </div> <#-- / .toc -->
+                </div> <#-- / .span3 / 4 -->
+            </#if>
+        </div> <#-- / .row -->
     </div> <#-- / .container -->
     
     <#-- Related Assets -->
@@ -697,7 +699,7 @@
             
             <#assign className = portalUtil.getClassName(linkEntry.getClassNameId()) />
             
-            <#if "com.liferay.portlet.journal.model.JournalArticle" == className>
+            <#if "com.liferay.journal.model.JournalArticle" == className>
             
                 <#assign assetRenderer = linkEntry.assetRenderer />
                 <#assign linkArticle = assetRenderer.article />
@@ -729,7 +731,7 @@
         <#assign anyTag = false />
         <#assign assetTagNames = "" />
         <#assign assetCategoryIds = "" />
-        <#assign className = "com.liferay.portlet.journal.model.JournalArticle" />
+        <#assign className = "com.liferay.journal.model.JournalArticle" />
         <#assign title = "" />
         
         <#if categories?size gt 0>
@@ -785,7 +787,7 @@
                             
                             <#assign className = portalUtil.getClassName(linkEntry.getClassNameId()) />
                             
-                            <#if "com.liferay.portlet.journal.model.JournalArticle" == className>
+                            <#if "com.liferay.journal.model.JournalArticle" == className>
                             
                                 <#assign assetRenderer = linkEntry.assetRenderer />
                                 <#assign linkArticle = assetRenderer.article />
@@ -798,7 +800,7 @@
                                     <#assign viewURL = prefix + "/-/" + assetRenderer.urlTitle />
                                 </#if>
                                 
-                                <#assign categories = categoryService.getCategories("com.liferay.portlet.journal.model.JournalArticle", linkArticle.resourcePrimKey) />
+                                <#assign categories = categoryService.getCategories("com.liferay.journal.model.JournalArticle", linkArticle.resourcePrimKey) />
                                 
                                 <#if i lt 3>
     
@@ -838,7 +840,7 @@
                             
                             <#assign className = portalUtil.getClassName(linkEntry.getClassNameId()) />
                             
-                            <#if "com.liferay.portlet.journal.model.JournalArticle" == className>
+                            <#if "com.liferay.journal.model.JournalArticle" == className>
                             
                                 <#assign assetRenderer = linkEntry.assetRenderer />
                                 <#assign linkArticle = assetRenderer.article />
@@ -856,7 +858,7 @@
                                     <#assign viewURL = prefix + "/-/" + assetRenderer.urlTitle />
                                 </#if>
                                 
-                                <#assign categories = categoryService.getCategories("com.liferay.portlet.journal.model.JournalArticle", linkArticle.resourcePrimKey) />                        
+                                <#assign categories = categoryService.getCategories("com.liferay.journal.model.JournalArticle", linkArticle.resourcePrimKey) />                        
                             
                                 <#if i lt 3 && headline?has_content >
                                     <div class="asset-abstract">
