@@ -1694,21 +1694,21 @@ input {
     .introduction,
     .story {
     
-        .keyvisual {
-            width: 100%;
-            height: calc(100vh - #{$nav-height}) !important;
-            overflow: hidden;
+/*         .keyvisual { */
+/*             width: 100%; */
+/*             height: calc(100vh - #{$nav-height}) !important; */
+/*             overflow: hidden; */
             
-            @include background-cover();
-        }
+/*             @include background-cover(); */
+/*         } */
         
         &.with-keyvisual {
         
-            > .container {
-                margin-top: $container-push;
-                position: relative; 
-                z-index:2;
-            }
+/*             > .container { */
+/*                 margin-top: $container-push; */
+/*                 position: relative;  */
+/*                 z-index:2; */
+/*             } */
             
             .toc {
                              
@@ -1944,13 +1944,13 @@ input {
                         margin: 2em 0;
                     }
                     
-                    .caption {
+/*                     .caption { */
                     
-                        font-size: $small-font-size;
-                        color: $color-gray-green;
-                        margin-top: -1em;
-                        padding-bottom: 1em;
-                    }
+/*                         font-size: $small-font-size; */
+/*                         color: $color-gray-green; */
+/*                         margin-top: -1em; */
+/*                         padding-bottom: 1em; */
+/*                     } */
                     
                     .section-body {
                     

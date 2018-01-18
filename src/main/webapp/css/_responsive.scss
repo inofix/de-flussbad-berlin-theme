@@ -2,14 +2,38 @@
     _responsive.scss: responsive configuration of the flussbad-theme
 
     Created:    2017-09-12 19:34 by Christian Berndt
-    Modified:   2017-12-29 21:38 by Christian Berndt
-    Version:    0.2.7
+    Modified:   2018-01-18 15:24 by Christian Berndt
+    Version:    0.2.8
 */
 
 
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    
+    .article {
+    
+        .content {
+            padding: 40px 30px 30px;
+        }
+    
+        h1 {
+            font-size: $h1-sm-font-size;
+            line-height: $h1-sm-line-height;
+        }
+        
+        h2 {
+            font-size: $h2-sm-font-size;
+        }
+        
+        h3 {
+            font-size: $h3-sm-font-size;
+        }
+    }
+    
+    body {
+        font-size: $default-sm-font-size;
+    }
          
     .button {
     
@@ -92,16 +116,6 @@
                 }
             }
         }
-        
-        .navbar-nav {
-            > li {
-                float: none;
-            }
-            
-            &.navbar-right {
-                float: none ! important;
-            }
-        }
     
         .navbar-toggle {
             display: block;
@@ -111,6 +125,7 @@
     }
 
     .portlet-asset-publisher {
+    
         .statements {
         
             .author {
@@ -129,6 +144,7 @@
     }
     
     .portlet-site-map {
+    
         .buttons {
             ul {
             
@@ -147,6 +163,8 @@
         .toggle {
         
             .toggle-button {
+            
+                line-height: inherit !important;
                 
                 @include rotate(45deg);             
             }  
@@ -163,6 +181,12 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    
+    .article {
+        .content {
+            padding: 40px 0 30px;
+        }
+    }
     
     #footer {
     
@@ -188,10 +212,22 @@
             
                 display: inline-block;
                 float: right;
+                margin-left: 20px;
                 position: relative;
                 right: auto;
                 top: auto; 
                 
+                .portlet-language {
+                
+                    .portlet-body {
+            
+                        a {                           
+                            &.dropdown-toggle {                           
+                                padding-bottom: 18px;
+                            }
+                        }
+                    }
+                }          
             }
         }
     
@@ -235,7 +271,7 @@
                     display: inline-block;
                     
                     a {
-                        padding: 22px 10px 20px !important;
+                        padding: 21px 10px 20px !important;
                     }
                 } 
             }  
@@ -244,7 +280,7 @@
         &.navbar-default {
             .navbar-collapse {
                 li > a {
-                    padding: 20px 10px;
+                    padding: 20px 10px 19px;
                 }
             }
         }
