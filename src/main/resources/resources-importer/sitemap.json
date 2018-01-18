@@ -178,6 +178,22 @@
                     "friendlyURL": "/donate",
                     "name": "Donate",
                     "title": "Donate"
+                },
+                {
+                    "columns": [
+                        [
+                            {
+                                "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                                "portletPreferences": {
+                                    "articleId": "logos_supporters.xml",
+                                    "groupId": "${groupId}"
+                                }
+                            }                                    
+                        ]
+                    ],
+                    "friendlyURL": "/faq",
+                    "name": "FAQ",
+                    "title": "FAQ"
                 }
             
             ]
