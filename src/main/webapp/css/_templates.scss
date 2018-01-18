@@ -3,8 +3,8 @@
     of the flussbad-theme.
 
     Created:    2017-09-07 17:21 by Christian Berndt
-    Modified:   2018-01-17 15:18 by Christian Berndt
-    Version:    1.1.0
+    Modified:   2018-01-18 15:16 by Christian Berndt
+    Version:    1.1.1
 */
 
 @import "custom_mixins";
@@ -14,6 +14,52 @@ h3 {
     font-size: $h3-font-size;
     letter-spacing: .1em;
     text-transform: uppercase;
+}
+
+.article {
+    
+    margin-left: -15px;
+    margin-right: -15px;
+    
+    .caption {
+    
+        font-size: $small-font-size;
+        color: $color-gray-green;
+        margin-top: -1em;
+        padding-bottom: 1em;
+    }
+    
+    .content {
+        padding: 20px 15px 30px;
+    }
+    
+    h1 {
+        margin-bottom: 1em;
+    }
+    
+    .keyvisual {
+        width: 100%;
+        height: calc(100vh - #{$nav-height}) !important;
+        overflow: hidden;
+        
+        @include background-cover();
+    }
+    
+    &.with-keyvisual {
+    
+        > .container {
+            background-color: transparent;
+            margin-top: $container-push;
+            position: relative; 
+            z-index:2;
+            
+            .row {
+                background-color: #fff;
+                margin-left: 0; 
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 .button {
