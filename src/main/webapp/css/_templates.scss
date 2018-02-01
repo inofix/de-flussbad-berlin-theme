@@ -112,8 +112,8 @@ h3 {
         border-radius: 2px;
         
         color: $navigation-font-color;
-        font-size: 22px;
-        font-family: "Amatic SC",cursive;
+        font-size: $button-font-size;
+        font-family: $button-font-family;
         font-weight: 600;
         letter-spacing: 2.6px;
         text-transform: uppercase;
@@ -124,6 +124,7 @@ h3 {
         &:focus,
         &:hover {
             color: $hover-font-color;
+            border: 2px solid $hover-font-color;
         }
     }
     
@@ -150,7 +151,7 @@ h3 {
         background-color: $color-sand;
         
         .btn-default {
-            border-color: transparent;
+            background-color: transparent;
         }
         
         h2 {
