@@ -43,8 +43,14 @@
                 ]
             ],
             "friendlyURL": "/welcome",
-            "name": "Welcome",
-            "title": "Welcome"
+            "nameMap": {
+                "en_US": "Welcome",
+                "de_DE": "Willkommen"
+            },
+            "titleMap": {
+                "en_US": "Welcome",
+                "de_DE": "Willkommen"
+            }
         },
         {
             "columns": [
@@ -59,8 +65,14 @@
                 ]
             ],
             "friendlyURL": "/logbook",
-            "name": "Logbook",
-            "title": "Logbook"
+            "nameMap": {
+                "en_US": "Logbook",
+                "de_DE": "Logbuch"
+            },
+            "titleMap": {
+                "en_US" : "Logbook",
+                "de_DE" : "Logbuch"
+            }
         },
         {
             "columns": [
@@ -83,8 +95,14 @@
                 ]
             ],
             "friendlyURL": "/project",
-            "name": "Project",
-            "title": "Project",
+            "nameMap": {
+                "en_US": "Project",
+                "de_DE": "Projekt"
+            },
+            "titleMap": {
+                "en_US": "Project",
+                "de_DE": "Projekt"
+            },
             "layouts": [
                 {
                     "friendlyURL": "/child-page-1",
@@ -111,8 +129,14 @@
                 ]
             ],
             "friendlyURL": "/about",
-            "name": "About Us",
-            "title": "About Us"
+            "nameMap": {
+                "en_US": "About Us",
+                "de_DE": "Wir"
+            },
+            "titleMap": {
+                "en_US": "About Us",
+                "de_DE": "Wir"
+            }
         },
         {
             "columns": [
@@ -137,8 +161,14 @@
                         ]
                     ],
                     "friendlyURL": "/events",
-                    "name": "Events",
-                    "title": "Events"
+                    "nameMap": {
+                        "en_US": "Events",
+                        "de_DE": "Termine"
+                    },
+                    "titleMap": {
+                        "en_US": "Events",
+                        "de_DE": "Termine"
+                    }
                 },
                 {
                     "columns": [
@@ -160,8 +190,14 @@
                         ]
                     ],
                     "friendlyURL": "/press",
-                    "name": "Press",
-                    "title": "Press"
+                    "nameMap": {
+                        "en_US": "Press",
+                        "de_DE": "Presse"
+                    },
+                    "titleMap": {
+                        "en_US": "Press",
+                        "de_DE": "Presse"
+                    }
                 },
                 {
                     "columns": [
@@ -176,8 +212,14 @@
                         ]
                     ],
                     "friendlyURL": "/donate",
-                    "name": "Donate",
-                    "title": "Donate"
+                    "nameMap": {
+                        "en_US": "Donate",
+                        "de_DE": "Spenden"
+                    },
+                    "titleMap": {
+                        "en_US": "Donate",
+                        "de_DE": "Spenden"
+                    }
                 },
                 {
                     "columns": [
@@ -192,8 +234,14 @@
                         ]
                     ],
                     "friendlyURL": "/faq",
-                    "name": "FAQ",
-                    "title": "FAQ"
+                    "nameMap": {
+                        "en_US": "FAQ",
+                        "de_DE": "FAQ"
+                    },
+                    "titleMap": {
+                        "en_US": "FAQ",
+                        "de_DE": "FAQ"
+                    }
                 }
             
             ]
