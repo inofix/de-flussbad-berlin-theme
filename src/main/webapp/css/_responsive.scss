@@ -2,7 +2,7 @@
     _responsive.scss: responsive configuration of the flussbad-theme
 
     Created:    2017-09-12 19:34 by Christian Berndt
-    Modified:   2018-01-18 15:24 by Christian Berndt
+    Modified:   2018-02-12 01:30 by Stefan Luebbers
     Version:    0.2.8
 */
 
@@ -97,6 +97,71 @@
         &.with-image {
             padding: 0 0 6em;
         }
+        
+        /*  flexbox config for same height intro boxes  */
+        
+        .row-flex, .row-flex > div[class*='col-'] {  
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            flex:1 1 auto;
+        }
+        
+        .row-flex-wrap {
+            -webkit-flex-flow: row wrap;
+            align-content: flex-start;
+            flex:0;
+        }
+        
+        .row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+             margin:-.2px; /* hack adjust for wrapping */
+        }
+        
+        .container-flex > div[class*='col-'] div,.row-flex > div[class*='col-'] div {
+            width:100%;
+        }
+        .flex-col {
+            display: flex;
+            display: -webkit-flex;
+            flex: 1 100%;
+            flex-flow: column nowrap;
+        }
+        .panel {   
+/*             flex: 1; */
+            display: flex;
+            flex-direction: column;
+            
+            .panel-heading {
+                padding: 0px 0px;
+                border-bottom: 0px solid transparent;
+                border-bottom-color: transparent;
+                border-top-right-radius: 0px;
+                border-top-left-radius: 0px;
+                background-color: transparent;
+                border-color: transparent
+            }
+            .panel-body {
+                padding: 0px;
+                
+                &.flex-grow {
+                    display: flex;
+                    -webkit-flex: 2;
+                    flex: 2;
+                }
+            }
+            
+            .panel-footer {
+                padding: 0px 0px;
+                background-color: transparent;
+                border-top: 0px solid #ddd;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                margin-top: auto;
+            }
+        }
+        
     } 
     
     #navigation {
