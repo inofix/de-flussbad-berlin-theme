@@ -2,8 +2,8 @@
     intro.ftl: Format the intro structure
     
     Created:    2015-08-28 17:52 by Christian Berndt
-    Modified:   2017-10-31 18:43 by Christian Berndt
-    Version:    1.1.5
+    Modified:   2018-02-11 22:03 by Stefan Luebbers
+    Version:    1.1.6
     
     Please note: Although this template is stored in the 
     site's context it's source is managed via git. Whenever you 
@@ -65,31 +65,38 @@
     <#assign cssClass = "${cssClass}" + " " + "${backgroundColor.getData()}" />
 </#if>
 
+
+
 <#macro print_abstracts caption>
     <#assign i = 0 />
     <#list caption.getSiblings() as cur_caption>
-        <#if (i < 3) >                   
+        <#if (i < 3) >
             <div class="col-sm-4">
-                <#if cur_caption.getData()?has_content>
-                    <div class="abstract abstract-${i}">
-                        <h3>${cur_caption.getData()}</h3>
-                        <h2>${cur_caption.claim.getData()}</h2>
-                        <p>${cur_caption.abstract.getData()}</p>
+                <div class="panel panel-default abstract abstract_${i}">
+                    <#if cur_caption.getData()?has_content>
+                        <div class="panel-heading">
+                            <h3>${cur_caption.getData()}</h3>
+                            <h2>${cur_caption.claim.getData()}</h2>
+                        </div>
+                        <div class="panel-body flex-grow">
+                            <p>${cur_caption.abstract.getData()}</p>
+                        </div>
+                        
                         <#if cur_caption.abstractLink.getData()?has_content>
-                        
-                            <#assign target = layoutLocalService.getLayout(groupId?number, false, cur_caption.abstractLink.getData()?number) />                                        
-                        
-                            <#assign targetURL = prefix + target.getFriendlyURL(locale) />
-                                            
-                            <div>
-                                <a href="${targetURL}" class="btn btn-default" title="${cur_caption.abstractLabel.getData()}">${cur_caption.abstractLabel.getData()}</a>
+                            <div class="panel-footer">
+                                    <#assign target = layoutLocalService.getLayout(groupId?number, false, cur_caption.abstractLink.getData()?number) />
+                                    <#assign targetURL = prefix + target.getFriendlyURL(locale) />
+                                                    
+                                    <div>
+                                        <a href="${targetURL}" class="btn btn-default" title="${cur_caption.abstractLabel.getData()}">${cur_caption.abstractLabel.getData()}</a>
+                                    </div>
                             </div>
                         </#if>
-                    </div>
-                </#if>
+                    </#if>
+                </div>
             </div>
-            <#assign i = i+1/>
         </#if>
+        <#assign i = i+1/>
     </#list>
 </#macro>
 
@@ -143,7 +150,8 @@
         </#if>
         
         <#if caption.getSiblings()?has_content>
-            <div class="row align-items-stretch">
+<#--            <div class="row align-items-stretch">   -->
+            <div class="row row-flex">
                 <@print_abstracts caption />
             </div>        
         </#if> 

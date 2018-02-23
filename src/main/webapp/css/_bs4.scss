@@ -2,15 +2,16 @@
     _bs4.scss: bs4 backports used in the flussbad-theme
 
     Created:    2017-10-31 18:38 by Christian Berndt
-    Modified:   2017-11-06 23:26 by Christian Berndt
+    Modified:   2018-02-12 00:46 by Stefan Luebbers
     Version:    1.0.1
 */
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     
+
     .intro {
-    
+/*  DEPRECATED
         .align-items-stretch {
         
             display: flex;
@@ -33,5 +34,7 @@
                 }
             }
         }
+*/
+        
     } 
 } 
